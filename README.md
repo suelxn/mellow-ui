@@ -1,4 +1,4 @@
-# Design System - Storybook
+# Mellow UI Design System - Storybook
 
 Este repositório centraliza o desenvolvimento isolado, os testes visuais e a documentação viva de todos os componentes de interface (UI) do Design System que estou desenvolvendo no Figma. 
 
