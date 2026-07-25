@@ -1,10 +1,23 @@
 {
   "name": "mellow-ui",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+    "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./components/*": {
+      "types": "./dist/components/*/index.d.ts",
+      "default": "./dist/components/*/index.js"
+    }
+  },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build:lib": "tsc src --outDir dist --declaration --module esnext",
+    "build": "npm run build:lib && npm run build-storybook",
     "start": "next start",
     "lint": "eslint",
     "storybook": "storybook dev -p 6006",
