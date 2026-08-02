@@ -1,0 +1,69 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade grid-column-end. 
+  Controla a linha vertical final onde a exibição de um item termina no CSS Grid, 
+  disponibilizando uma escala fixa de 1 a 9 via @breakpoints 
+  e suporte a valores customizados usando a variável --grid-column-end 
+  com media queries (@media).
+*/
+
+@breakpoints {
+  .rt-r-gce {
+  /* Mantenha este seletor aqui para preservar a ordem do código-fonte */
+  }
+  .rt-r-gce-1 {
+    grid-column-end: 1;
+  }
+  .rt-r-gce-2 {
+    grid-column-end: 2;
+  }
+  .rt-r-gce-3 {
+    grid-column-end: 3;
+  }
+  .rt-r-gce-4 {
+    grid-column-end: 4;
+  }
+  .rt-r-gce-5 {
+    grid-column-end: 5;
+  }
+  .rt-r-gce-6 {
+    grid-column-end: 6;
+  }
+  .rt-r-gce-7 {
+    grid-column-end: 7;
+  }
+  .rt-r-gce-8 {
+    grid-column-end: 8;
+  }
+  .rt-r-gce-9 {
+    grid-column-end: 9;
+  }
+}
+
+.rt-r-gce {
+  grid-column-end: var(--grid-column-end);
+}
+@media (--xs) {
+  .xs\:rt-r-gce {
+    grid-column-end: var(--grid-column-end-xs);
+  }
+}
+@media (--sm) {
+  .sm\:rt-r-gce {
+    grid-column-end: var(--grid-column-end-sm);
+  }
+}
+@media (--md) {
+  .md\:rt-r-gce {
+    grid-column-end: var(--grid-column-end-md);
+  }
+}
+@media (--lg) {
+  .lg\:rt-r-gce {
+    grid-column-end: var(--grid-column-end-lg);
+  }
+}
+@media (--xl) {
+  .xl\:rt-r-gce {
+    grid-column-end: var(--grid-column-end-xl);
+  }
+}

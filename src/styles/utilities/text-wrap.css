@@ -1,0 +1,23 @@
+/* 
+  Define classes utilitárias responsivas para as propriedades white-space e text-wrap. 
+  Controla o comportamento de quebra de linha e distribuição do texto (wrap, nowrap, 
+  pretty e balance) para otimização tipográfica e prevenção de linhas órfãs, 
+  agrupados pela diretiva @breakpoints para adequação responsiva.
+*/
+
+@breakpoints {
+  .rt-r-tw-wrap {
+    white-space: normal;
+  }
+  .rt-r-tw-nowrap {
+    white-space: nowrap;
+  }
+  .rt-r-tw-pretty {
+    white-space: normal;
+    text-wrap: pretty;
+  }
+  .rt-r-tw-balance {
+    white-space: normal;
+    text-wrap: balance;
+  }
+}

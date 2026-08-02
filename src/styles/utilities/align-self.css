@@ -1,0 +1,28 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade align-self. 
+  Controla o alinhamento individual de um item ao longo do eixo transversal no Flexbox ou Grid, 
+  sobrescrevendo o alinhamento geral do contêiner pai (start, center, end, baseline e stretch), 
+  agrupados pela diretiva @breakpoints para adequação responsiva.
+*/
+
+@breakpoints {
+  .rt-r-as-start {
+    align-self: start;
+  }
+
+  .rt-r-as-center {
+    align-self: center;
+  }
+
+  .rt-r-as-end {
+    align-self: end;
+  }
+
+  .rt-r-as-baseline {
+    align-self: baseline;
+  }
+
+  .rt-r-as-stretch {
+    align-self: stretch;
+  }
+}

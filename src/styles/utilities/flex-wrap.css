@@ -1,0 +1,20 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade flex-wrap. 
+  Controla se os itens em um contêiner Flexbox devem quebrar em múltiplas linhas 
+  (nowrap, wrap e wrap-reverse) quando faltar espaço, agrupados pela diretiva 
+  @breakpoints para adaptação conforme o tamanho da tela.
+*/
+
+@breakpoints {
+  .rt-r-fw-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .rt-r-fw-wrap {
+    flex-wrap: wrap;
+  }
+
+  .rt-r-fw-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+}

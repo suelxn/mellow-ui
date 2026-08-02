@@ -1,0 +1,28 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade align-items. 
+  Controla o alinhamento coletivo dos elementos filhos ao longo do eixo transversal 
+  em contêineres Flexbox ou Grid (flex-start, center, flex-end, baseline e stretch), 
+  agrupados pela diretiva @breakpoints para adequação responsiva do layout.
+*/
+
+@breakpoints {
+  .rt-r-ai-start {
+    align-items: flex-start;
+  }
+
+  .rt-r-ai-center {
+    align-items: center;
+  }
+
+  .rt-r-ai-end {
+    align-items: flex-end;
+  }
+
+  .rt-r-ai-baseline {
+    align-items: baseline;
+  }
+
+  .rt-r-ai-stretch {
+    align-items: stretch;
+  }
+}

@@ -1,0 +1,24 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade vertical-align. 
+  Controla o alinhamento vertical de elementos inline, inline-block ou células de tabela 
+  (baseline, top, middle e bottom), agrupados pela diretiva @breakpoints 
+  para adequação e ajuste responsivo do layout.
+*/
+
+@breakpoints {
+  .rt-r-va-baseline {
+    vertical-align: baseline;
+  }
+
+  .rt-r-va-top {
+    vertical-align: top;
+  }
+
+  .rt-r-va-middle {
+    vertical-align: middle;
+  }
+
+  .rt-r-va-bottom {
+    vertical-align: bottom;
+  }
+}

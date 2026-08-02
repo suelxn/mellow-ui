@@ -1,0 +1,24 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade justify-content. 
+  Controla o alinhamento e a distribuição de espaço entre os itens ao longo do eixo principal 
+  em contêineres Flexbox ou Grid (flex-start, center, flex-end e space-between), 
+  agrupados pela diretiva @breakpoints para adequação responsiva do layout.
+*/
+
+@breakpoints {
+  .rt-r-jc-start {
+    justify-content: flex-start;
+  }
+
+  .rt-r-jc-center {
+    justify-content: center;
+  }
+
+  .rt-r-jc-end {
+    justify-content: flex-end;
+  }
+
+  .rt-r-jc-space-between {
+    justify-content: space-between;
+  }
+}
