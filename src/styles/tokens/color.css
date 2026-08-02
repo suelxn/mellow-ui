@@ -1,0 +1,272 @@
+@import './colors/absolute.css';
+@import './colors/blue.css';
+@import './colors/coral.css';
+@import './colors/gray.css';
+@import './colors/green.css';
+@import './colors/mint.css';
+@import './colors/neutral.css';
+@import './colors/pink.css';
+@import './colors/red.css';
+@import './colors/sky.css';
+@import './colors/yellow.css';
+
+
+/* * * * * * * * * * * * * * * * * * * */
+/*                                     */
+/*           Semantic colors           */
+/*                                     */
+/* * * * * * * * * * * * * * * * * * * */
+
+:where(.mellow-ui) {
+
+  /* ==========================================================================
+     1. BASE LAYOUT & SURFACES (Ambiente Global)
+     ========================================================================== */
+  --color-background: var(--neutral-50);
+  --color-surface: var(--neutral-100);
+  --color-surface-hover: var(--neutral-200);
+  --color-surface-active: var(--neutral-300);
+  
+--color-overlay: color-mix(in srgb, var(--neutral-950) 35%, transparent);
+  --color-panel-solid: var(--neutral-50);
+  --color-panel-translucent: rgba(255, 255, 255, 0.7);
+
+  /* Texto Base */
+  --color-text: var(--neutral-900);
+  --color-text-subtle: var(--neutral-700);
+  --color-text-muted: var(--neutral-500);
+
+  /* Bordas Base */
+  --color-border: var(--neutral-200);
+  --color-border-subtle: var(--neutral-100);
+  --color-border-strong: var(--neutral-400);
+
+  /* Valores Absolutos */
+  --color-white: var(--absolute-white, #ffffff);
+  --color-black: var(--absolute-black, #000000);
+
+
+  /* ==========================================================================
+     2. BRAND & INTENT ROLES (Ações e Estados)
+     ========================================================================== */
+
+  /* --- PRIMARY (Pink) --- */
+  --color-primary-subtle: var(--pink-50);
+  --color-primary-surface: var(--pink-100);
+  --color-primary-border: var(--pink-200);
+  --color-primary-border-strong: var(--pink-400);
+  --color-primary: var(--pink-500);
+  --color-primary-hover: var(--pink-600);
+  --color-primary-active: var(--pink-700);
+  --color-primary-text: var(--pink-900);
+  --color-primary-text-subtle: var(--pink-700);
+  --color-primary-contrast: var(--pink-contrast);
+
+  /* --- SECONDARY (Blue) --- */
+  --color-secondary-subtle: var(--blue-50);
+  --color-secondary-surface: var(--blue-100);
+  --color-secondary-border: var(--blue-200);
+  --color-secondary-border-strong: var(--blue-400);
+  --color-secondary: var(--blue-500);
+  --color-secondary-hover: var(--blue-600);
+  --color-secondary-active: var(--blue-700);
+  --color-secondary-text: var(--blue-900);
+  --color-secondary-text-subtle: var(--blue-700);
+  --color-secondary-contrast: var(--blue-contrast);
+
+  /* --- TERTIARY (Coral) --- */
+  --color-tertiary-subtle: var(--coral-50);
+  --color-tertiary-surface: var(--coral-100);
+  --color-tertiary-border: var(--coral-200);
+  --color-tertiary-border-strong: var(--coral-400);
+  --color-tertiary: var(--coral-500);
+  --color-tertiary-hover: var(--coral-600);
+  --color-tertiary-active: var(--coral-700);
+  --color-tertiary-text: var(--coral-900);
+  --color-tertiary-text-subtle: var(--coral-700);
+  --color-tertiary-contrast: var(--coral-contrast);
+
+  /* --- QUATERNARY (Mint) --- */
+  --color-quaternary-subtle: var(--mint-50);
+  --color-quaternary-surface: var(--mint-100);
+  --color-quaternary-border: var(--mint-200);
+  --color-quaternary-border-strong: var(--mint-400);
+  --color-quaternary: var(--mint-500);
+  --color-quaternary-hover: var(--mint-600);
+  --color-quaternary-active: var(--mint-700);
+  --color-quaternary-text: var(--mint-900);
+  --color-quaternary-text-subtle: var(--mint-700);
+  --color-quaternary-contrast: var(--mint-contrast);
+
+
+  /* ==========================================================================
+     3. STATUS & FEEDBACK ROLES
+     ========================================================================== */
+
+  /* --- INFO (Sky) --- */
+  --color-info-subtle: var(--sky-50);
+  --color-info-surface: var(--sky-100);
+  --color-info-border: var(--sky-200);
+  --color-info-border-strong: var(--sky-400);
+  --color-info: var(--sky-500);
+  --color-info-hover: var(--sky-600);
+  --color-info-active: var(--sky-700);
+  --color-info-text: var(--sky-900);
+  --color-info-text-subtle: var(--sky-700);
+  --color-info-contrast: var(--sky-contrast);
+
+  /* --- SUCCESS (Green) --- */
+  --color-success-subtle: var(--green-50);
+  --color-success-surface: var(--green-100);
+  --color-success-border: var(--green-200);
+  --color-success-border-strong: var(--green-400);
+  --color-success: var(--green-500);
+  --color-success-hover: var(--green-600);
+  --color-success-active: var(--green-700);
+  --color-success-text: var(--green-900);
+  --color-success-text-subtle: var(--green-700);
+  --color-success-contrast: var(--green-contrast);
+
+  /* --- WARNING (Yellow) --- */
+  --color-warning-subtle: var(--yellow-50);
+  --color-warning-surface: var(--yellow-100);
+  --color-warning-border: var(--yellow-200);
+  --color-warning-border-strong: var(--yellow-400);
+  --color-warning: var(--yellow-500);
+  --color-warning-hover: var(--yellow-600);
+  --color-warning-active: var(--yellow-700);
+  --color-warning-text: var(--yellow-900);
+  --color-warning-text-subtle: var(--yellow-700);
+  --color-warning-contrast: var(--yellow-contrast);
+
+  /* --- ERROR / DESTRUCTIVE (Red) --- */
+  --color-error-subtle: var(--red-50);
+  --color-error-surface: var(--red-100);
+  --color-error-border: var(--red-200);
+  --color-error-border-strong: var(--red-400);
+  --color-error: var(--red-500);
+  --color-error-hover: var(--red-600);
+  --color-error-active: var(--red-700);
+  --color-error-text: var(--red-900);
+  --color-error-text-subtle: var(--red-700);
+  --color-error-contrast: var(--red-contrast);
+
+
+  /* ==========================================================================
+     4. DISABLED STATES (Gray)
+     ========================================================================== */
+  --color-disabled-subtle: var(--gray-50);
+  --color-disabled-surface: var(--gray-100);
+  --color-disabled-border: var(--gray-200);
+  --color-disabled: var(--gray-300);
+  --color-disabled-text: var(--gray-400);
+  --color-disabled-text-subtle: var(--gray-300);
+
+
+  /* ==========================================================================
+     5. FOCUS & SELECTION
+     ========================================================================== */
+  --focus-ring: var(--color-primary);
+  --selection-bg: var(--color-primary-surface);
+  --selection-text: var(--color-primary-text);
+}
+
+
+/* * * * * * * * * * * * * * * * * * * */
+/*                                     */
+/*            Dark theme               */
+/*                                     */
+/* * * * * * * * * * * * * * * * * * * */
+
+:is(.dark, .dark-theme),
+:is(.dark, .dark-theme) :where(.mellow-ui:not(.light, .light-theme)) {
+  --color-background: var(--neutral-50); /* Como as primitivas invertem, neutral-50 no dark já é escuro */
+  --color-surface: var(--neutral-100);
+  --color-surface-hover: var(--neutral-200);
+  --color-surface-active: var(--neutral-300);
+
+--color-overlay: color-mix(in srgb, var(--neutral-950) 50%, transparent);
+  --color-panel-solid: var(--neutral-100);
+  --color-panel-translucent: rgba(0, 0, 0, 0.5);
+
+  --color-text: var(--neutral-900);
+  --color-text-subtle: var(--neutral-700);
+  --color-text-muted: var(--neutral-500);
+
+  --color-border: var(--neutral-200);
+  --color-border-subtle: var(--neutral-100);
+  --color-border-strong: var(--neutral-400);
+}
+
+/* * * * * * * * * * * * * * * * * * * */
+/*                                     */
+/*            Transparency             */
+/*                                     */
+/* * * * * * * * * * * * * * * * * * * */
+
+:where(.mellow-ui) {
+  --color-transparent: rgb(0 0 0 / 0);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    .mellow-ui {
+      --color-transparent: color(display-p3 0 0 0 / 0);
+    }
+  }
+}
+
+/* * * * * * * * * * * * * * * * * * * */
+/*                                     */
+/*            Color scheme             */
+/*                                     */
+/* * * * * * * * * * * * * * * * * * * */
+
+.mellow-ui:where(.light, .light-theme) {
+  &,
+  :root:where(:has(&[data-is-root-theme='true'])) {
+    color-scheme: light;
+  }
+}
+
+.mellow-ui:where(.dark, .dark-theme) {
+  &,
+  :root:where(:has(&[data-is-root-theme='true'])) {
+    color-scheme: dark;
+  }
+}
+
+/* * * * * * * * * * * * * * * * * * * */
+/*                                     */
+/*         Background and text         */
+/*                                     */
+/* * * * * * * * * * * * * * * * * * * */
+
+.mellow-ui {
+  color: var(--color-text);
+  &:where([data-has-background='true']) {
+    background-color: var(--color-background);
+  }
+}
+
+.mellow-ui ::selection {
+  background-color: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+/* * * * * * * * * * * * * * * * * * * */
+/*                                     */
+/*          Panel background           */
+/*                                     */
+/* * * * * * * * * * * * * * * * * * * */
+
+.mellow-ui {
+  &:where([data-panel-background='solid']) {
+    --color-panel: var(--color-panel-solid);
+    --backdrop-filter-panel: none;
+  }
+  &:where([data-panel-background='translucent']) {
+    --color-panel: var(--color-panel-translucent);
+    --backdrop-filter-panel: blur(64px);
+  }
+}

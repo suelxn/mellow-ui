@@ -1,0 +1,18 @@
+/* ==========================================================================
+   SPACING TOKENS
+   Define a rampa de espaçamentos (paddings, margins, gaps). Cada token é
+   multiplicado pela variável `--scaling`, garantindo que todas as distâncias
+   da interface se adaptem proporcionalmente ao tamanho configurado.
+   ========================================================================== */
+
+.mellow-ui {
+  --space-3xs: calc(4px * var(--scaling));
+  --space-2xs: calc(8px * var(--scaling));
+  --space-xs:  calc(12px * var(--scaling));
+  --space-sm:  calc(16px * var(--scaling));
+  --space-md:  calc(24px * var(--scaling));
+  --space-lg:  calc(32px * var(--scaling));
+  --space-xl:  calc(40px * var(--scaling));
+  --space-2xl: calc(48px * var(--scaling));
+  --space-3xl: calc(64px * var(--scaling));
+}
