@@ -1,0 +1,14 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade table-layout. 
+  Controla o algoritmo de layout e cálculo de largura das colunas e células de uma tabela 
+  (auto e fixed), agrupados pela diretiva @breakpoints para adequação responsiva do layout.
+*/
+
+@breakpoints {
+  .rt-r-tl-auto {
+    table-layout: auto;
+  }
+  .rt-r-tl-fixed {
+    table-layout: fixed;
+  }
+}

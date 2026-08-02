@@ -1,0 +1,39 @@
+/* 
+  Define classes utilitárias responsivas para o recorte de espaçamento vertical (leading trim) na tipografia. 
+  Remove o espaço em branco excedente acima e abaixo do texto via pseudo-elementos (::before e ::after) 
+  e cálculos de margem com variáveis CSS, permitindo o alinhamento óptico preciso (start, end, both e normal) 
+  agrupado pela diretiva @breakpoints para adequação responsiva.
+*/
+
+@breakpoints {
+  .rt-r-lt-normal::before,
+  .rt-r-lt-end::before,
+  .rt-r-lt-normal::after,
+  .rt-r-lt-start::after {
+    content: none;
+  }
+
+  .rt-r-lt-start::before,
+  .rt-r-lt-both::before,
+  .rt-r-lt-end::after,
+  .rt-r-lt-both::after {
+    content: '';
+    display: table;
+  }
+
+  .rt-r-lt-start::before,
+  .rt-r-lt-both::before {
+    margin-bottom: calc(
+      var(--leading-trim-start, var(--default-leading-trim-start)) -
+        var(--line-height, calc(1em * var(--default-line-height))) / 2
+    );
+  }
+
+  .rt-r-lt-end::after,
+  .rt-r-lt-both::after {
+    margin-top: calc(
+      var(--leading-trim-end, var(--default-leading-trim-end)) -
+        var(--line-height, calc(1em * var(--default-line-height))) / 2
+    );
+  }
+}

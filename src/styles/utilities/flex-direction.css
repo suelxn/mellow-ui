@@ -1,0 +1,24 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade flex-direction. 
+  Controla a direção e o eixo principal de disposição dos itens em um contêiner Flexbox 
+  (row, column, row-reverse e column-reverse), agrupados pela diretiva @breakpoints 
+  para adequação e reordenação responsiva do layout.
+*/
+
+@breakpoints {
+  .rt-r-fd-row {
+    flex-direction: row;
+  }
+
+  .rt-r-fd-column {
+    flex-direction: column;
+  }
+
+  .rt-r-fd-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .rt-r-fd-column-reverse {
+    flex-direction: column-reverse;
+  }
+}

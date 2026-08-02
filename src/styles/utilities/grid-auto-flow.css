@@ -1,0 +1,28 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade grid-auto-flow. 
+  Controla o algoritmo de posicionamento automático de itens não mapeados no CSS Grid, 
+  permitindo alternar a direção do fluxo (linhas ou colunas) e o preenchimento de lacunas (dense) 
+  via diretiva @breakpoints.
+*/
+
+@breakpoints {
+  .rt-r-gaf-row {
+    grid-auto-flow: row;
+  }
+
+  .rt-r-gaf-column {
+    grid-auto-flow: column;
+  }
+
+  .rt-r-gaf-dense {
+    grid-auto-flow: dense;
+  }
+
+  .rt-r-gaf-row-dense {
+    grid-auto-flow: row dense;
+  }
+
+  .rt-r-gaf-column-dense {
+    grid-auto-flow: column dense;
+  }
+}

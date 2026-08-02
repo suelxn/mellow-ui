@@ -1,0 +1,36 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade flex-basis. 
+  Controla o tamanho inicial padrão de um item em um contêiner Flexbox 
+  antes da distribuição de espaço do layout, utilizando a variável 
+  --flex-basis integrada a consultas de mídia (@media) para adequação 
+  responsiva por breakpoint.
+*/
+
+.rt-r-fb {
+  flex-basis: var(--flex-basis);
+}
+@media (--xs) {
+  .xs\:rt-r-fb {
+    flex-basis: var(--flex-basis-xs);
+  }
+}
+@media (--sm) {
+  .sm\:rt-r-fb {
+    flex-basis: var(--flex-basis-sm);
+  }
+}
+@media (--md) {
+  .md\:rt-r-fb {
+    flex-basis: var(--flex-basis-md);
+  }
+}
+@media (--lg) {
+  .lg\:rt-r-fb {
+    flex-basis: var(--flex-basis-lg);
+  }
+}
+@media (--xl) {
+  .xl\:rt-r-fb {
+    flex-basis: var(--flex-basis-xl);
+  }
+}

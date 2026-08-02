@@ -1,0 +1,19 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade text-align. 
+  Controla o alinhamento horizontal do texto e elementos inline (left, center e right), 
+  agrupados pela diretiva @breakpoints para adequação tipográfica e responsiva do layout.
+*/
+
+@breakpoints {
+  .rt-r-ta-left {
+    text-align: left;
+  }
+
+  .rt-r-ta-center {
+    text-align: center;
+  }
+
+  .rt-r-ta-right {
+    text-align: right;
+  }
+}

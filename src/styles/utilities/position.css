@@ -1,0 +1,28 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade position. 
+  Controla o método de posicionamento de um elemento no fluxo da página 
+  (static, absolute, relative, fixed e sticky), agrupados pela diretiva @breakpoints 
+  para adequação e alteração do comportamento de layout por breakpoint.
+*/
+
+@breakpoints {
+  .rt-r-position-static {
+    position: static;
+  }
+
+  .rt-r-position-absolute {
+    position: absolute;
+  }
+
+  .rt-r-position-relative {
+    position: relative;
+  }
+
+  .rt-r-position-fixed {
+    position: fixed;
+  }
+
+  .rt-r-position-sticky {
+    position: sticky;
+  }
+}
