@@ -5,6 +5,7 @@
   via PropDef para alinhamento e consistência visual entre os componentes.
 */
 
+
 import type { PropDef } from './prop-def.js';
 
 // prettier-ignore
