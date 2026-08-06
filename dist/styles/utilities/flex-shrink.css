@@ -1,0 +1,83 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade flex-shrink. 
+  Controla se um item pode encolher em um contêiner Flexbox quando o espaço é insuficiente, 
+  disponibilizando os valores fixos 0 (impede encolhimento) e 1 (permite encolhimento) via blocos @media por breakpoint 
+  e suporte a valores customizados usando a variável --flex-shrink 
+  com media queries (@media).
+*/
+
+.rt-r-fs-0 {
+  flex-shrink: 0;
+}
+.rt-r-fs-1 {
+  flex-shrink: 1;
+}
+
+.rt-r-fs {
+  flex-shrink: var(--flex-shrink);
+}
+@media (--xs) {
+  .xs\:rt-r-fs {
+    flex-shrink: var(--flex-shrink-xs);
+  }
+}
+@media (--sm) {
+  .sm\:rt-r-fs {
+    flex-shrink: var(--flex-shrink-sm);
+  }
+}
+@media (--md) {
+  .md\:rt-r-fs {
+    flex-shrink: var(--flex-shrink-md);
+  }
+}
+@media (--lg) {
+  .lg\:rt-r-fs {
+    flex-shrink: var(--flex-shrink-lg);
+  }
+}
+@media (--xl) {
+  .xl\:rt-r-fs {
+    flex-shrink: var(--flex-shrink-xl);
+  }
+}
+@media (--xs) {
+  .xs\:rt-r-fs-0 {
+    flex-shrink: 0;
+  }
+  .xs\:rt-r-fs-1 {
+    flex-shrink: 1;
+  }
+}
+@media (--sm) {
+  .sm\:rt-r-fs-0 {
+    flex-shrink: 0;
+  }
+  .sm\:rt-r-fs-1 {
+    flex-shrink: 1;
+  }
+}
+@media (--md) {
+  .md\:rt-r-fs-0 {
+    flex-shrink: 0;
+  }
+  .md\:rt-r-fs-1 {
+    flex-shrink: 1;
+  }
+}
+@media (--lg) {
+  .lg\:rt-r-fs-0 {
+    flex-shrink: 0;
+  }
+  .lg\:rt-r-fs-1 {
+    flex-shrink: 1;
+  }
+}
+@media (--xl) {
+  .xl\:rt-r-fs-0 {
+    flex-shrink: 0;
+  }
+  .xl\:rt-r-fs-1 {
+    flex-shrink: 1;
+  }
+}

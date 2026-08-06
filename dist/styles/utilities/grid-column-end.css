@@ -1,0 +1,209 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade grid-column-end. 
+  Controla a linha vertical final onde a exibição de um item termina no CSS Grid, 
+  disponibilizando uma escala fixa de 1 a 9 via blocos @media por breakpoint 
+  e suporte a valores customizados usando a variável --grid-column-end 
+  com media queries (@media).
+*/
+
+.rt-r-gce-1 {
+  grid-column-end: 1;
+}
+.rt-r-gce-2 {
+  grid-column-end: 2;
+}
+.rt-r-gce-3 {
+  grid-column-end: 3;
+}
+.rt-r-gce-4 {
+  grid-column-end: 4;
+}
+.rt-r-gce-5 {
+  grid-column-end: 5;
+}
+.rt-r-gce-6 {
+  grid-column-end: 6;
+}
+.rt-r-gce-7 {
+  grid-column-end: 7;
+}
+.rt-r-gce-8 {
+  grid-column-end: 8;
+}
+.rt-r-gce-9 {
+  grid-column-end: 9;
+}
+
+.rt-r-gce {
+  grid-column-end: var(--grid-column-end);
+}
+@media (--xs) {
+  .xs\:rt-r-gce {
+    grid-column-end: var(--grid-column-end-xs);
+  }
+}
+@media (--sm) {
+  .sm\:rt-r-gce {
+    grid-column-end: var(--grid-column-end-sm);
+  }
+}
+@media (--md) {
+  .md\:rt-r-gce {
+    grid-column-end: var(--grid-column-end-md);
+  }
+}
+@media (--lg) {
+  .lg\:rt-r-gce {
+    grid-column-end: var(--grid-column-end-lg);
+  }
+}
+@media (--xl) {
+  .xl\:rt-r-gce {
+    grid-column-end: var(--grid-column-end-xl);
+  }
+}
+@media (--xs) {
+  .xs\:rt-r-gce-1 {
+    grid-column-end: 1;
+  }
+  .xs\:rt-r-gce-2 {
+    grid-column-end: 2;
+  }
+  .xs\:rt-r-gce-3 {
+    grid-column-end: 3;
+  }
+  .xs\:rt-r-gce-4 {
+    grid-column-end: 4;
+  }
+  .xs\:rt-r-gce-5 {
+    grid-column-end: 5;
+  }
+  .xs\:rt-r-gce-6 {
+    grid-column-end: 6;
+  }
+  .xs\:rt-r-gce-7 {
+    grid-column-end: 7;
+  }
+  .xs\:rt-r-gce-8 {
+    grid-column-end: 8;
+  }
+  .xs\:rt-r-gce-9 {
+    grid-column-end: 9;
+  }
+}
+@media (--sm) {
+  .sm\:rt-r-gce-1 {
+    grid-column-end: 1;
+  }
+  .sm\:rt-r-gce-2 {
+    grid-column-end: 2;
+  }
+  .sm\:rt-r-gce-3 {
+    grid-column-end: 3;
+  }
+  .sm\:rt-r-gce-4 {
+    grid-column-end: 4;
+  }
+  .sm\:rt-r-gce-5 {
+    grid-column-end: 5;
+  }
+  .sm\:rt-r-gce-6 {
+    grid-column-end: 6;
+  }
+  .sm\:rt-r-gce-7 {
+    grid-column-end: 7;
+  }
+  .sm\:rt-r-gce-8 {
+    grid-column-end: 8;
+  }
+  .sm\:rt-r-gce-9 {
+    grid-column-end: 9;
+  }
+}
+@media (--md) {
+  .md\:rt-r-gce-1 {
+    grid-column-end: 1;
+  }
+  .md\:rt-r-gce-2 {
+    grid-column-end: 2;
+  }
+  .md\:rt-r-gce-3 {
+    grid-column-end: 3;
+  }
+  .md\:rt-r-gce-4 {
+    grid-column-end: 4;
+  }
+  .md\:rt-r-gce-5 {
+    grid-column-end: 5;
+  }
+  .md\:rt-r-gce-6 {
+    grid-column-end: 6;
+  }
+  .md\:rt-r-gce-7 {
+    grid-column-end: 7;
+  }
+  .md\:rt-r-gce-8 {
+    grid-column-end: 8;
+  }
+  .md\:rt-r-gce-9 {
+    grid-column-end: 9;
+  }
+}
+@media (--lg) {
+  .lg\:rt-r-gce-1 {
+    grid-column-end: 1;
+  }
+  .lg\:rt-r-gce-2 {
+    grid-column-end: 2;
+  }
+  .lg\:rt-r-gce-3 {
+    grid-column-end: 3;
+  }
+  .lg\:rt-r-gce-4 {
+    grid-column-end: 4;
+  }
+  .lg\:rt-r-gce-5 {
+    grid-column-end: 5;
+  }
+  .lg\:rt-r-gce-6 {
+    grid-column-end: 6;
+  }
+  .lg\:rt-r-gce-7 {
+    grid-column-end: 7;
+  }
+  .lg\:rt-r-gce-8 {
+    grid-column-end: 8;
+  }
+  .lg\:rt-r-gce-9 {
+    grid-column-end: 9;
+  }
+}
+@media (--xl) {
+  .xl\:rt-r-gce-1 {
+    grid-column-end: 1;
+  }
+  .xl\:rt-r-gce-2 {
+    grid-column-end: 2;
+  }
+  .xl\:rt-r-gce-3 {
+    grid-column-end: 3;
+  }
+  .xl\:rt-r-gce-4 {
+    grid-column-end: 4;
+  }
+  .xl\:rt-r-gce-5 {
+    grid-column-end: 5;
+  }
+  .xl\:rt-r-gce-6 {
+    grid-column-end: 6;
+  }
+  .xl\:rt-r-gce-7 {
+    grid-column-end: 7;
+  }
+  .xl\:rt-r-gce-8 {
+    grid-column-end: 8;
+  }
+  .xl\:rt-r-gce-9 {
+    grid-column-end: 9;
+  }
+}

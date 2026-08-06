@@ -1,0 +1,107 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade align-self. 
+  Controla o alinhamento individual de um item ao longo do eixo transversal no Flexbox ou Grid, 
+  sobrescrevendo o alinhamento geral do contêiner pai (start, center, end, baseline e stretch), 
+  agrupados em blocos @media por breakpoint para adequação responsiva.
+*/
+
+.rt-r-as-start {
+  align-self: start;
+}
+.rt-r-as-center {
+  align-self: center;
+}
+.rt-r-as-end {
+  align-self: end;
+}
+.rt-r-as-baseline {
+  align-self: baseline;
+}
+.rt-r-as-stretch {
+  align-self: stretch;
+}
+@media (--xs) {
+  .xs\:rt-r-as-start {
+    align-self: start;
+  }
+  .xs\:rt-r-as-center {
+    align-self: center;
+  }
+  .xs\:rt-r-as-end {
+    align-self: end;
+  }
+  .xs\:rt-r-as-baseline {
+    align-self: baseline;
+  }
+  .xs\:rt-r-as-stretch {
+    align-self: stretch;
+  }
+}
+@media (--sm) {
+  .sm\:rt-r-as-start {
+    align-self: start;
+  }
+  .sm\:rt-r-as-center {
+    align-self: center;
+  }
+  .sm\:rt-r-as-end {
+    align-self: end;
+  }
+  .sm\:rt-r-as-baseline {
+    align-self: baseline;
+  }
+  .sm\:rt-r-as-stretch {
+    align-self: stretch;
+  }
+}
+@media (--md) {
+  .md\:rt-r-as-start {
+    align-self: start;
+  }
+  .md\:rt-r-as-center {
+    align-self: center;
+  }
+  .md\:rt-r-as-end {
+    align-self: end;
+  }
+  .md\:rt-r-as-baseline {
+    align-self: baseline;
+  }
+  .md\:rt-r-as-stretch {
+    align-self: stretch;
+  }
+}
+@media (--lg) {
+  .lg\:rt-r-as-start {
+    align-self: start;
+  }
+  .lg\:rt-r-as-center {
+    align-self: center;
+  }
+  .lg\:rt-r-as-end {
+    align-self: end;
+  }
+  .lg\:rt-r-as-baseline {
+    align-self: baseline;
+  }
+  .lg\:rt-r-as-stretch {
+    align-self: stretch;
+  }
+}
+@media (--xl) {
+  .xl\:rt-r-as-start {
+    align-self: start;
+  }
+  .xl\:rt-r-as-center {
+    align-self: center;
+  }
+  .xl\:rt-r-as-end {
+    align-self: end;
+  }
+  .xl\:rt-r-as-baseline {
+    align-self: baseline;
+  }
+  .xl\:rt-r-as-stretch {
+    align-self: stretch;
+  }
+}

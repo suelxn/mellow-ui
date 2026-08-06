@@ -1,0 +1,209 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade grid-template-columns. 
+  Controla o número e a largura das colunas em um contêiner CSS Grid, 
+  disponibilizando uma escala fixa de 1 a 9 colunas de tamanhos iguais 
+  (repeat(N, minmax(0, 1fr))) via blocos @media por breakpoint e suporte a valores 
+  customizados usando a variável --grid-template-columns com media queries (@media).
+*/
+
+.rt-r-gtc-1 {
+  grid-template-columns: minmax(0, 1fr);
+}
+.rt-r-gtc-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.rt-r-gtc-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.rt-r-gtc-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.rt-r-gtc-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.rt-r-gtc-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.rt-r-gtc-7 {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+.rt-r-gtc-8 {
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+.rt-r-gtc-9 {
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+
+.rt-r-gtc {
+  grid-template-columns: var(--grid-template-columns);
+}
+@media (--xs) {
+  .xs\:rt-r-gtc {
+    grid-template-columns: var(--grid-template-columns-xs);
+  }
+}
+@media (--sm) {
+  .sm\:rt-r-gtc {
+    grid-template-columns: var(--grid-template-columns-sm);
+  }
+}
+@media (--md) {
+  .md\:rt-r-gtc {
+    grid-template-columns: var(--grid-template-columns-md);
+  }
+}
+@media (--lg) {
+  .lg\:rt-r-gtc {
+    grid-template-columns: var(--grid-template-columns-lg);
+  }
+}
+@media (--xl) {
+  .xl\:rt-r-gtc {
+    grid-template-columns: var(--grid-template-columns-xl);
+  }
+}
+@media (--xs) {
+  .xs\:rt-r-gtc-1 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .xs\:rt-r-gtc-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .xs\:rt-r-gtc-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .xs\:rt-r-gtc-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .xs\:rt-r-gtc-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .xs\:rt-r-gtc-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .xs\:rt-r-gtc-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+  .xs\:rt-r-gtc-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+  .xs\:rt-r-gtc-9 {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+}
+@media (--sm) {
+  .sm\:rt-r-gtc-1 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .sm\:rt-r-gtc-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .sm\:rt-r-gtc-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .sm\:rt-r-gtc-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .sm\:rt-r-gtc-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .sm\:rt-r-gtc-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .sm\:rt-r-gtc-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+  .sm\:rt-r-gtc-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+  .sm\:rt-r-gtc-9 {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+}
+@media (--md) {
+  .md\:rt-r-gtc-1 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .md\:rt-r-gtc-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .md\:rt-r-gtc-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .md\:rt-r-gtc-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .md\:rt-r-gtc-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .md\:rt-r-gtc-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .md\:rt-r-gtc-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+  .md\:rt-r-gtc-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+  .md\:rt-r-gtc-9 {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+}
+@media (--lg) {
+  .lg\:rt-r-gtc-1 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .lg\:rt-r-gtc-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .lg\:rt-r-gtc-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .lg\:rt-r-gtc-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .lg\:rt-r-gtc-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .lg\:rt-r-gtc-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .lg\:rt-r-gtc-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+  .lg\:rt-r-gtc-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+  .lg\:rt-r-gtc-9 {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+}
+@media (--xl) {
+  .xl\:rt-r-gtc-1 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .xl\:rt-r-gtc-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .xl\:rt-r-gtc-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .xl\:rt-r-gtc-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .xl\:rt-r-gtc-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .xl\:rt-r-gtc-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .xl\:rt-r-gtc-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+  .xl\:rt-r-gtc-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+  .xl\:rt-r-gtc-9 {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+}

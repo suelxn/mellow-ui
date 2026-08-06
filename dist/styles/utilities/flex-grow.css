@@ -1,0 +1,83 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade flex-grow. 
+  Controla se um item pode expandir no contêiner Flexbox para preencher o espaço disponível, 
+  disponibilizando os valores fixos 0 (impede expansão) e 1 (permite expansão) via blocos @media por breakpoint 
+  e suporte a valores customizados usando a variável --flex-grow 
+  com media queries (@media).
+*/
+
+.rt-r-fg-0 {
+  flex-grow: 0;
+}
+.rt-r-fg-1 {
+  flex-grow: 1;
+}
+
+.rt-r-fg {
+  flex-grow: var(--flex-grow);
+}
+@media (--xs) {
+  .xs\:rt-r-fg {
+    flex-grow: var(--flex-grow-xs);
+  }
+}
+@media (--sm) {
+  .sm\:rt-r-fg {
+    flex-grow: var(--flex-grow-sm);
+  }
+}
+@media (--md) {
+  .md\:rt-r-fg {
+    flex-grow: var(--flex-grow-md);
+  }
+}
+@media (--lg) {
+  .lg\:rt-r-fg {
+    flex-grow: var(--flex-grow-lg);
+  }
+}
+@media (--xl) {
+  .xl\:rt-r-fg {
+    flex-grow: var(--flex-grow-xl);
+  }
+}
+@media (--xs) {
+  .xs\:rt-r-fg-0 {
+    flex-grow: 0;
+  }
+  .xs\:rt-r-fg-1 {
+    flex-grow: 1;
+  }
+}
+@media (--sm) {
+  .sm\:rt-r-fg-0 {
+    flex-grow: 0;
+  }
+  .sm\:rt-r-fg-1 {
+    flex-grow: 1;
+  }
+}
+@media (--md) {
+  .md\:rt-r-fg-0 {
+    flex-grow: 0;
+  }
+  .md\:rt-r-fg-1 {
+    flex-grow: 1;
+  }
+}
+@media (--lg) {
+  .lg\:rt-r-fg-0 {
+    flex-grow: 0;
+  }
+  .lg\:rt-r-fg-1 {
+    flex-grow: 1;
+  }
+}
+@media (--xl) {
+  .xl\:rt-r-fg-0 {
+    flex-grow: 0;
+  }
+  .xl\:rt-r-fg-1 {
+    flex-grow: 1;
+  }
+}

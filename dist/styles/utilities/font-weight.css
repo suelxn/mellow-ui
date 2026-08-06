@@ -1,0 +1,179 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade font-weight. 
+  Controla o peso e a espessura da tipografia (de thin a black), 
+  utilizando os tokens do sistema de design (var(--font-weight-...)) 
+  agrupados em blocos @media por breakpoint para adequação responsiva.
+*/
+
+.rt-r-weight-thin {
+  font-weight: var(--font-weight-thin);
+}
+.rt-r-weight-extralight {
+  font-weight: var(--font-weight-extralight);
+}
+.rt-r-weight-light {
+  font-weight: var(--font-weight-light);
+}
+.rt-r-weight-regular {
+  font-weight: var(--font-weight-regular);
+}
+.rt-r-weight-medium {
+  font-weight: var(--font-weight-medium);
+}
+.rt-r-weight-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+.rt-r-weight-bold {
+  font-weight: var(--font-weight-bold);
+}
+.rt-r-weight-extrabold {
+  font-weight: var(--font-weight-extrabold);
+}
+.rt-r-weight-black {
+  font-weight: var(--font-weight-black);
+}
+@media (--xs) {
+  .xs\:rt-r-weight-thin {
+    font-weight: var(--font-weight-thin);
+  }
+  .xs\:rt-r-weight-extralight {
+    font-weight: var(--font-weight-extralight);
+  }
+  .xs\:rt-r-weight-light {
+    font-weight: var(--font-weight-light);
+  }
+  .xs\:rt-r-weight-regular {
+    font-weight: var(--font-weight-regular);
+  }
+  .xs\:rt-r-weight-medium {
+    font-weight: var(--font-weight-medium);
+  }
+  .xs\:rt-r-weight-semibold {
+    font-weight: var(--font-weight-semibold);
+  }
+  .xs\:rt-r-weight-bold {
+    font-weight: var(--font-weight-bold);
+  }
+  .xs\:rt-r-weight-extrabold {
+    font-weight: var(--font-weight-extrabold);
+  }
+  .xs\:rt-r-weight-black {
+    font-weight: var(--font-weight-black);
+  }
+}
+@media (--sm) {
+  .sm\:rt-r-weight-thin {
+    font-weight: var(--font-weight-thin);
+  }
+  .sm\:rt-r-weight-extralight {
+    font-weight: var(--font-weight-extralight);
+  }
+  .sm\:rt-r-weight-light {
+    font-weight: var(--font-weight-light);
+  }
+  .sm\:rt-r-weight-regular {
+    font-weight: var(--font-weight-regular);
+  }
+  .sm\:rt-r-weight-medium {
+    font-weight: var(--font-weight-medium);
+  }
+  .sm\:rt-r-weight-semibold {
+    font-weight: var(--font-weight-semibold);
+  }
+  .sm\:rt-r-weight-bold {
+    font-weight: var(--font-weight-bold);
+  }
+  .sm\:rt-r-weight-extrabold {
+    font-weight: var(--font-weight-extrabold);
+  }
+  .sm\:rt-r-weight-black {
+    font-weight: var(--font-weight-black);
+  }
+}
+@media (--md) {
+  .md\:rt-r-weight-thin {
+    font-weight: var(--font-weight-thin);
+  }
+  .md\:rt-r-weight-extralight {
+    font-weight: var(--font-weight-extralight);
+  }
+  .md\:rt-r-weight-light {
+    font-weight: var(--font-weight-light);
+  }
+  .md\:rt-r-weight-regular {
+    font-weight: var(--font-weight-regular);
+  }
+  .md\:rt-r-weight-medium {
+    font-weight: var(--font-weight-medium);
+  }
+  .md\:rt-r-weight-semibold {
+    font-weight: var(--font-weight-semibold);
+  }
+  .md\:rt-r-weight-bold {
+    font-weight: var(--font-weight-bold);
+  }
+  .md\:rt-r-weight-extrabold {
+    font-weight: var(--font-weight-extrabold);
+  }
+  .md\:rt-r-weight-black {
+    font-weight: var(--font-weight-black);
+  }
+}
+@media (--lg) {
+  .lg\:rt-r-weight-thin {
+    font-weight: var(--font-weight-thin);
+  }
+  .lg\:rt-r-weight-extralight {
+    font-weight: var(--font-weight-extralight);
+  }
+  .lg\:rt-r-weight-light {
+    font-weight: var(--font-weight-light);
+  }
+  .lg\:rt-r-weight-regular {
+    font-weight: var(--font-weight-regular);
+  }
+  .lg\:rt-r-weight-medium {
+    font-weight: var(--font-weight-medium);
+  }
+  .lg\:rt-r-weight-semibold {
+    font-weight: var(--font-weight-semibold);
+  }
+  .lg\:rt-r-weight-bold {
+    font-weight: var(--font-weight-bold);
+  }
+  .lg\:rt-r-weight-extrabold {
+    font-weight: var(--font-weight-extrabold);
+  }
+  .lg\:rt-r-weight-black {
+    font-weight: var(--font-weight-black);
+  }
+}
+@media (--xl) {
+  .xl\:rt-r-weight-thin {
+    font-weight: var(--font-weight-thin);
+  }
+  .xl\:rt-r-weight-extralight {
+    font-weight: var(--font-weight-extralight);
+  }
+  .xl\:rt-r-weight-light {
+    font-weight: var(--font-weight-light);
+  }
+  .xl\:rt-r-weight-regular {
+    font-weight: var(--font-weight-regular);
+  }
+  .xl\:rt-r-weight-medium {
+    font-weight: var(--font-weight-medium);
+  }
+  .xl\:rt-r-weight-semibold {
+    font-weight: var(--font-weight-semibold);
+  }
+  .xl\:rt-r-weight-bold {
+    font-weight: var(--font-weight-bold);
+  }
+  .xl\:rt-r-weight-extrabold {
+    font-weight: var(--font-weight-extrabold);
+  }
+  .xl\:rt-r-weight-black {
+    font-weight: var(--font-weight-black);
+  }
+}

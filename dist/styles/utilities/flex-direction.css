@@ -1,0 +1,89 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade flex-direction. 
+  Controla a direção e o eixo principal de disposição dos itens em um contêiner Flexbox 
+  (row, column, row-reverse e column-reverse), agrupados em blocos @media por breakpoint 
+  para adequação e reordenação responsiva do layout.
+*/
+
+.rt-r-fd-row {
+  flex-direction: row;
+}
+.rt-r-fd-column {
+  flex-direction: column;
+}
+.rt-r-fd-row-reverse {
+  flex-direction: row-reverse;
+}
+.rt-r-fd-column-reverse {
+  flex-direction: column-reverse;
+}
+@media (--xs) {
+  .xs\:rt-r-fd-row {
+    flex-direction: row;
+  }
+  .xs\:rt-r-fd-column {
+    flex-direction: column;
+  }
+  .xs\:rt-r-fd-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .xs\:rt-r-fd-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+@media (--sm) {
+  .sm\:rt-r-fd-row {
+    flex-direction: row;
+  }
+  .sm\:rt-r-fd-column {
+    flex-direction: column;
+  }
+  .sm\:rt-r-fd-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .sm\:rt-r-fd-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+@media (--md) {
+  .md\:rt-r-fd-row {
+    flex-direction: row;
+  }
+  .md\:rt-r-fd-column {
+    flex-direction: column;
+  }
+  .md\:rt-r-fd-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .md\:rt-r-fd-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+@media (--lg) {
+  .lg\:rt-r-fd-row {
+    flex-direction: row;
+  }
+  .lg\:rt-r-fd-column {
+    flex-direction: column;
+  }
+  .lg\:rt-r-fd-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .lg\:rt-r-fd-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+@media (--xl) {
+  .xl\:rt-r-fd-row {
+    flex-direction: row;
+  }
+  .xl\:rt-r-fd-column {
+    flex-direction: column;
+  }
+  .xl\:rt-r-fd-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .xl\:rt-r-fd-column-reverse {
+    flex-direction: column-reverse;
+  }
+}

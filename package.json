@@ -20,7 +20,7 @@
   },
   "scripts": {
     "build:lib": "tsc --project tsconfig.json --outDir dist --declaration --module esnext --skipLibCheck && npm run copy:css",
-    "copy:css": "cp -r src/tokens dist/ && cp -r src/styles dist/ && cp -r src/themes dist/",
+    "copy:css": "copyfiles -u 1 \"src/{tokens,styles,themes}/**/*\" dist",
     "build": "npm run build:lib && npm run build-storybook",
     "prepublishOnly": "npm run build:lib",
     "dev": "next dev",
@@ -35,7 +35,9 @@
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",
-    "next": "16.2.9"
+    "next": "^16.3.0",
+    "postcss": "^8.5.26",
+    "sharp": "^0.35.3"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^5.2.1",
@@ -43,13 +45,16 @@
     "@storybook/addon-docs": "^10.5.4",
     "@storybook/addon-mcp": "^0.7.0",
     "@storybook/addon-vitest": "^10.5.4",
+    "@storybook/mcp": "^0.8.0",
     "@storybook/nextjs-vite": "^10.5.4",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@vitest/browser-playwright": "^4.1.9",
-    "@vitest/coverage-v8": "^4.1.9",
+    "@vitest/browser": "^4.1.10",
+    "@vitest/browser-playwright": "^4.1.10",
+    "@vitest/coverage-v8": "^4.1.10",
+    "copyfiles": "^2.4.1",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
     "eslint-plugin-storybook": "^10.5.4",
@@ -60,7 +65,8 @@
     "storybook": "^10.5.4",
     "tailwindcss": "^4",
     "typescript": "^5",
+    "valibot": "^1.4.2",
     "vite": "^8.1.0",
-    "vitest": "^4.1.9"
+    "vitest": "^4.1.10"
   }
 }

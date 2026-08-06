@@ -1,0 +1,287 @@
+/* 
+  Define classes utilitárias responsivas para as propriedades overflow, overflow-x e overflow-y. 
+  Controla o comportamento de exibição, corte e rolagem do conteúdo excedente de um elemento 
+  (visible, hidden, clip, scroll e auto), com suporte a eixos individuais e gerais, 
+  agrupados em blocos @media por breakpoint para adequação responsiva do layout.
+*/
+
+.rt-r-overflow-visible {
+  overflow: visible;
+}
+.rt-r-overflow-hidden {
+  overflow: hidden;
+}
+.rt-r-overflow-clip {
+  overflow: clip;
+}
+.rt-r-overflow-scroll {
+  overflow: scroll;
+}
+.rt-r-overflow-auto {
+  overflow: auto;
+}
+.rt-r-ox-visible {
+  overflow-x: visible;
+}
+.rt-r-ox-hidden {
+  overflow-x: hidden;
+}
+.rt-r-ox-clip {
+  overflow-x: clip;
+}
+.rt-r-ox-scroll {
+  overflow-x: scroll;
+}
+.rt-r-ox-auto {
+  overflow-x: auto;
+}
+.rt-r-oy-visible {
+  overflow-y: visible;
+}
+.rt-r-oy-hidden {
+  overflow-y: hidden;
+}
+.rt-r-oy-clip {
+  overflow-y: clip;
+}
+.rt-r-oy-scroll {
+  overflow-y: scroll;
+}
+.rt-r-oy-auto {
+  overflow-y: auto;
+}
+@media (--xs) {
+  .xs\:rt-r-overflow-visible {
+    overflow: visible;
+  }
+  .xs\:rt-r-overflow-hidden {
+    overflow: hidden;
+  }
+  .xs\:rt-r-overflow-clip {
+    overflow: clip;
+  }
+  .xs\:rt-r-overflow-scroll {
+    overflow: scroll;
+  }
+  .xs\:rt-r-overflow-auto {
+    overflow: auto;
+  }
+  .xs\:rt-r-ox-visible {
+    overflow-x: visible;
+  }
+  .xs\:rt-r-ox-hidden {
+    overflow-x: hidden;
+  }
+  .xs\:rt-r-ox-clip {
+    overflow-x: clip;
+  }
+  .xs\:rt-r-ox-scroll {
+    overflow-x: scroll;
+  }
+  .xs\:rt-r-ox-auto {
+    overflow-x: auto;
+  }
+  .xs\:rt-r-oy-visible {
+    overflow-y: visible;
+  }
+  .xs\:rt-r-oy-hidden {
+    overflow-y: hidden;
+  }
+  .xs\:rt-r-oy-clip {
+    overflow-y: clip;
+  }
+  .xs\:rt-r-oy-scroll {
+    overflow-y: scroll;
+  }
+  .xs\:rt-r-oy-auto {
+    overflow-y: auto;
+  }
+}
+@media (--sm) {
+  .sm\:rt-r-overflow-visible {
+    overflow: visible;
+  }
+  .sm\:rt-r-overflow-hidden {
+    overflow: hidden;
+  }
+  .sm\:rt-r-overflow-clip {
+    overflow: clip;
+  }
+  .sm\:rt-r-overflow-scroll {
+    overflow: scroll;
+  }
+  .sm\:rt-r-overflow-auto {
+    overflow: auto;
+  }
+  .sm\:rt-r-ox-visible {
+    overflow-x: visible;
+  }
+  .sm\:rt-r-ox-hidden {
+    overflow-x: hidden;
+  }
+  .sm\:rt-r-ox-clip {
+    overflow-x: clip;
+  }
+  .sm\:rt-r-ox-scroll {
+    overflow-x: scroll;
+  }
+  .sm\:rt-r-ox-auto {
+    overflow-x: auto;
+  }
+  .sm\:rt-r-oy-visible {
+    overflow-y: visible;
+  }
+  .sm\:rt-r-oy-hidden {
+    overflow-y: hidden;
+  }
+  .sm\:rt-r-oy-clip {
+    overflow-y: clip;
+  }
+  .sm\:rt-r-oy-scroll {
+    overflow-y: scroll;
+  }
+  .sm\:rt-r-oy-auto {
+    overflow-y: auto;
+  }
+}
+@media (--md) {
+  .md\:rt-r-overflow-visible {
+    overflow: visible;
+  }
+  .md\:rt-r-overflow-hidden {
+    overflow: hidden;
+  }
+  .md\:rt-r-overflow-clip {
+    overflow: clip;
+  }
+  .md\:rt-r-overflow-scroll {
+    overflow: scroll;
+  }
+  .md\:rt-r-overflow-auto {
+    overflow: auto;
+  }
+  .md\:rt-r-ox-visible {
+    overflow-x: visible;
+  }
+  .md\:rt-r-ox-hidden {
+    overflow-x: hidden;
+  }
+  .md\:rt-r-ox-clip {
+    overflow-x: clip;
+  }
+  .md\:rt-r-ox-scroll {
+    overflow-x: scroll;
+  }
+  .md\:rt-r-ox-auto {
+    overflow-x: auto;
+  }
+  .md\:rt-r-oy-visible {
+    overflow-y: visible;
+  }
+  .md\:rt-r-oy-hidden {
+    overflow-y: hidden;
+  }
+  .md\:rt-r-oy-clip {
+    overflow-y: clip;
+  }
+  .md\:rt-r-oy-scroll {
+    overflow-y: scroll;
+  }
+  .md\:rt-r-oy-auto {
+    overflow-y: auto;
+  }
+}
+@media (--lg) {
+  .lg\:rt-r-overflow-visible {
+    overflow: visible;
+  }
+  .lg\:rt-r-overflow-hidden {
+    overflow: hidden;
+  }
+  .lg\:rt-r-overflow-clip {
+    overflow: clip;
+  }
+  .lg\:rt-r-overflow-scroll {
+    overflow: scroll;
+  }
+  .lg\:rt-r-overflow-auto {
+    overflow: auto;
+  }
+  .lg\:rt-r-ox-visible {
+    overflow-x: visible;
+  }
+  .lg\:rt-r-ox-hidden {
+    overflow-x: hidden;
+  }
+  .lg\:rt-r-ox-clip {
+    overflow-x: clip;
+  }
+  .lg\:rt-r-ox-scroll {
+    overflow-x: scroll;
+  }
+  .lg\:rt-r-ox-auto {
+    overflow-x: auto;
+  }
+  .lg\:rt-r-oy-visible {
+    overflow-y: visible;
+  }
+  .lg\:rt-r-oy-hidden {
+    overflow-y: hidden;
+  }
+  .lg\:rt-r-oy-clip {
+    overflow-y: clip;
+  }
+  .lg\:rt-r-oy-scroll {
+    overflow-y: scroll;
+  }
+  .lg\:rt-r-oy-auto {
+    overflow-y: auto;
+  }
+}
+@media (--xl) {
+  .xl\:rt-r-overflow-visible {
+    overflow: visible;
+  }
+  .xl\:rt-r-overflow-hidden {
+    overflow: hidden;
+  }
+  .xl\:rt-r-overflow-clip {
+    overflow: clip;
+  }
+  .xl\:rt-r-overflow-scroll {
+    overflow: scroll;
+  }
+  .xl\:rt-r-overflow-auto {
+    overflow: auto;
+  }
+  .xl\:rt-r-ox-visible {
+    overflow-x: visible;
+  }
+  .xl\:rt-r-ox-hidden {
+    overflow-x: hidden;
+  }
+  .xl\:rt-r-ox-clip {
+    overflow-x: clip;
+  }
+  .xl\:rt-r-ox-scroll {
+    overflow-x: scroll;
+  }
+  .xl\:rt-r-ox-auto {
+    overflow-x: auto;
+  }
+  .xl\:rt-r-oy-visible {
+    overflow-y: visible;
+  }
+  .xl\:rt-r-oy-hidden {
+    overflow-y: hidden;
+  }
+  .xl\:rt-r-oy-clip {
+    overflow-y: clip;
+  }
+  .xl\:rt-r-oy-scroll {
+    overflow-y: scroll;
+  }
+  .xl\:rt-r-oy-auto {
+    overflow-y: auto;
+  }
+}
