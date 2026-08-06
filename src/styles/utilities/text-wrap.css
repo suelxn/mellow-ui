@@ -2,21 +2,99 @@
   Define classes utilitárias responsivas para as propriedades white-space e text-wrap. 
   Controla o comportamento de quebra de linha e distribuição do texto (wrap, nowrap, 
   pretty e balance) para otimização tipográfica e prevenção de linhas órfãs, 
-  agrupados pela diretiva @breakpoints para adequação responsiva.
+  agrupados em blocos @media por breakpoint para adequação responsiva.
 */
 
-@breakpoints {
-  .rt-r-tw-wrap {
+.rt-r-tw-wrap {
+  white-space: normal;
+}
+.rt-r-tw-nowrap {
+  white-space: nowrap;
+}
+.rt-r-tw-pretty {
+  white-space: normal;
+  text-wrap: pretty;
+}
+.rt-r-tw-balance {
+  white-space: normal;
+  text-wrap: balance;
+}
+@media (--xs) {
+  .xs\:rt-r-tw-wrap {
     white-space: normal;
   }
-  .rt-r-tw-nowrap {
+  .xs\:rt-r-tw-nowrap {
     white-space: nowrap;
   }
-  .rt-r-tw-pretty {
+  .xs\:rt-r-tw-pretty {
     white-space: normal;
     text-wrap: pretty;
   }
-  .rt-r-tw-balance {
+  .xs\:rt-r-tw-balance {
+    white-space: normal;
+    text-wrap: balance;
+  }
+}
+@media (--sm) {
+  .sm\:rt-r-tw-wrap {
+    white-space: normal;
+  }
+  .sm\:rt-r-tw-nowrap {
+    white-space: nowrap;
+  }
+  .sm\:rt-r-tw-pretty {
+    white-space: normal;
+    text-wrap: pretty;
+  }
+  .sm\:rt-r-tw-balance {
+    white-space: normal;
+    text-wrap: balance;
+  }
+}
+@media (--md) {
+  .md\:rt-r-tw-wrap {
+    white-space: normal;
+  }
+  .md\:rt-r-tw-nowrap {
+    white-space: nowrap;
+  }
+  .md\:rt-r-tw-pretty {
+    white-space: normal;
+    text-wrap: pretty;
+  }
+  .md\:rt-r-tw-balance {
+    white-space: normal;
+    text-wrap: balance;
+  }
+}
+@media (--lg) {
+  .lg\:rt-r-tw-wrap {
+    white-space: normal;
+  }
+  .lg\:rt-r-tw-nowrap {
+    white-space: nowrap;
+  }
+  .lg\:rt-r-tw-pretty {
+    white-space: normal;
+    text-wrap: pretty;
+  }
+  .lg\:rt-r-tw-balance {
+    white-space: normal;
+    text-wrap: balance;
+  }
+}
+@media (--xl) {
+  .xl\:rt-r-tw-wrap {
+    white-space: normal;
+  }
+  .xl\:rt-r-tw-nowrap {
+    white-space: nowrap;
+  }
+  .xl\:rt-r-tw-pretty {
+    white-space: normal;
+    text-wrap: pretty;
+  }
+  .xl\:rt-r-tw-balance {
     white-space: normal;
     text-wrap: balance;
   }

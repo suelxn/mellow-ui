@@ -6,7 +6,7 @@
 */
 
 
-import type { PropDef } from './prop-def.js';
+import type { PropDef } from './prop-def';
 
 // prettier-ignore
 const accentColors = ['blue', 'coral', 'green', 'mint', 'pink', 'red', 'sky', 'yellow'] as const;

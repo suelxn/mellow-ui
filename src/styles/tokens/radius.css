@@ -1,16 +1,42 @@
-/* 
-  Define variáveis customizadas (CSS Custom Properties) 
+/*
+  Define variáveis customizadas (CSS Custom Properties)
   para controlar o arredondamento dos elementos.
 */
 
-:root {
-  --radius-none: 0px;
-  --radius-xs: 0.125rem;  /* 2px */
-  --radius-sm: 0.25rem;   /* 4px */
-  --radius-md: 0.375rem;  /* 6px */
-  --radius-lg: 0.5rem;    /* 8px */
-  --radius-xl: 0.75rem;   /* 12px */
-  --radius-2xl: 1rem;     /* 16px */
-  --radius-3xl: 1.5rem;   /* 24px */
-  --radius-full: 9999px;  /* Pílula / Círculo */
+.mellow-ui {
+  &:where([data-radius]) {
+    --radius-none: 0px;
+    --radius-xs: calc(0.125rem * var(--scaling) * var(--radius-factor));  /* 2px */
+    --radius-sm: calc(0.25rem * var(--scaling) * var(--radius-factor));   /* 4px */
+    --radius-md: calc(0.375rem * var(--scaling) * var(--radius-factor));  /* 6px */
+    --radius-lg: calc(0.5rem * var(--scaling) * var(--radius-factor));    /* 8px */
+    --radius-xl: calc(0.75rem * var(--scaling) * var(--radius-factor));   /* 12px */
+    --radius-2xl: calc(1rem * var(--scaling) * var(--radius-factor));     /* 16px */
+    --radius-3xl: calc(1.5rem * var(--scaling) * var(--radius-factor));   /* 24px */
+  }
+
+  &:where([data-radius='none']) {
+    --radius-factor: 0;
+    --radius-full: 0px;
+  }
+
+  &:where([data-radius='small']) {
+    --radius-factor: 0.75;
+    --radius-full: 0px;
+  }
+
+  &:where([data-radius='medium']) {
+    --radius-factor: 1;
+    --radius-full: 0px;
+  }
+
+  &:where([data-radius='large']) {
+    --radius-factor: 1.5;
+    --radius-full: 0px;
+  }
+
+  &:where([data-radius='full']) {
+    --radius-factor: 1.5;
+    --radius-full: 9999px;
+  }
 }

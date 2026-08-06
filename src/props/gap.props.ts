@@ -4,7 +4,7 @@
   configurando o suporte a variáveis CSS dinâmicas e ajustes responsivos via PropDef.
 */
 
-import type { PropDef } from './prop-def.js';
+import type { PropDef } from './prop-def';
 
 const gapValues = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'] as const;
 

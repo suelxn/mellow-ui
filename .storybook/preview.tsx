@@ -1,8 +1,17 @@
-import type { Preview } from "@storybook/react";
+import type { Preview } from "@storybook/nextjs-vite";
 
-import "../src/app/globals.css";
+import { Theme } from "../src/components";
+import "../app/globals.css";
 
 const preview: Preview = {
+  decorators: [
+    (Story) => (
+      <Theme>
+        <Story />
+      </Theme>
+    ),
+  ],
+
   parameters: {
     layout: "centered",
 

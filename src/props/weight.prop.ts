@@ -1,12 +1,12 @@
 /* 
   Define os tokens de espessura de fonte e o objeto de especificação para a propriedade "weight". 
-  Mapeia as opções de peso tipográfico (weights: light, regular, medium e bold) 
+  Mapeia as opções de peso tipográfico (weights: thin, extralight, light, regular, medium, semibold, bold, extrabold e black) 
   para a classe utilitária "rt-r-weight" com suporte a ajustes responsivos via PropDef.
 */
 
-import type { PropDef } from './prop-def.js';
+import type { PropDef } from './prop-def';
 
-const weights = ['light', 'regular', 'medium', 'bold'] as const;
+const weights = ['thin', 'extralight', 'light', 'regular', 'medium', 'semibold', 'bold', 'extrabold', 'black'] as const;
 
 const weightPropDef = {
   weight: {

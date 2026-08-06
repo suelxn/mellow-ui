@@ -4,7 +4,7 @@
   em linha única com reticências, utilizando a validação de tipo PropDef.
 */
 
-import type { PropDef } from './prop-def.js';
+import type { PropDef } from './prop-def';
 
 const truncatePropDef = {
   truncate: {
