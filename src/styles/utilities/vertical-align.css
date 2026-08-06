@@ -1,24 +1,89 @@
 /* 
   Define classes utilitárias responsivas para a propriedade vertical-align. 
   Controla o alinhamento vertical de elementos inline, inline-block ou células de tabela 
-  (baseline, top, middle e bottom), agrupados pela diretiva @breakpoints 
+  (baseline, top, middle e bottom), agrupados em blocos @media por breakpoint 
   para adequação e ajuste responsivo do layout.
 */
 
-@breakpoints {
-  .rt-r-va-baseline {
+.rt-r-va-baseline {
+  vertical-align: baseline;
+}
+.rt-r-va-top {
+  vertical-align: top;
+}
+.rt-r-va-middle {
+  vertical-align: middle;
+}
+.rt-r-va-bottom {
+  vertical-align: bottom;
+}
+@media (--xs) {
+  .xs\:rt-r-va-baseline {
     vertical-align: baseline;
   }
-
-  .rt-r-va-top {
+  .xs\:rt-r-va-top {
     vertical-align: top;
   }
-
-  .rt-r-va-middle {
+  .xs\:rt-r-va-middle {
     vertical-align: middle;
   }
-
-  .rt-r-va-bottom {
+  .xs\:rt-r-va-bottom {
+    vertical-align: bottom;
+  }
+}
+@media (--sm) {
+  .sm\:rt-r-va-baseline {
+    vertical-align: baseline;
+  }
+  .sm\:rt-r-va-top {
+    vertical-align: top;
+  }
+  .sm\:rt-r-va-middle {
+    vertical-align: middle;
+  }
+  .sm\:rt-r-va-bottom {
+    vertical-align: bottom;
+  }
+}
+@media (--md) {
+  .md\:rt-r-va-baseline {
+    vertical-align: baseline;
+  }
+  .md\:rt-r-va-top {
+    vertical-align: top;
+  }
+  .md\:rt-r-va-middle {
+    vertical-align: middle;
+  }
+  .md\:rt-r-va-bottom {
+    vertical-align: bottom;
+  }
+}
+@media (--lg) {
+  .lg\:rt-r-va-baseline {
+    vertical-align: baseline;
+  }
+  .lg\:rt-r-va-top {
+    vertical-align: top;
+  }
+  .lg\:rt-r-va-middle {
+    vertical-align: middle;
+  }
+  .lg\:rt-r-va-bottom {
+    vertical-align: bottom;
+  }
+}
+@media (--xl) {
+  .xl\:rt-r-va-baseline {
+    vertical-align: baseline;
+  }
+  .xl\:rt-r-va-top {
+    vertical-align: top;
+  }
+  .xl\:rt-r-va-middle {
+    vertical-align: middle;
+  }
+  .xl\:rt-r-va-bottom {
     vertical-align: bottom;
   }
 }

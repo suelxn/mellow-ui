@@ -4,9 +4,9 @@
   e exporta a definição tipada radiusPropDef via PropDef para padronização do visual dos componentes.
 */
 
-import type { PropDef } from './prop-def.js';
+import type { PropDef } from './prop-def';
 
-const radii = ['none', 'small', 'medium', 'large', 'full'] as const;
+const radii = ['none', 'xs',  'small', 'medium', 'large', 'full'] as const;
 
 const radiusPropDef = {
   radius: {

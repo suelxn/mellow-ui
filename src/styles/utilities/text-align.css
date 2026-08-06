@@ -1,19 +1,70 @@
 /* 
   Define classes utilitárias responsivas para a propriedade text-align. 
   Controla o alinhamento horizontal do texto e elementos inline (left, center e right), 
-  agrupados pela diretiva @breakpoints para adequação tipográfica e responsiva do layout.
+  agrupados em blocos @media por breakpoint para adequação tipográfica e responsiva do layout.
 */
 
-@breakpoints {
-  .rt-r-ta-left {
+.rt-r-ta-left {
+  text-align: left;
+}
+.rt-r-ta-center {
+  text-align: center;
+}
+.rt-r-ta-right {
+  text-align: right;
+}
+@media (--xs) {
+  .xs\:rt-r-ta-left {
     text-align: left;
   }
-
-  .rt-r-ta-center {
+  .xs\:rt-r-ta-center {
     text-align: center;
   }
-
-  .rt-r-ta-right {
+  .xs\:rt-r-ta-right {
+    text-align: right;
+  }
+}
+@media (--sm) {
+  .sm\:rt-r-ta-left {
+    text-align: left;
+  }
+  .sm\:rt-r-ta-center {
+    text-align: center;
+  }
+  .sm\:rt-r-ta-right {
+    text-align: right;
+  }
+}
+@media (--md) {
+  .md\:rt-r-ta-left {
+    text-align: left;
+  }
+  .md\:rt-r-ta-center {
+    text-align: center;
+  }
+  .md\:rt-r-ta-right {
+    text-align: right;
+  }
+}
+@media (--lg) {
+  .lg\:rt-r-ta-left {
+    text-align: left;
+  }
+  .lg\:rt-r-ta-center {
+    text-align: center;
+  }
+  .lg\:rt-r-ta-right {
+    text-align: right;
+  }
+}
+@media (--xl) {
+  .xl\:rt-r-ta-left {
+    text-align: left;
+  }
+  .xl\:rt-r-ta-center {
+    text-align: center;
+  }
+  .xl\:rt-r-ta-right {
     text-align: right;
   }
 }

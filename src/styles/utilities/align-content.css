@@ -3,39 +3,160 @@
   Controla o alinhamento e a distribuição de espaço entre as linhas de conteúdo 
   ao longo do eixo transversal em contêineres Flexbox multilinha ou Grid 
   (start, center, end, baseline, stretch, space-between, space-around e space-evenly), 
-  agrupados pela diretiva @breakpoints para adequação responsiva do layout.
+  agrupados em blocos @media por breakpoint para adequação responsiva do layout.
 */
 
-@breakpoints {
-  .rt-r-ac-start {
+.rt-r-ac-start {
+  align-content: start;
+}
+.rt-r-ac-center {
+  align-content: center;
+}
+.rt-r-ac-end {
+  align-content: end;
+}
+.rt-r-ac-baseline {
+  align-content: baseline;
+}
+.rt-r-ac-stretch {
+  align-content: stretch;
+}
+.rt-r-ac-space-between {
+  align-content: space-between;
+}
+.rt-r-ac-space-around {
+  align-content: space-around;
+}
+.rt-r-ac-space-evenly {
+  align-content: space-evenly;
+}
+@media (--xs) {
+  .xs\:rt-r-ac-start {
     align-content: start;
   }
-
-  .rt-r-ac-center {
+  .xs\:rt-r-ac-center {
     align-content: center;
   }
-
-  .rt-r-ac-end {
+  .xs\:rt-r-ac-end {
     align-content: end;
   }
-
-  .rt-r-ac-baseline {
+  .xs\:rt-r-ac-baseline {
     align-content: baseline;
   }
-
-  .rt-r-ac-stretch {
+  .xs\:rt-r-ac-stretch {
     align-content: stretch;
   }
-
-  .rt-r-ac-space-between {
+  .xs\:rt-r-ac-space-between {
     align-content: space-between;
   }
-
-  .rt-r-ac-space-around {
+  .xs\:rt-r-ac-space-around {
     align-content: space-around;
   }
-
-  .rt-r-ac-space-evenly {
+  .xs\:rt-r-ac-space-evenly {
+    align-content: space-evenly;
+  }
+}
+@media (--sm) {
+  .sm\:rt-r-ac-start {
+    align-content: start;
+  }
+  .sm\:rt-r-ac-center {
+    align-content: center;
+  }
+  .sm\:rt-r-ac-end {
+    align-content: end;
+  }
+  .sm\:rt-r-ac-baseline {
+    align-content: baseline;
+  }
+  .sm\:rt-r-ac-stretch {
+    align-content: stretch;
+  }
+  .sm\:rt-r-ac-space-between {
+    align-content: space-between;
+  }
+  .sm\:rt-r-ac-space-around {
+    align-content: space-around;
+  }
+  .sm\:rt-r-ac-space-evenly {
+    align-content: space-evenly;
+  }
+}
+@media (--md) {
+  .md\:rt-r-ac-start {
+    align-content: start;
+  }
+  .md\:rt-r-ac-center {
+    align-content: center;
+  }
+  .md\:rt-r-ac-end {
+    align-content: end;
+  }
+  .md\:rt-r-ac-baseline {
+    align-content: baseline;
+  }
+  .md\:rt-r-ac-stretch {
+    align-content: stretch;
+  }
+  .md\:rt-r-ac-space-between {
+    align-content: space-between;
+  }
+  .md\:rt-r-ac-space-around {
+    align-content: space-around;
+  }
+  .md\:rt-r-ac-space-evenly {
+    align-content: space-evenly;
+  }
+}
+@media (--lg) {
+  .lg\:rt-r-ac-start {
+    align-content: start;
+  }
+  .lg\:rt-r-ac-center {
+    align-content: center;
+  }
+  .lg\:rt-r-ac-end {
+    align-content: end;
+  }
+  .lg\:rt-r-ac-baseline {
+    align-content: baseline;
+  }
+  .lg\:rt-r-ac-stretch {
+    align-content: stretch;
+  }
+  .lg\:rt-r-ac-space-between {
+    align-content: space-between;
+  }
+  .lg\:rt-r-ac-space-around {
+    align-content: space-around;
+  }
+  .lg\:rt-r-ac-space-evenly {
+    align-content: space-evenly;
+  }
+}
+@media (--xl) {
+  .xl\:rt-r-ac-start {
+    align-content: start;
+  }
+  .xl\:rt-r-ac-center {
+    align-content: center;
+  }
+  .xl\:rt-r-ac-end {
+    align-content: end;
+  }
+  .xl\:rt-r-ac-baseline {
+    align-content: baseline;
+  }
+  .xl\:rt-r-ac-stretch {
+    align-content: stretch;
+  }
+  .xl\:rt-r-ac-space-between {
+    align-content: space-between;
+  }
+  .xl\:rt-r-ac-space-around {
+    align-content: space-around;
+  }
+  .xl\:rt-r-ac-space-evenly {
     align-content: space-evenly;
   }
 }

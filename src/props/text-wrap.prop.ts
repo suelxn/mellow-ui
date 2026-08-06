@@ -4,7 +4,7 @@
   para a classe utilitária "rt-r-tw" com suporte a variações responsivas via PropDef.
 */
 
-import type { PropDef } from './prop-def.js';
+import type { PropDef } from './prop-def';
 
 const textWrapValues = ['wrap', 'nowrap', 'pretty', 'balance'] as const;
 

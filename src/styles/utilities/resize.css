@@ -1,21 +1,89 @@
 /* 
   Define classes utilitárias responsivas para a propriedade resize. 
   Controla a permissão e a direção de redimensionamento de um elemento pelo usuário 
-  (none, vertical, horizontal e both), agrupadas pela diretiva @breakpoints 
+  (none, vertical, horizontal e both), agrupadas em blocos @media por breakpoint 
   para adequação responsiva conforme o breakpoint.
 */
 
-@breakpoints {
-  .rt-r-resize-none {
+.rt-r-resize-none {
+  resize: none;
+}
+.rt-r-resize-vertical {
+  resize: vertical;
+}
+.rt-r-resize-horizontal {
+  resize: horizontal;
+}
+.rt-r-resize-both {
+  resize: both;
+}
+@media (--xs) {
+  .xs\:rt-r-resize-none {
     resize: none;
   }
-  .rt-r-resize-vertical {
+  .xs\:rt-r-resize-vertical {
     resize: vertical;
   }
-  .rt-r-resize-horizontal {
+  .xs\:rt-r-resize-horizontal {
     resize: horizontal;
   }
-  .rt-r-resize-both {
+  .xs\:rt-r-resize-both {
+    resize: both;
+  }
+}
+@media (--sm) {
+  .sm\:rt-r-resize-none {
+    resize: none;
+  }
+  .sm\:rt-r-resize-vertical {
+    resize: vertical;
+  }
+  .sm\:rt-r-resize-horizontal {
+    resize: horizontal;
+  }
+  .sm\:rt-r-resize-both {
+    resize: both;
+  }
+}
+@media (--md) {
+  .md\:rt-r-resize-none {
+    resize: none;
+  }
+  .md\:rt-r-resize-vertical {
+    resize: vertical;
+  }
+  .md\:rt-r-resize-horizontal {
+    resize: horizontal;
+  }
+  .md\:rt-r-resize-both {
+    resize: both;
+  }
+}
+@media (--lg) {
+  .lg\:rt-r-resize-none {
+    resize: none;
+  }
+  .lg\:rt-r-resize-vertical {
+    resize: vertical;
+  }
+  .lg\:rt-r-resize-horizontal {
+    resize: horizontal;
+  }
+  .lg\:rt-r-resize-both {
+    resize: both;
+  }
+}
+@media (--xl) {
+  .xl\:rt-r-resize-none {
+    resize: none;
+  }
+  .xl\:rt-r-resize-vertical {
+    resize: vertical;
+  }
+  .xl\:rt-r-resize-horizontal {
+    resize: horizontal;
+  }
+  .xl\:rt-r-resize-both {
     resize: both;
   }
 }

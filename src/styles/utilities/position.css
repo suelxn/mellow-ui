@@ -1,28 +1,107 @@
 /* 
   Define classes utilitárias responsivas para a propriedade position. 
   Controla o método de posicionamento de um elemento no fluxo da página 
-  (static, absolute, relative, fixed e sticky), agrupados pela diretiva @breakpoints 
+  (static, absolute, relative, fixed e sticky), agrupados em blocos @media por breakpoint 
   para adequação e alteração do comportamento de layout por breakpoint.
 */
 
-@breakpoints {
-  .rt-r-position-static {
+.rt-r-position-static {
+  position: static;
+}
+.rt-r-position-absolute {
+  position: absolute;
+}
+.rt-r-position-relative {
+  position: relative;
+}
+.rt-r-position-fixed {
+  position: fixed;
+}
+.rt-r-position-sticky {
+  position: sticky;
+}
+@media (--xs) {
+  .xs\:rt-r-position-static {
     position: static;
   }
-
-  .rt-r-position-absolute {
+  .xs\:rt-r-position-absolute {
     position: absolute;
   }
-
-  .rt-r-position-relative {
+  .xs\:rt-r-position-relative {
     position: relative;
   }
-
-  .rt-r-position-fixed {
+  .xs\:rt-r-position-fixed {
     position: fixed;
   }
-
-  .rt-r-position-sticky {
+  .xs\:rt-r-position-sticky {
+    position: sticky;
+  }
+}
+@media (--sm) {
+  .sm\:rt-r-position-static {
+    position: static;
+  }
+  .sm\:rt-r-position-absolute {
+    position: absolute;
+  }
+  .sm\:rt-r-position-relative {
+    position: relative;
+  }
+  .sm\:rt-r-position-fixed {
+    position: fixed;
+  }
+  .sm\:rt-r-position-sticky {
+    position: sticky;
+  }
+}
+@media (--md) {
+  .md\:rt-r-position-static {
+    position: static;
+  }
+  .md\:rt-r-position-absolute {
+    position: absolute;
+  }
+  .md\:rt-r-position-relative {
+    position: relative;
+  }
+  .md\:rt-r-position-fixed {
+    position: fixed;
+  }
+  .md\:rt-r-position-sticky {
+    position: sticky;
+  }
+}
+@media (--lg) {
+  .lg\:rt-r-position-static {
+    position: static;
+  }
+  .lg\:rt-r-position-absolute {
+    position: absolute;
+  }
+  .lg\:rt-r-position-relative {
+    position: relative;
+  }
+  .lg\:rt-r-position-fixed {
+    position: fixed;
+  }
+  .lg\:rt-r-position-sticky {
+    position: sticky;
+  }
+}
+@media (--xl) {
+  .xl\:rt-r-position-static {
+    position: static;
+  }
+  .xl\:rt-r-position-absolute {
+    position: absolute;
+  }
+  .xl\:rt-r-position-relative {
+    position: relative;
+  }
+  .xl\:rt-r-position-fixed {
+    position: fixed;
+  }
+  .xl\:rt-r-position-sticky {
     position: sticky;
   }
 }

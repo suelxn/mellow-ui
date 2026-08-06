@@ -4,7 +4,7 @@
   configurando o comportamento responsivo via PropDef e exportando o tipo agrupado WidthProps.
 */
 
-import type { GetPropDefTypes, PropDef } from './prop-def.js';
+import type { GetPropDefTypes, PropDef } from './prop-def';
 
 const widthPropDefs = {
   /**

@@ -4,7 +4,7 @@
   renderizar um nó HTML próprio no DOM, utilizando a tipagem genérica PropDef e validação via o operador "satisfies".
 */
 
-import type { PropDef } from './prop-def.js';
+import type { PropDef } from './prop-def';
 
 const asChildPropDef = {
   /**
