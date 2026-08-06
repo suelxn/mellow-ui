@@ -9,9 +9,7 @@ import { accentColors, grayColors } from '../../props/color.prop';
 import { radii } from '../../props/radius.prop';
 import { scalings } from '../../props/scaling.prop';
 
-// O tema global só define os 5 níveis de arredondamento; "xs" é exclusivo do prop `radius` por componente.
-type ThemeRadius = Exclude<(typeof radii)[number], 'xs'>;
-const themeRadii = radii.filter((radius): radius is ThemeRadius => radius !== 'xs');
+type ThemeRadius = (typeof radii)[number];
 
 const appearances = ['inherit', 'light', 'dark'] as const;
 const panelBackgrounds = ['solid', 'translucent'] as const;
@@ -39,7 +37,7 @@ const themePropDefs = {
   },
   radius: {
     type: 'enum',
-    values: themeRadii,
+    values: radii,
     default: 'medium',
   },
   scaling: {
@@ -61,5 +59,5 @@ const themePropDefs = {
   hasBackground: PropDef<boolean>;
 };
 
-export { themePropDefs, appearances, panelBackgrounds, themeRadii };
+export { themePropDefs, appearances, panelBackgrounds };
 export type { ThemeRadius };

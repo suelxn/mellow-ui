@@ -6,7 +6,7 @@
 
 import type { PropDef } from './prop-def';
 
-const radii = ['none', 'xs',  'small', 'medium', 'large', 'full'] as const;
+const radii = ['none', 'small', 'medium', 'large', 'full'] as const;
 
 const radiusPropDef = {
   radius: {
