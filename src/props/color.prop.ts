@@ -11,6 +11,7 @@ import type { PropDef } from './prop-def';
 // prettier-ignore
 const accentColors = ['blue', 'coral', 'green', 'mint', 'pink', 'red', 'sky', 'yellow'] as const;
 
+// 'auto' resolve o cinza a partir do accentColor ativo (ver color.css); os demais valores são fixos.
 const grayColors = ['auto', 'neutral', 'slate'] as const;
 
 const colorPropDef = {

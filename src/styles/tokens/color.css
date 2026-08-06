@@ -340,3 +340,57 @@
     --gray-track: var(--slate-track);
   }
 }
+
+/*
+  grayColor="auto": o cinza é escolhido a partir da temperatura do accentColor ativo.
+  Accents frios (blue, sky, green, mint) recebem --slate, um cinza com viés azulado.
+  Accents quentes (coral, pink, red, yellow) recebem --neutral, um cinza acromático.
+  Novos accentColors devem ser adicionados a um dos dois grupos abaixo.
+*/
+.mellow-ui:where([data-gray-color='auto']) {
+  &:where(
+      [data-accent-color='blue'],
+      [data-accent-color='sky'],
+      [data-accent-color='green'],
+      [data-accent-color='mint']
+    ) {
+    --gray-50: var(--slate-50);
+    --gray-100: var(--slate-100);
+    --gray-200: var(--slate-200);
+    --gray-300: var(--slate-300);
+    --gray-400: var(--slate-400);
+    --gray-500: var(--slate-500);
+    --gray-600: var(--slate-600);
+    --gray-700: var(--slate-700);
+    --gray-800: var(--slate-800);
+    --gray-900: var(--slate-900);
+
+    --gray-contrast: var(--slate-contrast);
+    --gray-surface: var(--slate-surface);
+    --gray-indicator: var(--slate-indicator);
+    --gray-track: var(--slate-track);
+  }
+
+  &:where(
+      [data-accent-color='coral'],
+      [data-accent-color='pink'],
+      [data-accent-color='red'],
+      [data-accent-color='yellow']
+    ) {
+    --gray-50: var(--neutral-50);
+    --gray-100: var(--neutral-100);
+    --gray-200: var(--neutral-200);
+    --gray-300: var(--neutral-300);
+    --gray-400: var(--neutral-400);
+    --gray-500: var(--neutral-500);
+    --gray-600: var(--neutral-600);
+    --gray-700: var(--neutral-700);
+    --gray-800: var(--neutral-800);
+    --gray-900: var(--neutral-900);
+
+    --gray-contrast: var(--neutral-contrast);
+    --gray-surface: var(--neutral-surface);
+    --gray-indicator: var(--neutral-indicator);
+    --gray-track: var(--neutral-track);
+  }
+}
