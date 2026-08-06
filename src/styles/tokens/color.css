@@ -1,15 +1,4 @@
-@import './colors/absolute.css';
-@import './colors/blue.css';
-@import './colors/coral.css';
-@import './colors/gray.css';
-@import './colors/green.css';
-@import './colors/mint.css';
-@import './colors/neutral.css';
-@import './colors/pink.css';
-@import './colors/red.css';
-@import './colors/sky.css';
-@import './colors/yellow.css';
-
+@import './colors/index.css';
 
 /* * * * * * * * * * * * * * * * * * * */
 /*                                     */
@@ -18,184 +7,16 @@
 /* * * * * * * * * * * * * * * * * * * */
 
 :where(.mellow-ui) {
-
-  /* ==========================================================================
-     1. BASE LAYOUT & SURFACES (Ambiente Global)
-     ========================================================================== */
   --color-background: var(--neutral-50);
-  --color-surface: var(--neutral-100);
-  --color-surface-hover: var(--neutral-200);
-  --color-surface-active: var(--neutral-300);
-  
---color-overlay: color-mix(in srgb, var(--neutral-950) 35%, transparent);
+  --color-overlay: color-mix(in srgb, var(--neutral-900) 35%, transparent);
   --color-panel-solid: var(--neutral-50);
   --color-panel-translucent: rgba(255, 255, 255, 0.7);
-
-  /* Texto Base */
-  --color-text: var(--neutral-900);
-  --color-text-subtle: var(--neutral-700);
-  --color-text-muted: var(--neutral-500);
-
-  /* Bordas Base */
-  --color-border: var(--neutral-200);
-  --color-border-subtle: var(--neutral-100);
-  --color-border-strong: var(--neutral-400);
-
-  /* Valores Absolutos */
-  --color-white: var(--absolute-white, #ffffff);
-  --color-black: var(--absolute-black, #000000);
-
-
-  /* ==========================================================================
-     2. BRAND & INTENT ROLES (Ações e Estados)
-     ========================================================================== */
-
-  /* --- PRIMARY (Pink) --- */
-  --color-primary-subtle: var(--pink-50);
-  --color-primary-surface: var(--pink-100);
-  --color-primary-border: var(--pink-200);
-  --color-primary-border-strong: var(--pink-400);
-  --color-primary: var(--pink-500);
-  --color-primary-hover: var(--pink-600);
-  --color-primary-active: var(--pink-700);
-  --color-primary-text: var(--pink-900);
-  --color-primary-text-subtle: var(--pink-700);
-  --color-primary-contrast: var(--pink-contrast);
-
-  /* --- SECONDARY (Blue) --- */
-  --color-secondary-subtle: var(--blue-50);
-  --color-secondary-surface: var(--blue-100);
-  --color-secondary-border: var(--blue-200);
-  --color-secondary-border-strong: var(--blue-400);
-  --color-secondary: var(--blue-500);
-  --color-secondary-hover: var(--blue-600);
-  --color-secondary-active: var(--blue-700);
-  --color-secondary-text: var(--blue-900);
-  --color-secondary-text-subtle: var(--blue-700);
-  --color-secondary-contrast: var(--blue-contrast);
-
-  /* --- TERTIARY (Coral) --- */
-  --color-tertiary-subtle: var(--coral-50);
-  --color-tertiary-surface: var(--coral-100);
-  --color-tertiary-border: var(--coral-200);
-  --color-tertiary-border-strong: var(--coral-400);
-  --color-tertiary: var(--coral-500);
-  --color-tertiary-hover: var(--coral-600);
-  --color-tertiary-active: var(--coral-700);
-  --color-tertiary-text: var(--coral-900);
-  --color-tertiary-text-subtle: var(--coral-700);
-  --color-tertiary-contrast: var(--coral-contrast);
-
-  /* --- QUATERNARY (Mint) --- */
-  --color-quaternary-subtle: var(--mint-50);
-  --color-quaternary-surface: var(--mint-100);
-  --color-quaternary-border: var(--mint-200);
-  --color-quaternary-border-strong: var(--mint-400);
-  --color-quaternary: var(--mint-500);
-  --color-quaternary-hover: var(--mint-600);
-  --color-quaternary-active: var(--mint-700);
-  --color-quaternary-text: var(--mint-900);
-  --color-quaternary-text-subtle: var(--mint-700);
-  --color-quaternary-contrast: var(--mint-contrast);
-
-
-  /* ==========================================================================
-     3. STATUS & FEEDBACK ROLES
-     ========================================================================== */
-
-  /* --- INFO (Sky) --- */
-  --color-info-subtle: var(--sky-50);
-  --color-info-surface: var(--sky-100);
-  --color-info-border: var(--sky-200);
-  --color-info-border-strong: var(--sky-400);
-  --color-info: var(--sky-500);
-  --color-info-hover: var(--sky-600);
-  --color-info-active: var(--sky-700);
-  --color-info-text: var(--sky-900);
-  --color-info-text-subtle: var(--sky-700);
-  --color-info-contrast: var(--sky-contrast);
-
-  /* --- SUCCESS (Green) --- */
-  --color-success-subtle: var(--green-50);
-  --color-success-surface: var(--green-100);
-  --color-success-border: var(--green-200);
-  --color-success-border-strong: var(--green-400);
-  --color-success: var(--green-500);
-  --color-success-hover: var(--green-600);
-  --color-success-active: var(--green-700);
-  --color-success-text: var(--green-900);
-  --color-success-text-subtle: var(--green-700);
-  --color-success-contrast: var(--green-contrast);
-
-  /* --- WARNING (Yellow) --- */
-  --color-warning-subtle: var(--yellow-50);
-  --color-warning-surface: var(--yellow-100);
-  --color-warning-border: var(--yellow-200);
-  --color-warning-border-strong: var(--yellow-400);
-  --color-warning: var(--yellow-500);
-  --color-warning-hover: var(--yellow-600);
-  --color-warning-active: var(--yellow-700);
-  --color-warning-text: var(--yellow-900);
-  --color-warning-text-subtle: var(--yellow-700);
-  --color-warning-contrast: var(--yellow-contrast);
-
-  /* --- ERROR / DESTRUCTIVE (Red) --- */
-  --color-error-subtle: var(--red-50);
-  --color-error-surface: var(--red-100);
-  --color-error-border: var(--red-200);
-  --color-error-border-strong: var(--red-400);
-  --color-error: var(--red-500);
-  --color-error-hover: var(--red-600);
-  --color-error-active: var(--red-700);
-  --color-error-text: var(--red-900);
-  --color-error-text-subtle: var(--red-700);
-  --color-error-contrast: var(--red-contrast);
-
-
-  /* ==========================================================================
-     4. DISABLED STATES (Gray)
-     ========================================================================== */
-  --color-disabled-subtle: var(--gray-50);
-  --color-disabled-surface: var(--gray-100);
-  --color-disabled-border: var(--gray-200);
-  --color-disabled: var(--gray-300);
-  --color-disabled-text: var(--gray-400);
-  --color-disabled-text-subtle: var(--gray-300);
-
-
-  /* ==========================================================================
-     5. FOCUS & SELECTION
-     ========================================================================== */
-  --focus-ring: var(--color-primary);
-  --selection-bg: var(--color-primary-surface);
-  --selection-text: var(--color-primary-text);
+  --color-surface: var(--neutral-100);
 }
-
-
-/* * * * * * * * * * * * * * * * * * * */
-/*                                     */
-/*            Dark theme               */
-/*                                     */
-/* * * * * * * * * * * * * * * * * * * */
-
 :is(.dark, .dark-theme),
 :is(.dark, .dark-theme) :where(.mellow-ui:not(.light, .light-theme)) {
-  --color-background: var(--neutral-50); /* Como as primitivas invertem, neutral-50 no dark já é escuro */
-  --color-surface: var(--neutral-100);
-  --color-surface-hover: var(--neutral-200);
-  --color-surface-active: var(--neutral-300);
-
---color-overlay: color-mix(in srgb, var(--neutral-950) 50%, transparent);
-  --color-panel-solid: var(--neutral-100);
+  --color-overlay: color-mix(in srgb, var(--neutral-900) 50%, transparent);
   --color-panel-translucent: rgba(0, 0, 0, 0.5);
-
-  --color-text: var(--neutral-900);
-  --color-text-subtle: var(--neutral-700);
-  --color-text-muted: var(--neutral-500);
-
-  --color-border: var(--neutral-200);
-  --color-border-subtle: var(--neutral-100);
-  --color-border-strong: var(--neutral-400);
 }
 
 /* * * * * * * * * * * * * * * * * * * */
@@ -207,7 +28,6 @@
 :where(.mellow-ui) {
   --color-transparent: rgb(0 0 0 / 0);
 }
-
 @supports (color: color(display-p3 1 1 1)) {
   @media (color-gamut: p3) {
     .mellow-ui {
@@ -228,7 +48,6 @@
     color-scheme: light;
   }
 }
-
 .mellow-ui:where(.dark, .dark-theme) {
   &,
   :root:where(:has(&[data-is-root-theme='true'])) {
@@ -238,20 +57,39 @@
 
 /* * * * * * * * * * * * * * * * * * * */
 /*                                     */
+/*      Focus, selection e autofill    */
+/*                                     */
+/* * * * * * * * * * * * * * * * * * * */
+
+.mellow-ui,
+[data-accent-color]:where(:not([data-accent-color=''], [data-accent-color='gray'])) {
+  --focus-50: var(--accent-50);
+  --focus-100: var(--accent-100);
+  --focus-200: var(--accent-200);
+  --focus-300: var(--accent-300);
+  --focus-400: var(--accent-400);
+  --focus-500: var(--accent-500);
+  --focus-600: var(--accent-600);
+  --focus-700: var(--accent-700);
+  --focus-800: var(--accent-800);
+  --focus-900: var(--accent-900);
+}
+
+.mellow-ui ::selection {
+  background-color: var(--accent-surface);
+}
+
+/* * * * * * * * * * * * * * * * * * * */
+/*                                     */
 /*         Background and text         */
 /*                                     */
 /* * * * * * * * * * * * * * * * * * * */
 
 .mellow-ui {
-  color: var(--color-text);
+  color: var(--gray-900);
   &:where([data-has-background='true']) {
     background-color: var(--color-background);
   }
-}
-
-.mellow-ui ::selection {
-  background-color: var(--selection-bg);
-  color: var(--selection-text);
 }
 
 /* * * * * * * * * * * * * * * * * * * */
@@ -268,5 +106,237 @@
   &:where([data-panel-background='translucent']) {
     --color-panel: var(--color-panel-translucent);
     --backdrop-filter-panel: blur(64px);
+  }
+}
+
+/* * * * * * * * * * * * * * * * * * * */
+/*                                     */
+/*            Accent color             */
+/*                                     */
+/* * * * * * * * * * * * * * * * * * * */
+
+:where(.mellow-ui) {
+  /* padrão usado quando nenhum [data-accent-color] é definido */
+  --accent-50: var(--pink-50);
+  --accent-100: var(--pink-100);
+  --accent-200: var(--pink-200);
+  --accent-300: var(--pink-300);
+  --accent-400: var(--pink-400);
+  --accent-500: var(--pink-500);
+  --accent-600: var(--pink-600);
+  --accent-700: var(--pink-700);
+  --accent-800: var(--pink-800);
+  --accent-900: var(--pink-900);
+
+  --accent-contrast: var(--pink-contrast);
+  --accent-surface: var(--pink-surface);
+  --accent-indicator: var(--pink-indicator);
+  --accent-track: var(--pink-track);
+}
+
+[data-accent-color='blue'] {
+  --accent-50: var(--blue-50);
+  --accent-100: var(--blue-100);
+  --accent-200: var(--blue-200);
+  --accent-300: var(--blue-300);
+  --accent-400: var(--blue-400);
+  --accent-500: var(--blue-500);
+  --accent-600: var(--blue-600);
+  --accent-700: var(--blue-700);
+  --accent-800: var(--blue-800);
+  --accent-900: var(--blue-900);
+
+  --accent-contrast: var(--blue-contrast);
+  --accent-surface: var(--blue-surface);
+  --accent-indicator: var(--blue-indicator);
+  --accent-track: var(--blue-track);
+}
+
+[data-accent-color='coral'] {
+  --accent-50: var(--coral-50);
+  --accent-100: var(--coral-100);
+  --accent-200: var(--coral-200);
+  --accent-300: var(--coral-300);
+  --accent-400: var(--coral-400);
+  --accent-500: var(--coral-500);
+  --accent-600: var(--coral-600);
+  --accent-700: var(--coral-700);
+  --accent-800: var(--coral-800);
+  --accent-900: var(--coral-900);
+
+  --accent-contrast: var(--coral-contrast);
+  --accent-surface: var(--coral-surface);
+  --accent-indicator: var(--coral-indicator);
+  --accent-track: var(--coral-track);
+}
+
+[data-accent-color='green'] {
+  --accent-50: var(--green-50);
+  --accent-100: var(--green-100);
+  --accent-200: var(--green-200);
+  --accent-300: var(--green-300);
+  --accent-400: var(--green-400);
+  --accent-500: var(--green-500);
+  --accent-600: var(--green-600);
+  --accent-700: var(--green-700);
+  --accent-800: var(--green-800);
+  --accent-900: var(--green-900);
+
+  --accent-contrast: var(--green-contrast);
+  --accent-surface: var(--green-surface);
+  --accent-indicator: var(--green-indicator);
+  --accent-track: var(--green-track);
+}
+
+[data-accent-color='mint'] {
+  --accent-50: var(--mint-50);
+  --accent-100: var(--mint-100);
+  --accent-200: var(--mint-200);
+  --accent-300: var(--mint-300);
+  --accent-400: var(--mint-400);
+  --accent-500: var(--mint-500);
+  --accent-600: var(--mint-600);
+  --accent-700: var(--mint-700);
+  --accent-800: var(--mint-800);
+  --accent-900: var(--mint-900);
+
+  --accent-contrast: var(--mint-contrast);
+  --accent-surface: var(--mint-surface);
+  --accent-indicator: var(--mint-indicator);
+  --accent-track: var(--mint-track);
+}
+
+[data-accent-color='pink'] {
+  --accent-50: var(--pink-50);
+  --accent-100: var(--pink-100);
+  --accent-200: var(--pink-200);
+  --accent-300: var(--pink-300);
+  --accent-400: var(--pink-400);
+  --accent-500: var(--pink-500);
+  --accent-600: var(--pink-600);
+  --accent-700: var(--pink-700);
+  --accent-800: var(--pink-800);
+  --accent-900: var(--pink-900);
+
+  --accent-contrast: var(--pink-contrast);
+  --accent-surface: var(--pink-surface);
+  --accent-indicator: var(--pink-indicator);
+  --accent-track: var(--pink-track);
+}
+
+[data-accent-color='red'] {
+  --accent-50: var(--red-50);
+  --accent-100: var(--red-100);
+  --accent-200: var(--red-200);
+  --accent-300: var(--red-300);
+  --accent-400: var(--red-400);
+  --accent-500: var(--red-500);
+  --accent-600: var(--red-600);
+  --accent-700: var(--red-700);
+  --accent-800: var(--red-800);
+  --accent-900: var(--red-900);
+
+  --accent-contrast: var(--red-contrast);
+  --accent-surface: var(--red-surface);
+  --accent-indicator: var(--red-indicator);
+  --accent-track: var(--red-track);
+}
+
+[data-accent-color='sky'] {
+  --accent-50: var(--sky-50);
+  --accent-100: var(--sky-100);
+  --accent-200: var(--sky-200);
+  --accent-300: var(--sky-300);
+  --accent-400: var(--sky-400);
+  --accent-500: var(--sky-500);
+  --accent-600: var(--sky-600);
+  --accent-700: var(--sky-700);
+  --accent-800: var(--sky-800);
+  --accent-900: var(--sky-900);
+
+  --accent-contrast: var(--sky-contrast);
+  --accent-surface: var(--sky-surface);
+  --accent-indicator: var(--sky-indicator);
+  --accent-track: var(--sky-track);
+}
+
+[data-accent-color='yellow'] {
+  --accent-50: var(--yellow-50);
+  --accent-100: var(--yellow-100);
+  --accent-200: var(--yellow-200);
+  --accent-300: var(--yellow-300);
+  --accent-400: var(--yellow-400);
+  --accent-500: var(--yellow-500);
+  --accent-600: var(--yellow-600);
+  --accent-700: var(--yellow-700);
+  --accent-800: var(--yellow-800);
+  --accent-900: var(--yellow-900);
+
+  --accent-contrast: var(--yellow-contrast);
+  --accent-surface: var(--yellow-surface);
+  --accent-indicator: var(--yellow-indicator);
+  --accent-track: var(--yellow-track);
+}
+
+/* * * * * * * * * * * * * * * * * * * */
+/*                                     */
+/*             Gray color              */
+/*                                     */
+/* * * * * * * * * * * * * * * * * * * */
+
+:where(.mellow-ui) {
+  /* padrão usado quando nenhum [data-gray-color] é definido */
+  --gray-50: var(--neutral-50);
+  --gray-100: var(--neutral-100);
+  --gray-200: var(--neutral-200);
+  --gray-300: var(--neutral-300);
+  --gray-400: var(--neutral-400);
+  --gray-500: var(--neutral-500);
+  --gray-600: var(--neutral-600);
+  --gray-700: var(--neutral-700);
+  --gray-800: var(--neutral-800);
+  --gray-900: var(--neutral-900);
+
+  --gray-contrast: var(--neutral-contrast);
+  --gray-surface: var(--neutral-surface);
+  --gray-indicator: var(--neutral-indicator);
+  --gray-track: var(--neutral-track);
+}
+
+.mellow-ui {
+  &:where([data-gray-color='neutral']) {
+    --gray-50: var(--neutral-50);
+    --gray-100: var(--neutral-100);
+    --gray-200: var(--neutral-200);
+    --gray-300: var(--neutral-300);
+    --gray-400: var(--neutral-400);
+    --gray-500: var(--neutral-500);
+    --gray-600: var(--neutral-600);
+    --gray-700: var(--neutral-700);
+    --gray-800: var(--neutral-800);
+    --gray-900: var(--neutral-900);
+
+    --gray-contrast: var(--neutral-contrast);
+    --gray-surface: var(--neutral-surface);
+    --gray-indicator: var(--neutral-indicator);
+    --gray-track: var(--neutral-track);
+  }
+
+  &:where([data-gray-color='slate']) {
+    --gray-50: var(--slate-50);
+    --gray-100: var(--slate-100);
+    --gray-200: var(--slate-200);
+    --gray-300: var(--slate-300);
+    --gray-400: var(--slate-400);
+    --gray-500: var(--slate-500);
+    --gray-600: var(--slate-600);
+    --gray-700: var(--slate-700);
+    --gray-800: var(--slate-800);
+    --gray-900: var(--slate-900);
+
+    --gray-contrast: var(--slate-contrast);
+    --gray-surface: var(--slate-surface);
+    --gray-indicator: var(--slate-indicator);
+    --gray-track: var(--slate-track);
   }
 }
