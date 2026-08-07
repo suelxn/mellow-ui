@@ -5,103 +5,103 @@
   agrupados em blocos @media por breakpoint para adequação responsiva.
 */
 
-.rt-r-as-start {
+.mui-r-as-start {
   align-self: start;
 }
-.rt-r-as-center {
+.mui-r-as-center {
   align-self: center;
 }
-.rt-r-as-end {
+.mui-r-as-end {
   align-self: end;
 }
-.rt-r-as-baseline {
+.mui-r-as-baseline {
   align-self: baseline;
 }
-.rt-r-as-stretch {
+.mui-r-as-stretch {
   align-self: stretch;
 }
 @media (--xs) {
-  .xs\:rt-r-as-start {
+  .xs\:mui-r-as-start {
     align-self: start;
   }
-  .xs\:rt-r-as-center {
+  .xs\:mui-r-as-center {
     align-self: center;
   }
-  .xs\:rt-r-as-end {
+  .xs\:mui-r-as-end {
     align-self: end;
   }
-  .xs\:rt-r-as-baseline {
+  .xs\:mui-r-as-baseline {
     align-self: baseline;
   }
-  .xs\:rt-r-as-stretch {
+  .xs\:mui-r-as-stretch {
     align-self: stretch;
   }
 }
 @media (--sm) {
-  .sm\:rt-r-as-start {
+  .sm\:mui-r-as-start {
     align-self: start;
   }
-  .sm\:rt-r-as-center {
+  .sm\:mui-r-as-center {
     align-self: center;
   }
-  .sm\:rt-r-as-end {
+  .sm\:mui-r-as-end {
     align-self: end;
   }
-  .sm\:rt-r-as-baseline {
+  .sm\:mui-r-as-baseline {
     align-self: baseline;
   }
-  .sm\:rt-r-as-stretch {
+  .sm\:mui-r-as-stretch {
     align-self: stretch;
   }
 }
 @media (--md) {
-  .md\:rt-r-as-start {
+  .md\:mui-r-as-start {
     align-self: start;
   }
-  .md\:rt-r-as-center {
+  .md\:mui-r-as-center {
     align-self: center;
   }
-  .md\:rt-r-as-end {
+  .md\:mui-r-as-end {
     align-self: end;
   }
-  .md\:rt-r-as-baseline {
+  .md\:mui-r-as-baseline {
     align-self: baseline;
   }
-  .md\:rt-r-as-stretch {
+  .md\:mui-r-as-stretch {
     align-self: stretch;
   }
 }
 @media (--lg) {
-  .lg\:rt-r-as-start {
+  .lg\:mui-r-as-start {
     align-self: start;
   }
-  .lg\:rt-r-as-center {
+  .lg\:mui-r-as-center {
     align-self: center;
   }
-  .lg\:rt-r-as-end {
+  .lg\:mui-r-as-end {
     align-self: end;
   }
-  .lg\:rt-r-as-baseline {
+  .lg\:mui-r-as-baseline {
     align-self: baseline;
   }
-  .lg\:rt-r-as-stretch {
+  .lg\:mui-r-as-stretch {
     align-self: stretch;
   }
 }
 @media (--xl) {
-  .xl\:rt-r-as-start {
+  .xl\:mui-r-as-start {
     align-self: start;
   }
-  .xl\:rt-r-as-center {
+  .xl\:mui-r-as-center {
     align-self: center;
   }
-  .xl\:rt-r-as-end {
+  .xl\:mui-r-as-end {
     align-self: end;
   }
-  .xl\:rt-r-as-baseline {
+  .xl\:mui-r-as-baseline {
     align-self: baseline;
   }
-  .xl\:rt-r-as-stretch {
+  .xl\:mui-r-as-stretch {
     align-self: stretch;
   }
 }

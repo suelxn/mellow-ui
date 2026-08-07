@@ -4,49 +4,49 @@
   (auto e fixed), agrupados em blocos @media por breakpoint para adequação responsiva do layout.
 */
 
-.rt-r-tl-auto {
+.mui-r-tl-auto {
   table-layout: auto;
 }
-.rt-r-tl-fixed {
+.mui-r-tl-fixed {
   table-layout: fixed;
 }
 @media (--xs) {
-  .xs\:rt-r-tl-auto {
+  .xs\:mui-r-tl-auto {
     table-layout: auto;
   }
-  .xs\:rt-r-tl-fixed {
+  .xs\:mui-r-tl-fixed {
     table-layout: fixed;
   }
 }
 @media (--sm) {
-  .sm\:rt-r-tl-auto {
+  .sm\:mui-r-tl-auto {
     table-layout: auto;
   }
-  .sm\:rt-r-tl-fixed {
+  .sm\:mui-r-tl-fixed {
     table-layout: fixed;
   }
 }
 @media (--md) {
-  .md\:rt-r-tl-auto {
+  .md\:mui-r-tl-auto {
     table-layout: auto;
   }
-  .md\:rt-r-tl-fixed {
+  .md\:mui-r-tl-fixed {
     table-layout: fixed;
   }
 }
 @media (--lg) {
-  .lg\:rt-r-tl-auto {
+  .lg\:mui-r-tl-auto {
     table-layout: auto;
   }
-  .lg\:rt-r-tl-fixed {
+  .lg\:mui-r-tl-fixed {
     table-layout: fixed;
   }
 }
 @media (--xl) {
-  .xl\:rt-r-tl-auto {
+  .xl\:mui-r-tl-auto {
     table-layout: auto;
   }
-  .xl\:rt-r-tl-fixed {
+  .xl\:mui-r-tl-fixed {
     table-layout: fixed;
   }
 }

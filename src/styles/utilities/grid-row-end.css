@@ -6,204 +6,204 @@
   com media queries (@media).
 */
 
-.rt-r-gre-1 {
+.mui-r-gre-1 {
   grid-row-end: 1;
 }
-.rt-r-gre-2 {
+.mui-r-gre-2 {
   grid-row-end: 2;
 }
-.rt-r-gre-3 {
+.mui-r-gre-3 {
   grid-row-end: 3;
 }
-.rt-r-gre-4 {
+.mui-r-gre-4 {
   grid-row-end: 4;
 }
-.rt-r-gre-5 {
+.mui-r-gre-5 {
   grid-row-end: 5;
 }
-.rt-r-gre-6 {
+.mui-r-gre-6 {
   grid-row-end: 6;
 }
-.rt-r-gre-7 {
+.mui-r-gre-7 {
   grid-row-end: 7;
 }
-.rt-r-gre-8 {
+.mui-r-gre-8 {
   grid-row-end: 8;
 }
-.rt-r-gre-9 {
+.mui-r-gre-9 {
   grid-row-end: 9;
 }
 
-.rt-r-gre {
+.mui-r-gre {
   grid-row-end: var(--grid-row-end);
 }
 @media (--xs) {
-  .xs\:rt-r-gre {
+  .xs\:mui-r-gre {
     grid-row-end: var(--grid-row-end-xs);
   }
 }
 @media (--sm) {
-  .sm\:rt-r-gre {
+  .sm\:mui-r-gre {
     grid-row-end: var(--grid-row-end-sm);
   }
 }
 @media (--md) {
-  .md\:rt-r-gre {
+  .md\:mui-r-gre {
     grid-row-end: var(--grid-row-end-md);
   }
 }
 @media (--lg) {
-  .lg\:rt-r-gre {
+  .lg\:mui-r-gre {
     grid-row-end: var(--grid-row-end-lg);
   }
 }
 @media (--xl) {
-  .xl\:rt-r-gre {
+  .xl\:mui-r-gre {
     grid-row-end: var(--grid-row-end-xl);
   }
 }
 @media (--xs) {
-  .xs\:rt-r-gre-1 {
+  .xs\:mui-r-gre-1 {
     grid-row-end: 1;
   }
-  .xs\:rt-r-gre-2 {
+  .xs\:mui-r-gre-2 {
     grid-row-end: 2;
   }
-  .xs\:rt-r-gre-3 {
+  .xs\:mui-r-gre-3 {
     grid-row-end: 3;
   }
-  .xs\:rt-r-gre-4 {
+  .xs\:mui-r-gre-4 {
     grid-row-end: 4;
   }
-  .xs\:rt-r-gre-5 {
+  .xs\:mui-r-gre-5 {
     grid-row-end: 5;
   }
-  .xs\:rt-r-gre-6 {
+  .xs\:mui-r-gre-6 {
     grid-row-end: 6;
   }
-  .xs\:rt-r-gre-7 {
+  .xs\:mui-r-gre-7 {
     grid-row-end: 7;
   }
-  .xs\:rt-r-gre-8 {
+  .xs\:mui-r-gre-8 {
     grid-row-end: 8;
   }
-  .xs\:rt-r-gre-9 {
+  .xs\:mui-r-gre-9 {
     grid-row-end: 9;
   }
 }
 @media (--sm) {
-  .sm\:rt-r-gre-1 {
+  .sm\:mui-r-gre-1 {
     grid-row-end: 1;
   }
-  .sm\:rt-r-gre-2 {
+  .sm\:mui-r-gre-2 {
     grid-row-end: 2;
   }
-  .sm\:rt-r-gre-3 {
+  .sm\:mui-r-gre-3 {
     grid-row-end: 3;
   }
-  .sm\:rt-r-gre-4 {
+  .sm\:mui-r-gre-4 {
     grid-row-end: 4;
   }
-  .sm\:rt-r-gre-5 {
+  .sm\:mui-r-gre-5 {
     grid-row-end: 5;
   }
-  .sm\:rt-r-gre-6 {
+  .sm\:mui-r-gre-6 {
     grid-row-end: 6;
   }
-  .sm\:rt-r-gre-7 {
+  .sm\:mui-r-gre-7 {
     grid-row-end: 7;
   }
-  .sm\:rt-r-gre-8 {
+  .sm\:mui-r-gre-8 {
     grid-row-end: 8;
   }
-  .sm\:rt-r-gre-9 {
+  .sm\:mui-r-gre-9 {
     grid-row-end: 9;
   }
 }
 @media (--md) {
-  .md\:rt-r-gre-1 {
+  .md\:mui-r-gre-1 {
     grid-row-end: 1;
   }
-  .md\:rt-r-gre-2 {
+  .md\:mui-r-gre-2 {
     grid-row-end: 2;
   }
-  .md\:rt-r-gre-3 {
+  .md\:mui-r-gre-3 {
     grid-row-end: 3;
   }
-  .md\:rt-r-gre-4 {
+  .md\:mui-r-gre-4 {
     grid-row-end: 4;
   }
-  .md\:rt-r-gre-5 {
+  .md\:mui-r-gre-5 {
     grid-row-end: 5;
   }
-  .md\:rt-r-gre-6 {
+  .md\:mui-r-gre-6 {
     grid-row-end: 6;
   }
-  .md\:rt-r-gre-7 {
+  .md\:mui-r-gre-7 {
     grid-row-end: 7;
   }
-  .md\:rt-r-gre-8 {
+  .md\:mui-r-gre-8 {
     grid-row-end: 8;
   }
-  .md\:rt-r-gre-9 {
+  .md\:mui-r-gre-9 {
     grid-row-end: 9;
   }
 }
 @media (--lg) {
-  .lg\:rt-r-gre-1 {
+  .lg\:mui-r-gre-1 {
     grid-row-end: 1;
   }
-  .lg\:rt-r-gre-2 {
+  .lg\:mui-r-gre-2 {
     grid-row-end: 2;
   }
-  .lg\:rt-r-gre-3 {
+  .lg\:mui-r-gre-3 {
     grid-row-end: 3;
   }
-  .lg\:rt-r-gre-4 {
+  .lg\:mui-r-gre-4 {
     grid-row-end: 4;
   }
-  .lg\:rt-r-gre-5 {
+  .lg\:mui-r-gre-5 {
     grid-row-end: 5;
   }
-  .lg\:rt-r-gre-6 {
+  .lg\:mui-r-gre-6 {
     grid-row-end: 6;
   }
-  .lg\:rt-r-gre-7 {
+  .lg\:mui-r-gre-7 {
     grid-row-end: 7;
   }
-  .lg\:rt-r-gre-8 {
+  .lg\:mui-r-gre-8 {
     grid-row-end: 8;
   }
-  .lg\:rt-r-gre-9 {
+  .lg\:mui-r-gre-9 {
     grid-row-end: 9;
   }
 }
 @media (--xl) {
-  .xl\:rt-r-gre-1 {
+  .xl\:mui-r-gre-1 {
     grid-row-end: 1;
   }
-  .xl\:rt-r-gre-2 {
+  .xl\:mui-r-gre-2 {
     grid-row-end: 2;
   }
-  .xl\:rt-r-gre-3 {
+  .xl\:mui-r-gre-3 {
     grid-row-end: 3;
   }
-  .xl\:rt-r-gre-4 {
+  .xl\:mui-r-gre-4 {
     grid-row-end: 4;
   }
-  .xl\:rt-r-gre-5 {
+  .xl\:mui-r-gre-5 {
     grid-row-end: 5;
   }
-  .xl\:rt-r-gre-6 {
+  .xl\:mui-r-gre-6 {
     grid-row-end: 6;
   }
-  .xl\:rt-r-gre-7 {
+  .xl\:mui-r-gre-7 {
     grid-row-end: 7;
   }
-  .xl\:rt-r-gre-8 {
+  .xl\:mui-r-gre-8 {
     grid-row-end: 8;
   }
-  .xl\:rt-r-gre-9 {
+  .xl\:mui-r-gre-9 {
     grid-row-end: 9;
   }
 }

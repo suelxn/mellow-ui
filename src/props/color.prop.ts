@@ -30,7 +30,7 @@ const accentColorPropDef = {
   color: {
     type: 'enum',
     values: accentColors,
-    default: '' as (typeof accentColors)[number],
+    default: undefined as (typeof accentColors)[number] | undefined,
   },
 } satisfies {
   color: PropDef<(typeof accentColors)[number]>;

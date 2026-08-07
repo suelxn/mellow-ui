@@ -5,96 +5,96 @@
   agrupados em blocos @media por breakpoint para adequação responsiva.
 */
 
-.rt-r-tw-wrap {
+.mui-r-tw-wrap {
   white-space: normal;
 }
-.rt-r-tw-nowrap {
+.mui-r-tw-nowrap {
   white-space: nowrap;
 }
-.rt-r-tw-pretty {
+.mui-r-tw-pretty {
   white-space: normal;
   text-wrap: pretty;
 }
-.rt-r-tw-balance {
+.mui-r-tw-balance {
   white-space: normal;
   text-wrap: balance;
 }
 @media (--xs) {
-  .xs\:rt-r-tw-wrap {
+  .xs\:mui-r-tw-wrap {
     white-space: normal;
   }
-  .xs\:rt-r-tw-nowrap {
+  .xs\:mui-r-tw-nowrap {
     white-space: nowrap;
   }
-  .xs\:rt-r-tw-pretty {
+  .xs\:mui-r-tw-pretty {
     white-space: normal;
     text-wrap: pretty;
   }
-  .xs\:rt-r-tw-balance {
+  .xs\:mui-r-tw-balance {
     white-space: normal;
     text-wrap: balance;
   }
 }
 @media (--sm) {
-  .sm\:rt-r-tw-wrap {
+  .sm\:mui-r-tw-wrap {
     white-space: normal;
   }
-  .sm\:rt-r-tw-nowrap {
+  .sm\:mui-r-tw-nowrap {
     white-space: nowrap;
   }
-  .sm\:rt-r-tw-pretty {
+  .sm\:mui-r-tw-pretty {
     white-space: normal;
     text-wrap: pretty;
   }
-  .sm\:rt-r-tw-balance {
+  .sm\:mui-r-tw-balance {
     white-space: normal;
     text-wrap: balance;
   }
 }
 @media (--md) {
-  .md\:rt-r-tw-wrap {
+  .md\:mui-r-tw-wrap {
     white-space: normal;
   }
-  .md\:rt-r-tw-nowrap {
+  .md\:mui-r-tw-nowrap {
     white-space: nowrap;
   }
-  .md\:rt-r-tw-pretty {
+  .md\:mui-r-tw-pretty {
     white-space: normal;
     text-wrap: pretty;
   }
-  .md\:rt-r-tw-balance {
+  .md\:mui-r-tw-balance {
     white-space: normal;
     text-wrap: balance;
   }
 }
 @media (--lg) {
-  .lg\:rt-r-tw-wrap {
+  .lg\:mui-r-tw-wrap {
     white-space: normal;
   }
-  .lg\:rt-r-tw-nowrap {
+  .lg\:mui-r-tw-nowrap {
     white-space: nowrap;
   }
-  .lg\:rt-r-tw-pretty {
+  .lg\:mui-r-tw-pretty {
     white-space: normal;
     text-wrap: pretty;
   }
-  .lg\:rt-r-tw-balance {
+  .lg\:mui-r-tw-balance {
     white-space: normal;
     text-wrap: balance;
   }
 }
 @media (--xl) {
-  .xl\:rt-r-tw-wrap {
+  .xl\:mui-r-tw-wrap {
     white-space: normal;
   }
-  .xl\:rt-r-tw-nowrap {
+  .xl\:mui-r-tw-nowrap {
     white-space: nowrap;
   }
-  .xl\:rt-r-tw-pretty {
+  .xl\:mui-r-tw-pretty {
     white-space: normal;
     text-wrap: pretty;
   }
-  .xl\:rt-r-tw-balance {
+  .xl\:mui-r-tw-balance {
     white-space: normal;
     text-wrap: balance;
   }

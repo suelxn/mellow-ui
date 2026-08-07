@@ -5,103 +5,103 @@
   para adequação e alteração do comportamento de layout por breakpoint.
 */
 
-.rt-r-position-static {
+.mui-r-position-static {
   position: static;
 }
-.rt-r-position-absolute {
+.mui-r-position-absolute {
   position: absolute;
 }
-.rt-r-position-relative {
+.mui-r-position-relative {
   position: relative;
 }
-.rt-r-position-fixed {
+.mui-r-position-fixed {
   position: fixed;
 }
-.rt-r-position-sticky {
+.mui-r-position-sticky {
   position: sticky;
 }
 @media (--xs) {
-  .xs\:rt-r-position-static {
+  .xs\:mui-r-position-static {
     position: static;
   }
-  .xs\:rt-r-position-absolute {
+  .xs\:mui-r-position-absolute {
     position: absolute;
   }
-  .xs\:rt-r-position-relative {
+  .xs\:mui-r-position-relative {
     position: relative;
   }
-  .xs\:rt-r-position-fixed {
+  .xs\:mui-r-position-fixed {
     position: fixed;
   }
-  .xs\:rt-r-position-sticky {
+  .xs\:mui-r-position-sticky {
     position: sticky;
   }
 }
 @media (--sm) {
-  .sm\:rt-r-position-static {
+  .sm\:mui-r-position-static {
     position: static;
   }
-  .sm\:rt-r-position-absolute {
+  .sm\:mui-r-position-absolute {
     position: absolute;
   }
-  .sm\:rt-r-position-relative {
+  .sm\:mui-r-position-relative {
     position: relative;
   }
-  .sm\:rt-r-position-fixed {
+  .sm\:mui-r-position-fixed {
     position: fixed;
   }
-  .sm\:rt-r-position-sticky {
+  .sm\:mui-r-position-sticky {
     position: sticky;
   }
 }
 @media (--md) {
-  .md\:rt-r-position-static {
+  .md\:mui-r-position-static {
     position: static;
   }
-  .md\:rt-r-position-absolute {
+  .md\:mui-r-position-absolute {
     position: absolute;
   }
-  .md\:rt-r-position-relative {
+  .md\:mui-r-position-relative {
     position: relative;
   }
-  .md\:rt-r-position-fixed {
+  .md\:mui-r-position-fixed {
     position: fixed;
   }
-  .md\:rt-r-position-sticky {
+  .md\:mui-r-position-sticky {
     position: sticky;
   }
 }
 @media (--lg) {
-  .lg\:rt-r-position-static {
+  .lg\:mui-r-position-static {
     position: static;
   }
-  .lg\:rt-r-position-absolute {
+  .lg\:mui-r-position-absolute {
     position: absolute;
   }
-  .lg\:rt-r-position-relative {
+  .lg\:mui-r-position-relative {
     position: relative;
   }
-  .lg\:rt-r-position-fixed {
+  .lg\:mui-r-position-fixed {
     position: fixed;
   }
-  .lg\:rt-r-position-sticky {
+  .lg\:mui-r-position-sticky {
     position: sticky;
   }
 }
 @media (--xl) {
-  .xl\:rt-r-position-static {
+  .xl\:mui-r-position-static {
     position: static;
   }
-  .xl\:rt-r-position-absolute {
+  .xl\:mui-r-position-absolute {
     position: absolute;
   }
-  .xl\:rt-r-position-relative {
+  .xl\:mui-r-position-relative {
     position: relative;
   }
-  .xl\:rt-r-position-fixed {
+  .xl\:mui-r-position-fixed {
     position: fixed;
   }
-  .xl\:rt-r-position-sticky {
+  .xl\:mui-r-position-sticky {
     position: sticky;
   }
 }

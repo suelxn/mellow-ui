@@ -37,7 +37,7 @@ const layoutPropDefs = {
    */
   position: {
     type: 'enum',
-    className: 'rt-r-position',
+    className: 'mui-r-position',
     values: positionValues,
     responsive: true,
   },
@@ -55,7 +55,7 @@ const layoutPropDefs = {
    */
   inset: {
     type: 'enum | string',
-    className: 'rt-r-inset',
+    className: 'mui-r-inset',
     customProperties: ['--inset'],
     values: positionEdgeValues,
     responsive: true,
@@ -74,7 +74,7 @@ const layoutPropDefs = {
    */
   top: {
     type: 'enum | string',
-    className: 'rt-r-top',
+    className: 'mui-r-top',
     customProperties: ['--top'],
     values: positionEdgeValues,
     responsive: true,
@@ -93,7 +93,7 @@ const layoutPropDefs = {
    */
   right: {
     type: 'enum | string',
-    className: 'rt-r-right',
+    className: 'mui-r-right',
     customProperties: ['--right'],
     values: positionEdgeValues,
     responsive: true,
@@ -112,7 +112,7 @@ const layoutPropDefs = {
    */
   bottom: {
     type: 'enum | string',
-    className: 'rt-r-bottom',
+    className: 'mui-r-bottom',
     customProperties: ['--bottom'],
     values: positionEdgeValues,
     responsive: true,
@@ -131,7 +131,7 @@ const layoutPropDefs = {
    */
   left: {
     type: 'enum | string',
-    className: 'rt-r-left',
+    className: 'mui-r-left',
     customProperties: ['--left'],
     values: positionEdgeValues,
     responsive: true,
@@ -149,7 +149,7 @@ const layoutPropDefs = {
    */
   overflow: {
     type: 'enum',
-    className: 'rt-r-overflow',
+    className: 'mui-r-overflow',
     values: overflowValues,
     responsive: true,
   },
@@ -166,7 +166,7 @@ const layoutPropDefs = {
    */
   overflowX: {
     type: 'enum',
-    className: 'rt-r-ox',
+    className: 'mui-r-ox',
     values: overflowValues,
     responsive: true,
   },
@@ -183,7 +183,7 @@ const layoutPropDefs = {
    */
   overflowY: {
     type: 'enum',
-    className: 'rt-r-oy',
+    className: 'mui-r-oy',
     values: overflowValues,
     responsive: true,
   },
@@ -201,7 +201,7 @@ const layoutPropDefs = {
    */
   flexBasis: {
     type: 'string',
-    className: 'rt-r-fb',
+    className: 'mui-r-fb',
     customProperties: ['--flex-basis'],
     responsive: true,
   },
@@ -219,7 +219,7 @@ const layoutPropDefs = {
    */
   flexShrink: {
     type: 'enum | string',
-    className: 'rt-r-fs',
+    className: 'mui-r-fs',
     customProperties: ['--flex-shrink'],
     values: flexShrinkValues,
     responsive: true,
@@ -238,7 +238,7 @@ const layoutPropDefs = {
    */
   flexGrow: {
     type: 'enum | string',
-    className: 'rt-r-fg',
+    className: 'mui-r-fg',
     customProperties: ['--flex-grow'],
     values: flexGrowValues,
     responsive: true,
@@ -255,7 +255,7 @@ const layoutPropDefs = {
    */
   gridArea: {
     type: 'string',
-    className: 'rt-r-ga',
+    className: 'mui-r-ga',
     customProperties: ['--grid-area'],
     responsive: true,
   },
@@ -273,7 +273,7 @@ const layoutPropDefs = {
    */
   gridColumn: {
     type: 'string',
-    className: 'rt-r-gc',
+    className: 'mui-r-gc',
     customProperties: ['--grid-column'],
     responsive: true,
   },
@@ -291,7 +291,7 @@ const layoutPropDefs = {
    */
   gridColumnStart: {
     type: 'string',
-    className: 'rt-r-gcs',
+    className: 'mui-r-gcs',
     customProperties: ['--grid-column-start'],
     responsive: true,
   },
@@ -309,7 +309,7 @@ const layoutPropDefs = {
    */
   gridColumnEnd: {
     type: 'string',
-    className: 'rt-r-gce',
+    className: 'mui-r-gce',
     customProperties: ['--grid-column-end'],
     responsive: true,
   },
@@ -327,7 +327,7 @@ const layoutPropDefs = {
    */
   gridRow: {
     type: 'string',
-    className: 'rt-r-gr',
+    className: 'mui-r-gr',
     customProperties: ['--grid-row'],
     responsive: true,
   },
@@ -345,7 +345,7 @@ const layoutPropDefs = {
    */
   gridRowStart: {
     type: 'string',
-    className: 'rt-r-grs',
+    className: 'mui-r-grs',
     customProperties: ['--grid-row-start'],
     responsive: true,
   },
@@ -363,7 +363,7 @@ const layoutPropDefs = {
    */
   gridRowEnd: {
     type: 'string',
-    className: 'rt-r-gre',
+    className: 'mui-r-gre',
     customProperties: ['--grid-row-end'],
     responsive: true,
   },
@@ -380,7 +380,7 @@ const layoutPropDefs = {
    */
   alignSelf: {
     type: 'enum',
-    className: 'rt-r-as',
+    className: 'mui-r-as',
     values: alignSelfValues,
     responsive: true,
   },
@@ -397,7 +397,7 @@ const layoutPropDefs = {
    */
   justifySelf: {
     type: 'enum',
-    className: 'rt-r-js',
+    className: 'mui-r-js',
     values: justifySelfValues,
     responsive: true,
   },

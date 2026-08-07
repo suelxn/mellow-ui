@@ -20,7 +20,7 @@ const widthPropDefs = {
    */
   width: {
     type: 'string',
-    className: 'rt-r-w',
+    className: 'mui-r-w',
     customProperties: ['--width'],
     responsive: true,
   },
@@ -37,7 +37,7 @@ const widthPropDefs = {
    */
   minWidth: {
     type: 'string',
-    className: 'rt-r-min-w',
+    className: 'mui-r-min-w',
     customProperties: ['--min-width'],
     responsive: true,
   },
@@ -54,7 +54,7 @@ const widthPropDefs = {
    */
   maxWidth: {
     type: 'string',
-    className: 'rt-r-max-w',
+    className: 'mui-r-max-w',
     customProperties: ['--max-width'],
     responsive: true,
   },

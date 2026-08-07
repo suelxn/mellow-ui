@@ -6,618 +6,618 @@
   (--gap, --column-gap, --row-gap) com media queries (@media).
 */
 
-.rt-r-gap-0 {
+.mui-r-gap-0 {
   gap: 0;
 }
-.rt-r-gap-1 {
+.mui-r-gap-1 {
   gap: var(--space-1);
 }
-.rt-r-gap-2 {
+.mui-r-gap-2 {
   gap: var(--space-2);
 }
-.rt-r-gap-3 {
+.mui-r-gap-3 {
   gap: var(--space-3);
 }
-.rt-r-gap-4 {
+.mui-r-gap-4 {
   gap: var(--space-4);
 }
-.rt-r-gap-5 {
+.mui-r-gap-5 {
   gap: var(--space-5);
 }
-.rt-r-gap-6 {
+.mui-r-gap-6 {
   gap: var(--space-6);
 }
-.rt-r-gap-7 {
+.mui-r-gap-7 {
   gap: var(--space-7);
 }
-.rt-r-gap-8 {
+.mui-r-gap-8 {
   gap: var(--space-8);
 }
-.rt-r-gap-9 {
+.mui-r-gap-9 {
   gap: var(--space-9);
 }
-.rt-r-cg-0 {
+.mui-r-cg-0 {
   column-gap: 0;
 }
-.rt-r-cg-1 {
+.mui-r-cg-1 {
   column-gap: var(--space-1);
 }
-.rt-r-cg-2 {
+.mui-r-cg-2 {
   column-gap: var(--space-2);
 }
-.rt-r-cg-3 {
+.mui-r-cg-3 {
   column-gap: var(--space-3);
 }
-.rt-r-cg-4 {
+.mui-r-cg-4 {
   column-gap: var(--space-4);
 }
-.rt-r-cg-5 {
+.mui-r-cg-5 {
   column-gap: var(--space-5);
 }
-.rt-r-cg-6 {
+.mui-r-cg-6 {
   column-gap: var(--space-6);
 }
-.rt-r-cg-7 {
+.mui-r-cg-7 {
   column-gap: var(--space-7);
 }
-.rt-r-cg-8 {
+.mui-r-cg-8 {
   column-gap: var(--space-8);
 }
-.rt-r-cg-9 {
+.mui-r-cg-9 {
   column-gap: var(--space-9);
 }
-.rt-r-rg-0 {
+.mui-r-rg-0 {
   row-gap: 0;
 }
-.rt-r-rg-1 {
+.mui-r-rg-1 {
   row-gap: var(--space-1);
 }
-.rt-r-rg-2 {
+.mui-r-rg-2 {
   row-gap: var(--space-2);
 }
-.rt-r-rg-3 {
+.mui-r-rg-3 {
   row-gap: var(--space-3);
 }
-.rt-r-rg-4 {
+.mui-r-rg-4 {
   row-gap: var(--space-4);
 }
-.rt-r-rg-5 {
+.mui-r-rg-5 {
   row-gap: var(--space-5);
 }
-.rt-r-rg-6 {
+.mui-r-rg-6 {
   row-gap: var(--space-6);
 }
-.rt-r-rg-7 {
+.mui-r-rg-7 {
   row-gap: var(--space-7);
 }
-.rt-r-rg-8 {
+.mui-r-rg-8 {
   row-gap: var(--space-8);
 }
-.rt-r-rg-9 {
+.mui-r-rg-9 {
   row-gap: var(--space-9);
 }
 
-.rt-r-gap {
+.mui-r-gap {
   gap: var(--gap);
 }
-.rt-r-cg {
+.mui-r-cg {
   column-gap: var(--column-gap);
 }
-.rt-r-rg {
+.mui-r-rg {
   row-gap: var(--row-gap);
 }
 @media (--xs) {
-  .xs\:rt-r-gap {
+  .xs\:mui-r-gap {
     gap: var(--gap-xs);
   }
-  .xs\:rt-r-cg {
+  .xs\:mui-r-cg {
     column-gap: var(--column-gap-xs);
   }
-  .xs\:rt-r-rg {
+  .xs\:mui-r-rg {
     row-gap: var(--row-gap-xs);
   }
 }
 @media (--sm) {
-  .sm\:rt-r-gap {
+  .sm\:mui-r-gap {
     gap: var(--gap-sm);
   }
-  .sm\:rt-r-cg {
+  .sm\:mui-r-cg {
     column-gap: var(--column-gap-sm);
   }
-  .sm\:rt-r-rg {
+  .sm\:mui-r-rg {
     row-gap: var(--row-gap-sm);
   }
 }
 @media (--md) {
-  .md\:rt-r-gap {
+  .md\:mui-r-gap {
     gap: var(--gap-md);
   }
-  .md\:rt-r-cg {
+  .md\:mui-r-cg {
     column-gap: var(--column-gap-md);
   }
-  .md\:rt-r-rg {
+  .md\:mui-r-rg {
     row-gap: var(--row-gap-md);
   }
 }
 @media (--lg) {
-  .lg\:rt-r-gap {
+  .lg\:mui-r-gap {
     gap: var(--gap-lg);
   }
-  .lg\:rt-r-cg {
+  .lg\:mui-r-cg {
     column-gap: var(--column-gap-lg);
   }
-  .lg\:rt-r-rg {
+  .lg\:mui-r-rg {
     row-gap: var(--row-gap-lg);
   }
 }
 @media (--xl) {
-  .xl\:rt-r-gap {
+  .xl\:mui-r-gap {
     gap: var(--gap-xl);
   }
-  .xl\:rt-r-cg {
+  .xl\:mui-r-cg {
     column-gap: var(--column-gap-xl);
   }
-  .xl\:rt-r-rg {
+  .xl\:mui-r-rg {
     row-gap: var(--row-gap-xl);
   }
 }
 @media (--xs) {
-  .xs\:rt-r-gap-0 {
+  .xs\:mui-r-gap-0 {
     gap: 0;
   }
-  .xs\:rt-r-gap-1 {
+  .xs\:mui-r-gap-1 {
     gap: var(--space-1);
   }
-  .xs\:rt-r-gap-2 {
+  .xs\:mui-r-gap-2 {
     gap: var(--space-2);
   }
-  .xs\:rt-r-gap-3 {
+  .xs\:mui-r-gap-3 {
     gap: var(--space-3);
   }
-  .xs\:rt-r-gap-4 {
+  .xs\:mui-r-gap-4 {
     gap: var(--space-4);
   }
-  .xs\:rt-r-gap-5 {
+  .xs\:mui-r-gap-5 {
     gap: var(--space-5);
   }
-  .xs\:rt-r-gap-6 {
+  .xs\:mui-r-gap-6 {
     gap: var(--space-6);
   }
-  .xs\:rt-r-gap-7 {
+  .xs\:mui-r-gap-7 {
     gap: var(--space-7);
   }
-  .xs\:rt-r-gap-8 {
+  .xs\:mui-r-gap-8 {
     gap: var(--space-8);
   }
-  .xs\:rt-r-gap-9 {
+  .xs\:mui-r-gap-9 {
     gap: var(--space-9);
   }
-  .xs\:rt-r-cg-0 {
+  .xs\:mui-r-cg-0 {
     column-gap: 0;
   }
-  .xs\:rt-r-cg-1 {
+  .xs\:mui-r-cg-1 {
     column-gap: var(--space-1);
   }
-  .xs\:rt-r-cg-2 {
+  .xs\:mui-r-cg-2 {
     column-gap: var(--space-2);
   }
-  .xs\:rt-r-cg-3 {
+  .xs\:mui-r-cg-3 {
     column-gap: var(--space-3);
   }
-  .xs\:rt-r-cg-4 {
+  .xs\:mui-r-cg-4 {
     column-gap: var(--space-4);
   }
-  .xs\:rt-r-cg-5 {
+  .xs\:mui-r-cg-5 {
     column-gap: var(--space-5);
   }
-  .xs\:rt-r-cg-6 {
+  .xs\:mui-r-cg-6 {
     column-gap: var(--space-6);
   }
-  .xs\:rt-r-cg-7 {
+  .xs\:mui-r-cg-7 {
     column-gap: var(--space-7);
   }
-  .xs\:rt-r-cg-8 {
+  .xs\:mui-r-cg-8 {
     column-gap: var(--space-8);
   }
-  .xs\:rt-r-cg-9 {
+  .xs\:mui-r-cg-9 {
     column-gap: var(--space-9);
   }
-  .xs\:rt-r-rg-0 {
+  .xs\:mui-r-rg-0 {
     row-gap: 0;
   }
-  .xs\:rt-r-rg-1 {
+  .xs\:mui-r-rg-1 {
     row-gap: var(--space-1);
   }
-  .xs\:rt-r-rg-2 {
+  .xs\:mui-r-rg-2 {
     row-gap: var(--space-2);
   }
-  .xs\:rt-r-rg-3 {
+  .xs\:mui-r-rg-3 {
     row-gap: var(--space-3);
   }
-  .xs\:rt-r-rg-4 {
+  .xs\:mui-r-rg-4 {
     row-gap: var(--space-4);
   }
-  .xs\:rt-r-rg-5 {
+  .xs\:mui-r-rg-5 {
     row-gap: var(--space-5);
   }
-  .xs\:rt-r-rg-6 {
+  .xs\:mui-r-rg-6 {
     row-gap: var(--space-6);
   }
-  .xs\:rt-r-rg-7 {
+  .xs\:mui-r-rg-7 {
     row-gap: var(--space-7);
   }
-  .xs\:rt-r-rg-8 {
+  .xs\:mui-r-rg-8 {
     row-gap: var(--space-8);
   }
-  .xs\:rt-r-rg-9 {
+  .xs\:mui-r-rg-9 {
     row-gap: var(--space-9);
   }
 }
 @media (--sm) {
-  .sm\:rt-r-gap-0 {
+  .sm\:mui-r-gap-0 {
     gap: 0;
   }
-  .sm\:rt-r-gap-1 {
+  .sm\:mui-r-gap-1 {
     gap: var(--space-1);
   }
-  .sm\:rt-r-gap-2 {
+  .sm\:mui-r-gap-2 {
     gap: var(--space-2);
   }
-  .sm\:rt-r-gap-3 {
+  .sm\:mui-r-gap-3 {
     gap: var(--space-3);
   }
-  .sm\:rt-r-gap-4 {
+  .sm\:mui-r-gap-4 {
     gap: var(--space-4);
   }
-  .sm\:rt-r-gap-5 {
+  .sm\:mui-r-gap-5 {
     gap: var(--space-5);
   }
-  .sm\:rt-r-gap-6 {
+  .sm\:mui-r-gap-6 {
     gap: var(--space-6);
   }
-  .sm\:rt-r-gap-7 {
+  .sm\:mui-r-gap-7 {
     gap: var(--space-7);
   }
-  .sm\:rt-r-gap-8 {
+  .sm\:mui-r-gap-8 {
     gap: var(--space-8);
   }
-  .sm\:rt-r-gap-9 {
+  .sm\:mui-r-gap-9 {
     gap: var(--space-9);
   }
-  .sm\:rt-r-cg-0 {
+  .sm\:mui-r-cg-0 {
     column-gap: 0;
   }
-  .sm\:rt-r-cg-1 {
+  .sm\:mui-r-cg-1 {
     column-gap: var(--space-1);
   }
-  .sm\:rt-r-cg-2 {
+  .sm\:mui-r-cg-2 {
     column-gap: var(--space-2);
   }
-  .sm\:rt-r-cg-3 {
+  .sm\:mui-r-cg-3 {
     column-gap: var(--space-3);
   }
-  .sm\:rt-r-cg-4 {
+  .sm\:mui-r-cg-4 {
     column-gap: var(--space-4);
   }
-  .sm\:rt-r-cg-5 {
+  .sm\:mui-r-cg-5 {
     column-gap: var(--space-5);
   }
-  .sm\:rt-r-cg-6 {
+  .sm\:mui-r-cg-6 {
     column-gap: var(--space-6);
   }
-  .sm\:rt-r-cg-7 {
+  .sm\:mui-r-cg-7 {
     column-gap: var(--space-7);
   }
-  .sm\:rt-r-cg-8 {
+  .sm\:mui-r-cg-8 {
     column-gap: var(--space-8);
   }
-  .sm\:rt-r-cg-9 {
+  .sm\:mui-r-cg-9 {
     column-gap: var(--space-9);
   }
-  .sm\:rt-r-rg-0 {
+  .sm\:mui-r-rg-0 {
     row-gap: 0;
   }
-  .sm\:rt-r-rg-1 {
+  .sm\:mui-r-rg-1 {
     row-gap: var(--space-1);
   }
-  .sm\:rt-r-rg-2 {
+  .sm\:mui-r-rg-2 {
     row-gap: var(--space-2);
   }
-  .sm\:rt-r-rg-3 {
+  .sm\:mui-r-rg-3 {
     row-gap: var(--space-3);
   }
-  .sm\:rt-r-rg-4 {
+  .sm\:mui-r-rg-4 {
     row-gap: var(--space-4);
   }
-  .sm\:rt-r-rg-5 {
+  .sm\:mui-r-rg-5 {
     row-gap: var(--space-5);
   }
-  .sm\:rt-r-rg-6 {
+  .sm\:mui-r-rg-6 {
     row-gap: var(--space-6);
   }
-  .sm\:rt-r-rg-7 {
+  .sm\:mui-r-rg-7 {
     row-gap: var(--space-7);
   }
-  .sm\:rt-r-rg-8 {
+  .sm\:mui-r-rg-8 {
     row-gap: var(--space-8);
   }
-  .sm\:rt-r-rg-9 {
+  .sm\:mui-r-rg-9 {
     row-gap: var(--space-9);
   }
 }
 @media (--md) {
-  .md\:rt-r-gap-0 {
+  .md\:mui-r-gap-0 {
     gap: 0;
   }
-  .md\:rt-r-gap-1 {
+  .md\:mui-r-gap-1 {
     gap: var(--space-1);
   }
-  .md\:rt-r-gap-2 {
+  .md\:mui-r-gap-2 {
     gap: var(--space-2);
   }
-  .md\:rt-r-gap-3 {
+  .md\:mui-r-gap-3 {
     gap: var(--space-3);
   }
-  .md\:rt-r-gap-4 {
+  .md\:mui-r-gap-4 {
     gap: var(--space-4);
   }
-  .md\:rt-r-gap-5 {
+  .md\:mui-r-gap-5 {
     gap: var(--space-5);
   }
-  .md\:rt-r-gap-6 {
+  .md\:mui-r-gap-6 {
     gap: var(--space-6);
   }
-  .md\:rt-r-gap-7 {
+  .md\:mui-r-gap-7 {
     gap: var(--space-7);
   }
-  .md\:rt-r-gap-8 {
+  .md\:mui-r-gap-8 {
     gap: var(--space-8);
   }
-  .md\:rt-r-gap-9 {
+  .md\:mui-r-gap-9 {
     gap: var(--space-9);
   }
-  .md\:rt-r-cg-0 {
+  .md\:mui-r-cg-0 {
     column-gap: 0;
   }
-  .md\:rt-r-cg-1 {
+  .md\:mui-r-cg-1 {
     column-gap: var(--space-1);
   }
-  .md\:rt-r-cg-2 {
+  .md\:mui-r-cg-2 {
     column-gap: var(--space-2);
   }
-  .md\:rt-r-cg-3 {
+  .md\:mui-r-cg-3 {
     column-gap: var(--space-3);
   }
-  .md\:rt-r-cg-4 {
+  .md\:mui-r-cg-4 {
     column-gap: var(--space-4);
   }
-  .md\:rt-r-cg-5 {
+  .md\:mui-r-cg-5 {
     column-gap: var(--space-5);
   }
-  .md\:rt-r-cg-6 {
+  .md\:mui-r-cg-6 {
     column-gap: var(--space-6);
   }
-  .md\:rt-r-cg-7 {
+  .md\:mui-r-cg-7 {
     column-gap: var(--space-7);
   }
-  .md\:rt-r-cg-8 {
+  .md\:mui-r-cg-8 {
     column-gap: var(--space-8);
   }
-  .md\:rt-r-cg-9 {
+  .md\:mui-r-cg-9 {
     column-gap: var(--space-9);
   }
-  .md\:rt-r-rg-0 {
+  .md\:mui-r-rg-0 {
     row-gap: 0;
   }
-  .md\:rt-r-rg-1 {
+  .md\:mui-r-rg-1 {
     row-gap: var(--space-1);
   }
-  .md\:rt-r-rg-2 {
+  .md\:mui-r-rg-2 {
     row-gap: var(--space-2);
   }
-  .md\:rt-r-rg-3 {
+  .md\:mui-r-rg-3 {
     row-gap: var(--space-3);
   }
-  .md\:rt-r-rg-4 {
+  .md\:mui-r-rg-4 {
     row-gap: var(--space-4);
   }
-  .md\:rt-r-rg-5 {
+  .md\:mui-r-rg-5 {
     row-gap: var(--space-5);
   }
-  .md\:rt-r-rg-6 {
+  .md\:mui-r-rg-6 {
     row-gap: var(--space-6);
   }
-  .md\:rt-r-rg-7 {
+  .md\:mui-r-rg-7 {
     row-gap: var(--space-7);
   }
-  .md\:rt-r-rg-8 {
+  .md\:mui-r-rg-8 {
     row-gap: var(--space-8);
   }
-  .md\:rt-r-rg-9 {
+  .md\:mui-r-rg-9 {
     row-gap: var(--space-9);
   }
 }
 @media (--lg) {
-  .lg\:rt-r-gap-0 {
+  .lg\:mui-r-gap-0 {
     gap: 0;
   }
-  .lg\:rt-r-gap-1 {
+  .lg\:mui-r-gap-1 {
     gap: var(--space-1);
   }
-  .lg\:rt-r-gap-2 {
+  .lg\:mui-r-gap-2 {
     gap: var(--space-2);
   }
-  .lg\:rt-r-gap-3 {
+  .lg\:mui-r-gap-3 {
     gap: var(--space-3);
   }
-  .lg\:rt-r-gap-4 {
+  .lg\:mui-r-gap-4 {
     gap: var(--space-4);
   }
-  .lg\:rt-r-gap-5 {
+  .lg\:mui-r-gap-5 {
     gap: var(--space-5);
   }
-  .lg\:rt-r-gap-6 {
+  .lg\:mui-r-gap-6 {
     gap: var(--space-6);
   }
-  .lg\:rt-r-gap-7 {
+  .lg\:mui-r-gap-7 {
     gap: var(--space-7);
   }
-  .lg\:rt-r-gap-8 {
+  .lg\:mui-r-gap-8 {
     gap: var(--space-8);
   }
-  .lg\:rt-r-gap-9 {
+  .lg\:mui-r-gap-9 {
     gap: var(--space-9);
   }
-  .lg\:rt-r-cg-0 {
+  .lg\:mui-r-cg-0 {
     column-gap: 0;
   }
-  .lg\:rt-r-cg-1 {
+  .lg\:mui-r-cg-1 {
     column-gap: var(--space-1);
   }
-  .lg\:rt-r-cg-2 {
+  .lg\:mui-r-cg-2 {
     column-gap: var(--space-2);
   }
-  .lg\:rt-r-cg-3 {
+  .lg\:mui-r-cg-3 {
     column-gap: var(--space-3);
   }
-  .lg\:rt-r-cg-4 {
+  .lg\:mui-r-cg-4 {
     column-gap: var(--space-4);
   }
-  .lg\:rt-r-cg-5 {
+  .lg\:mui-r-cg-5 {
     column-gap: var(--space-5);
   }
-  .lg\:rt-r-cg-6 {
+  .lg\:mui-r-cg-6 {
     column-gap: var(--space-6);
   }
-  .lg\:rt-r-cg-7 {
+  .lg\:mui-r-cg-7 {
     column-gap: var(--space-7);
   }
-  .lg\:rt-r-cg-8 {
+  .lg\:mui-r-cg-8 {
     column-gap: var(--space-8);
   }
-  .lg\:rt-r-cg-9 {
+  .lg\:mui-r-cg-9 {
     column-gap: var(--space-9);
   }
-  .lg\:rt-r-rg-0 {
+  .lg\:mui-r-rg-0 {
     row-gap: 0;
   }
-  .lg\:rt-r-rg-1 {
+  .lg\:mui-r-rg-1 {
     row-gap: var(--space-1);
   }
-  .lg\:rt-r-rg-2 {
+  .lg\:mui-r-rg-2 {
     row-gap: var(--space-2);
   }
-  .lg\:rt-r-rg-3 {
+  .lg\:mui-r-rg-3 {
     row-gap: var(--space-3);
   }
-  .lg\:rt-r-rg-4 {
+  .lg\:mui-r-rg-4 {
     row-gap: var(--space-4);
   }
-  .lg\:rt-r-rg-5 {
+  .lg\:mui-r-rg-5 {
     row-gap: var(--space-5);
   }
-  .lg\:rt-r-rg-6 {
+  .lg\:mui-r-rg-6 {
     row-gap: var(--space-6);
   }
-  .lg\:rt-r-rg-7 {
+  .lg\:mui-r-rg-7 {
     row-gap: var(--space-7);
   }
-  .lg\:rt-r-rg-8 {
+  .lg\:mui-r-rg-8 {
     row-gap: var(--space-8);
   }
-  .lg\:rt-r-rg-9 {
+  .lg\:mui-r-rg-9 {
     row-gap: var(--space-9);
   }
 }
 @media (--xl) {
-  .xl\:rt-r-gap-0 {
+  .xl\:mui-r-gap-0 {
     gap: 0;
   }
-  .xl\:rt-r-gap-1 {
+  .xl\:mui-r-gap-1 {
     gap: var(--space-1);
   }
-  .xl\:rt-r-gap-2 {
+  .xl\:mui-r-gap-2 {
     gap: var(--space-2);
   }
-  .xl\:rt-r-gap-3 {
+  .xl\:mui-r-gap-3 {
     gap: var(--space-3);
   }
-  .xl\:rt-r-gap-4 {
+  .xl\:mui-r-gap-4 {
     gap: var(--space-4);
   }
-  .xl\:rt-r-gap-5 {
+  .xl\:mui-r-gap-5 {
     gap: var(--space-5);
   }
-  .xl\:rt-r-gap-6 {
+  .xl\:mui-r-gap-6 {
     gap: var(--space-6);
   }
-  .xl\:rt-r-gap-7 {
+  .xl\:mui-r-gap-7 {
     gap: var(--space-7);
   }
-  .xl\:rt-r-gap-8 {
+  .xl\:mui-r-gap-8 {
     gap: var(--space-8);
   }
-  .xl\:rt-r-gap-9 {
+  .xl\:mui-r-gap-9 {
     gap: var(--space-9);
   }
-  .xl\:rt-r-cg-0 {
+  .xl\:mui-r-cg-0 {
     column-gap: 0;
   }
-  .xl\:rt-r-cg-1 {
+  .xl\:mui-r-cg-1 {
     column-gap: var(--space-1);
   }
-  .xl\:rt-r-cg-2 {
+  .xl\:mui-r-cg-2 {
     column-gap: var(--space-2);
   }
-  .xl\:rt-r-cg-3 {
+  .xl\:mui-r-cg-3 {
     column-gap: var(--space-3);
   }
-  .xl\:rt-r-cg-4 {
+  .xl\:mui-r-cg-4 {
     column-gap: var(--space-4);
   }
-  .xl\:rt-r-cg-5 {
+  .xl\:mui-r-cg-5 {
     column-gap: var(--space-5);
   }
-  .xl\:rt-r-cg-6 {
+  .xl\:mui-r-cg-6 {
     column-gap: var(--space-6);
   }
-  .xl\:rt-r-cg-7 {
+  .xl\:mui-r-cg-7 {
     column-gap: var(--space-7);
   }
-  .xl\:rt-r-cg-8 {
+  .xl\:mui-r-cg-8 {
     column-gap: var(--space-8);
   }
-  .xl\:rt-r-cg-9 {
+  .xl\:mui-r-cg-9 {
     column-gap: var(--space-9);
   }
-  .xl\:rt-r-rg-0 {
+  .xl\:mui-r-rg-0 {
     row-gap: 0;
   }
-  .xl\:rt-r-rg-1 {
+  .xl\:mui-r-rg-1 {
     row-gap: var(--space-1);
   }
-  .xl\:rt-r-rg-2 {
+  .xl\:mui-r-rg-2 {
     row-gap: var(--space-2);
   }
-  .xl\:rt-r-rg-3 {
+  .xl\:mui-r-rg-3 {
     row-gap: var(--space-3);
   }
-  .xl\:rt-r-rg-4 {
+  .xl\:mui-r-rg-4 {
     row-gap: var(--space-4);
   }
-  .xl\:rt-r-rg-5 {
+  .xl\:mui-r-rg-5 {
     row-gap: var(--space-5);
   }
-  .xl\:rt-r-rg-6 {
+  .xl\:mui-r-rg-6 {
     row-gap: var(--space-6);
   }
-  .xl\:rt-r-rg-7 {
+  .xl\:mui-r-rg-7 {
     row-gap: var(--space-7);
   }
-  .xl\:rt-r-rg-8 {
+  .xl\:mui-r-rg-8 {
     row-gap: var(--space-8);
   }
-  .xl\:rt-r-rg-9 {
+  .xl\:mui-r-rg-9 {
     row-gap: var(--space-9);
   }
 }

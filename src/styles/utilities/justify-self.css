@@ -5,103 +5,103 @@
   agrupados em blocos @media por breakpoint para adequação responsiva.
 */
 
-.rt-r-js-start {
+.mui-r-js-start {
   justify-self: start;
 }
-.rt-r-js-center {
+.mui-r-js-center {
   justify-self: center;
 }
-.rt-r-js-end {
+.mui-r-js-end {
   justify-self: end;
 }
-.rt-r-js-baseline {
+.mui-r-js-baseline {
   justify-self: baseline;
 }
-.rt-r-js-stretch {
+.mui-r-js-stretch {
   justify-self: stretch;
 }
 @media (--xs) {
-  .xs\:rt-r-js-start {
+  .xs\:mui-r-js-start {
     justify-self: start;
   }
-  .xs\:rt-r-js-center {
+  .xs\:mui-r-js-center {
     justify-self: center;
   }
-  .xs\:rt-r-js-end {
+  .xs\:mui-r-js-end {
     justify-self: end;
   }
-  .xs\:rt-r-js-baseline {
+  .xs\:mui-r-js-baseline {
     justify-self: baseline;
   }
-  .xs\:rt-r-js-stretch {
+  .xs\:mui-r-js-stretch {
     justify-self: stretch;
   }
 }
 @media (--sm) {
-  .sm\:rt-r-js-start {
+  .sm\:mui-r-js-start {
     justify-self: start;
   }
-  .sm\:rt-r-js-center {
+  .sm\:mui-r-js-center {
     justify-self: center;
   }
-  .sm\:rt-r-js-end {
+  .sm\:mui-r-js-end {
     justify-self: end;
   }
-  .sm\:rt-r-js-baseline {
+  .sm\:mui-r-js-baseline {
     justify-self: baseline;
   }
-  .sm\:rt-r-js-stretch {
+  .sm\:mui-r-js-stretch {
     justify-self: stretch;
   }
 }
 @media (--md) {
-  .md\:rt-r-js-start {
+  .md\:mui-r-js-start {
     justify-self: start;
   }
-  .md\:rt-r-js-center {
+  .md\:mui-r-js-center {
     justify-self: center;
   }
-  .md\:rt-r-js-end {
+  .md\:mui-r-js-end {
     justify-self: end;
   }
-  .md\:rt-r-js-baseline {
+  .md\:mui-r-js-baseline {
     justify-self: baseline;
   }
-  .md\:rt-r-js-stretch {
+  .md\:mui-r-js-stretch {
     justify-self: stretch;
   }
 }
 @media (--lg) {
-  .lg\:rt-r-js-start {
+  .lg\:mui-r-js-start {
     justify-self: start;
   }
-  .lg\:rt-r-js-center {
+  .lg\:mui-r-js-center {
     justify-self: center;
   }
-  .lg\:rt-r-js-end {
+  .lg\:mui-r-js-end {
     justify-self: end;
   }
-  .lg\:rt-r-js-baseline {
+  .lg\:mui-r-js-baseline {
     justify-self: baseline;
   }
-  .lg\:rt-r-js-stretch {
+  .lg\:mui-r-js-stretch {
     justify-self: stretch;
   }
 }
 @media (--xl) {
-  .xl\:rt-r-js-start {
+  .xl\:mui-r-js-start {
     justify-self: start;
   }
-  .xl\:rt-r-js-center {
+  .xl\:mui-r-js-center {
     justify-self: center;
   }
-  .xl\:rt-r-js-end {
+  .xl\:mui-r-js-end {
     justify-self: end;
   }
-  .xl\:rt-r-js-baseline {
+  .xl\:mui-r-js-baseline {
     justify-self: baseline;
   }
-  .xl\:rt-r-js-stretch {
+  .xl\:mui-r-js-stretch {
     justify-self: stretch;
   }
 }
