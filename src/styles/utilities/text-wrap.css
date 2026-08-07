@@ -1,0 +1,101 @@
+/* 
+  Define classes utilitárias responsivas para as propriedades white-space e text-wrap. 
+  Controla o comportamento de quebra de linha e distribuição do texto (wrap, nowrap, 
+  pretty e balance) para otimização tipográfica e prevenção de linhas órfãs, 
+  agrupados em blocos @media por breakpoint para adequação responsiva.
+*/
+
+.mui-r-tw-wrap {
+  white-space: normal;
+}
+.mui-r-tw-nowrap {
+  white-space: nowrap;
+}
+.mui-r-tw-pretty {
+  white-space: normal;
+  text-wrap: pretty;
+}
+.mui-r-tw-balance {
+  white-space: normal;
+  text-wrap: balance;
+}
+@media (--xs) {
+  .xs\:mui-r-tw-wrap {
+    white-space: normal;
+  }
+  .xs\:mui-r-tw-nowrap {
+    white-space: nowrap;
+  }
+  .xs\:mui-r-tw-pretty {
+    white-space: normal;
+    text-wrap: pretty;
+  }
+  .xs\:mui-r-tw-balance {
+    white-space: normal;
+    text-wrap: balance;
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-tw-wrap {
+    white-space: normal;
+  }
+  .sm\:mui-r-tw-nowrap {
+    white-space: nowrap;
+  }
+  .sm\:mui-r-tw-pretty {
+    white-space: normal;
+    text-wrap: pretty;
+  }
+  .sm\:mui-r-tw-balance {
+    white-space: normal;
+    text-wrap: balance;
+  }
+}
+@media (--md) {
+  .md\:mui-r-tw-wrap {
+    white-space: normal;
+  }
+  .md\:mui-r-tw-nowrap {
+    white-space: nowrap;
+  }
+  .md\:mui-r-tw-pretty {
+    white-space: normal;
+    text-wrap: pretty;
+  }
+  .md\:mui-r-tw-balance {
+    white-space: normal;
+    text-wrap: balance;
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-tw-wrap {
+    white-space: normal;
+  }
+  .lg\:mui-r-tw-nowrap {
+    white-space: nowrap;
+  }
+  .lg\:mui-r-tw-pretty {
+    white-space: normal;
+    text-wrap: pretty;
+  }
+  .lg\:mui-r-tw-balance {
+    white-space: normal;
+    text-wrap: balance;
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-tw-wrap {
+    white-space: normal;
+  }
+  .xl\:mui-r-tw-nowrap {
+    white-space: nowrap;
+  }
+  .xl\:mui-r-tw-pretty {
+    white-space: normal;
+    text-wrap: pretty;
+  }
+  .xl\:mui-r-tw-balance {
+    white-space: normal;
+    text-wrap: balance;
+  }
+}

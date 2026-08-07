@@ -1,0 +1,82 @@
+/* ==========================================================================
+   PRIMITIVE COLORS
+   ========================================================================== */
+
+/* Red */
+
+/* Tema Light */
+:root,
+.light,
+.light-theme {
+  --red-50: #FEF2F2;
+  --red-100: #FEE2E2;
+  --red-200: #FECACA;
+  --red-300: #FCA5A5;
+  --red-400: #F87171;
+  --red-500: #EF4444; /* Cor principal / Accent */
+  --red-600: #DC2626;
+  --red-700: #B91C1C;
+  --red-800: #991B1B;
+  --red-900: #7F1D1D;
+}
+
+/* Tema Dark */
+.dark,
+.dark-theme {
+  --red-50: #7F1D1D;
+  --red-100: #991B1B;
+  --red-200: #B91C1C;
+  --red-300: #DC2626;
+  --red-400: #EF4444;
+  --red-500: #F87171; /* Tom principal adaptado para contraste em fundo escuro */
+  --red-600: #FCA5A5;
+  --red-700: #FECACA;
+  --red-800: #FEE2E2;
+  --red-900: #FEF2F2;
+}
+
+/* Regras globais de contraste */
+:root {
+  /* Cor do texto/ícone sobre o tom de destaque (--red-500) */
+  --red-contrast: #ffffff;
+}
+
+/* ==========================================================================
+   SEMANTIC ROLES / MAPPING 
+   ========================================================================== */
+
+/* Mapeamento dos papéis para Light Mode */
+:root,
+.light,
+.light-theme {
+  --red-surface: #FEE2E2cc; /* Mapeado para o tom suave --red-100 com transparência */
+  --red-indicator: var(--red-500);
+  --red-track: var(--red-500);
+
+  /* Suporte a telas de ampla gama de cores (Display P3) */
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      --red-surface: color(display-p3 0.996 0.886 0.886 / 0.8);
+    }
+  }
+}
+
+/* Mapeamento dos papéis para Dark Mode */
+.dark,
+.dark-theme {
+  --red-surface: #7F1D1D80; /* Mapeado para o tom escuro com transparência */
+  --red-indicator: var(--red-500);
+  --red-track: var(--red-500);
+
+  /* Suporte a telas de ampla gama de cores (Display P3) no tema escuro */
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      --red-surface: color(display-p3 0.498 0.114 0.114 / 0.5);
+    }
+  }
+
+  /* Mistura refinada de cores usando OKLAB para o track no modo escuro */
+  @supports (color: color-mix(in oklab, white, black)) {
+    --red-track: color-mix(in oklab, var(--red-400), var(--red-500) 75%);
+  }
+}

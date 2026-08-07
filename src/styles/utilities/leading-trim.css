@@ -1,0 +1,179 @@
+/* 
+  Define classes utilitárias responsivas para o recorte de espaçamento vertical (leading trim) na tipografia. 
+  Remove o espaço em branco excedente acima e abaixo do texto via pseudo-elementos (::before e ::after) 
+  e cálculos de margem com variáveis CSS, permitindo o alinhamento óptico preciso (start, end, both e normal) 
+  agrupado em blocos @media por breakpoint para adequação responsiva.
+*/
+
+.mui-r-lt-normal::before,
+  .mui-r-lt-end::before,
+  .mui-r-lt-normal::after,
+  .mui-r-lt-start::after {
+  content: none;
+}
+.mui-r-lt-start::before,
+  .mui-r-lt-both::before,
+  .mui-r-lt-end::after,
+  .mui-r-lt-both::after {
+  content: '';
+  display: table;
+}
+.mui-r-lt-start::before,
+  .mui-r-lt-both::before {
+  margin-bottom: calc(
+      var(--leading-trim-start, var(--default-leading-trim-start)) -
+        var(--line-height, calc(1em * var(--default-line-height))) / 2
+    );
+}
+.mui-r-lt-end::after,
+  .mui-r-lt-both::after {
+  margin-top: calc(
+      var(--leading-trim-end, var(--default-leading-trim-end)) -
+        var(--line-height, calc(1em * var(--default-line-height))) / 2
+    );
+}
+@media (--xs) {
+  .xs\:mui-r-lt-normal::before,
+  .xs\:mui-r-lt-end::before,
+  .xs\:mui-r-lt-normal::after,
+  .xs\:mui-r-lt-start::after {
+    content: none;
+  }
+  .xs\:mui-r-lt-start::before,
+  .xs\:mui-r-lt-both::before,
+  .xs\:mui-r-lt-end::after,
+  .xs\:mui-r-lt-both::after {
+    content: '';
+    display: table;
+  }
+  .xs\:mui-r-lt-start::before,
+  .xs\:mui-r-lt-both::before {
+    margin-bottom: calc(
+      var(--leading-trim-start, var(--default-leading-trim-start)) -
+        var(--line-height, calc(1em * var(--default-line-height))) / 2
+    );
+  }
+  .xs\:mui-r-lt-end::after,
+  .xs\:mui-r-lt-both::after {
+    margin-top: calc(
+      var(--leading-trim-end, var(--default-leading-trim-end)) -
+        var(--line-height, calc(1em * var(--default-line-height))) / 2
+    );
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-lt-normal::before,
+  .sm\:mui-r-lt-end::before,
+  .sm\:mui-r-lt-normal::after,
+  .sm\:mui-r-lt-start::after {
+    content: none;
+  }
+  .sm\:mui-r-lt-start::before,
+  .sm\:mui-r-lt-both::before,
+  .sm\:mui-r-lt-end::after,
+  .sm\:mui-r-lt-both::after {
+    content: '';
+    display: table;
+  }
+  .sm\:mui-r-lt-start::before,
+  .sm\:mui-r-lt-both::before {
+    margin-bottom: calc(
+      var(--leading-trim-start, var(--default-leading-trim-start)) -
+        var(--line-height, calc(1em * var(--default-line-height))) / 2
+    );
+  }
+  .sm\:mui-r-lt-end::after,
+  .sm\:mui-r-lt-both::after {
+    margin-top: calc(
+      var(--leading-trim-end, var(--default-leading-trim-end)) -
+        var(--line-height, calc(1em * var(--default-line-height))) / 2
+    );
+  }
+}
+@media (--md) {
+  .md\:mui-r-lt-normal::before,
+  .md\:mui-r-lt-end::before,
+  .md\:mui-r-lt-normal::after,
+  .md\:mui-r-lt-start::after {
+    content: none;
+  }
+  .md\:mui-r-lt-start::before,
+  .md\:mui-r-lt-both::before,
+  .md\:mui-r-lt-end::after,
+  .md\:mui-r-lt-both::after {
+    content: '';
+    display: table;
+  }
+  .md\:mui-r-lt-start::before,
+  .md\:mui-r-lt-both::before {
+    margin-bottom: calc(
+      var(--leading-trim-start, var(--default-leading-trim-start)) -
+        var(--line-height, calc(1em * var(--default-line-height))) / 2
+    );
+  }
+  .md\:mui-r-lt-end::after,
+  .md\:mui-r-lt-both::after {
+    margin-top: calc(
+      var(--leading-trim-end, var(--default-leading-trim-end)) -
+        var(--line-height, calc(1em * var(--default-line-height))) / 2
+    );
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-lt-normal::before,
+  .lg\:mui-r-lt-end::before,
+  .lg\:mui-r-lt-normal::after,
+  .lg\:mui-r-lt-start::after {
+    content: none;
+  }
+  .lg\:mui-r-lt-start::before,
+  .lg\:mui-r-lt-both::before,
+  .lg\:mui-r-lt-end::after,
+  .lg\:mui-r-lt-both::after {
+    content: '';
+    display: table;
+  }
+  .lg\:mui-r-lt-start::before,
+  .lg\:mui-r-lt-both::before {
+    margin-bottom: calc(
+      var(--leading-trim-start, var(--default-leading-trim-start)) -
+        var(--line-height, calc(1em * var(--default-line-height))) / 2
+    );
+  }
+  .lg\:mui-r-lt-end::after,
+  .lg\:mui-r-lt-both::after {
+    margin-top: calc(
+      var(--leading-trim-end, var(--default-leading-trim-end)) -
+        var(--line-height, calc(1em * var(--default-line-height))) / 2
+    );
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-lt-normal::before,
+  .xl\:mui-r-lt-end::before,
+  .xl\:mui-r-lt-normal::after,
+  .xl\:mui-r-lt-start::after {
+    content: none;
+  }
+  .xl\:mui-r-lt-start::before,
+  .xl\:mui-r-lt-both::before,
+  .xl\:mui-r-lt-end::after,
+  .xl\:mui-r-lt-both::after {
+    content: '';
+    display: table;
+  }
+  .xl\:mui-r-lt-start::before,
+  .xl\:mui-r-lt-both::before {
+    margin-bottom: calc(
+      var(--leading-trim-start, var(--default-leading-trim-start)) -
+        var(--line-height, calc(1em * var(--default-line-height))) / 2
+    );
+  }
+  .xl\:mui-r-lt-end::after,
+  .xl\:mui-r-lt-both::after {
+    margin-top: calc(
+      var(--leading-trim-end, var(--default-leading-trim-end)) -
+        var(--line-height, calc(1em * var(--default-line-height))) / 2
+    );
+  }
+}

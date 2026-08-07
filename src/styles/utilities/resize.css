@@ -1,0 +1,89 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade resize. 
+  Controla a permissão e a direção de redimensionamento de um elemento pelo usuário 
+  (none, vertical, horizontal e both), agrupadas em blocos @media por breakpoint 
+  para adequação responsiva conforme o breakpoint.
+*/
+
+.mui-r-resize-none {
+  resize: none;
+}
+.mui-r-resize-vertical {
+  resize: vertical;
+}
+.mui-r-resize-horizontal {
+  resize: horizontal;
+}
+.mui-r-resize-both {
+  resize: both;
+}
+@media (--xs) {
+  .xs\:mui-r-resize-none {
+    resize: none;
+  }
+  .xs\:mui-r-resize-vertical {
+    resize: vertical;
+  }
+  .xs\:mui-r-resize-horizontal {
+    resize: horizontal;
+  }
+  .xs\:mui-r-resize-both {
+    resize: both;
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-resize-none {
+    resize: none;
+  }
+  .sm\:mui-r-resize-vertical {
+    resize: vertical;
+  }
+  .sm\:mui-r-resize-horizontal {
+    resize: horizontal;
+  }
+  .sm\:mui-r-resize-both {
+    resize: both;
+  }
+}
+@media (--md) {
+  .md\:mui-r-resize-none {
+    resize: none;
+  }
+  .md\:mui-r-resize-vertical {
+    resize: vertical;
+  }
+  .md\:mui-r-resize-horizontal {
+    resize: horizontal;
+  }
+  .md\:mui-r-resize-both {
+    resize: both;
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-resize-none {
+    resize: none;
+  }
+  .lg\:mui-r-resize-vertical {
+    resize: vertical;
+  }
+  .lg\:mui-r-resize-horizontal {
+    resize: horizontal;
+  }
+  .lg\:mui-r-resize-both {
+    resize: both;
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-resize-none {
+    resize: none;
+  }
+  .xl\:mui-r-resize-vertical {
+    resize: vertical;
+  }
+  .xl\:mui-r-resize-horizontal {
+    resize: horizontal;
+  }
+  .xl\:mui-r-resize-both {
+    resize: both;
+  }
+}

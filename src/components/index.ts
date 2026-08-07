@@ -1,2 +1,3 @@
 // src/components/index.ts
-export {};
+export * from './Theme/index';
+export * from './Button/index';

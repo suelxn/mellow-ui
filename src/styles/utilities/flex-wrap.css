@@ -1,0 +1,71 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade flex-wrap. 
+  Controla se os itens em um contêiner Flexbox devem quebrar em múltiplas linhas 
+  (nowrap, wrap e wrap-reverse) quando faltar espaço, agrupados em
+  blocos @media por breakpoint para adaptação conforme o tamanho da tela.
+*/
+
+.mui-r-fw-nowrap {
+  flex-wrap: nowrap;
+}
+.mui-r-fw-wrap {
+  flex-wrap: wrap;
+}
+.mui-r-fw-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+@media (--xs) {
+  .xs\:mui-r-fw-nowrap {
+    flex-wrap: nowrap;
+  }
+  .xs\:mui-r-fw-wrap {
+    flex-wrap: wrap;
+  }
+  .xs\:mui-r-fw-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-fw-nowrap {
+    flex-wrap: nowrap;
+  }
+  .sm\:mui-r-fw-wrap {
+    flex-wrap: wrap;
+  }
+  .sm\:mui-r-fw-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+}
+@media (--md) {
+  .md\:mui-r-fw-nowrap {
+    flex-wrap: nowrap;
+  }
+  .md\:mui-r-fw-wrap {
+    flex-wrap: wrap;
+  }
+  .md\:mui-r-fw-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-fw-nowrap {
+    flex-wrap: nowrap;
+  }
+  .lg\:mui-r-fw-wrap {
+    flex-wrap: wrap;
+  }
+  .lg\:mui-r-fw-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-fw-nowrap {
+    flex-wrap: nowrap;
+  }
+  .xl\:mui-r-fw-wrap {
+    flex-wrap: wrap;
+  }
+  .xl\:mui-r-fw-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+}

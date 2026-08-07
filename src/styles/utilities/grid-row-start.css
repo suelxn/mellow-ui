@@ -1,0 +1,209 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade grid-row-start. 
+  Controla a linha horizontal inicial onde um item começa no CSS Grid, 
+  disponibilizando uma escala fixa de 1 a 9 via blocos @media por breakpoint 
+  e suporte a valores customizados usando a variável --grid-row-start 
+  com media queries (@media).
+*/
+
+.mui-r-grs-1 {
+  grid-row-start: 1;
+}
+.mui-r-grs-2 {
+  grid-row-start: 2;
+}
+.mui-r-grs-3 {
+  grid-row-start: 3;
+}
+.mui-r-grs-4 {
+  grid-row-start: 4;
+}
+.mui-r-grs-5 {
+  grid-row-start: 5;
+}
+.mui-r-grs-6 {
+  grid-row-start: 6;
+}
+.mui-r-grs-7 {
+  grid-row-start: 7;
+}
+.mui-r-grs-8 {
+  grid-row-start: 8;
+}
+.mui-r-grs-9 {
+  grid-row-start: 9;
+}
+
+.mui-r-grs {
+  grid-row-start: var(--grid-row-start);
+}
+@media (--xs) {
+  .xs\:mui-r-grs {
+    grid-row-start: var(--grid-row-start-xs);
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-grs {
+    grid-row-start: var(--grid-row-start-sm);
+  }
+}
+@media (--md) {
+  .md\:mui-r-grs {
+    grid-row-start: var(--grid-row-start-md);
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-grs {
+    grid-row-start: var(--grid-row-start-lg);
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-grs {
+    grid-row-start: var(--grid-row-start-xl);
+  }
+}
+@media (--xs) {
+  .xs\:mui-r-grs-1 {
+    grid-row-start: 1;
+  }
+  .xs\:mui-r-grs-2 {
+    grid-row-start: 2;
+  }
+  .xs\:mui-r-grs-3 {
+    grid-row-start: 3;
+  }
+  .xs\:mui-r-grs-4 {
+    grid-row-start: 4;
+  }
+  .xs\:mui-r-grs-5 {
+    grid-row-start: 5;
+  }
+  .xs\:mui-r-grs-6 {
+    grid-row-start: 6;
+  }
+  .xs\:mui-r-grs-7 {
+    grid-row-start: 7;
+  }
+  .xs\:mui-r-grs-8 {
+    grid-row-start: 8;
+  }
+  .xs\:mui-r-grs-9 {
+    grid-row-start: 9;
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-grs-1 {
+    grid-row-start: 1;
+  }
+  .sm\:mui-r-grs-2 {
+    grid-row-start: 2;
+  }
+  .sm\:mui-r-grs-3 {
+    grid-row-start: 3;
+  }
+  .sm\:mui-r-grs-4 {
+    grid-row-start: 4;
+  }
+  .sm\:mui-r-grs-5 {
+    grid-row-start: 5;
+  }
+  .sm\:mui-r-grs-6 {
+    grid-row-start: 6;
+  }
+  .sm\:mui-r-grs-7 {
+    grid-row-start: 7;
+  }
+  .sm\:mui-r-grs-8 {
+    grid-row-start: 8;
+  }
+  .sm\:mui-r-grs-9 {
+    grid-row-start: 9;
+  }
+}
+@media (--md) {
+  .md\:mui-r-grs-1 {
+    grid-row-start: 1;
+  }
+  .md\:mui-r-grs-2 {
+    grid-row-start: 2;
+  }
+  .md\:mui-r-grs-3 {
+    grid-row-start: 3;
+  }
+  .md\:mui-r-grs-4 {
+    grid-row-start: 4;
+  }
+  .md\:mui-r-grs-5 {
+    grid-row-start: 5;
+  }
+  .md\:mui-r-grs-6 {
+    grid-row-start: 6;
+  }
+  .md\:mui-r-grs-7 {
+    grid-row-start: 7;
+  }
+  .md\:mui-r-grs-8 {
+    grid-row-start: 8;
+  }
+  .md\:mui-r-grs-9 {
+    grid-row-start: 9;
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-grs-1 {
+    grid-row-start: 1;
+  }
+  .lg\:mui-r-grs-2 {
+    grid-row-start: 2;
+  }
+  .lg\:mui-r-grs-3 {
+    grid-row-start: 3;
+  }
+  .lg\:mui-r-grs-4 {
+    grid-row-start: 4;
+  }
+  .lg\:mui-r-grs-5 {
+    grid-row-start: 5;
+  }
+  .lg\:mui-r-grs-6 {
+    grid-row-start: 6;
+  }
+  .lg\:mui-r-grs-7 {
+    grid-row-start: 7;
+  }
+  .lg\:mui-r-grs-8 {
+    grid-row-start: 8;
+  }
+  .lg\:mui-r-grs-9 {
+    grid-row-start: 9;
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-grs-1 {
+    grid-row-start: 1;
+  }
+  .xl\:mui-r-grs-2 {
+    grid-row-start: 2;
+  }
+  .xl\:mui-r-grs-3 {
+    grid-row-start: 3;
+  }
+  .xl\:mui-r-grs-4 {
+    grid-row-start: 4;
+  }
+  .xl\:mui-r-grs-5 {
+    grid-row-start: 5;
+  }
+  .xl\:mui-r-grs-6 {
+    grid-row-start: 6;
+  }
+  .xl\:mui-r-grs-7 {
+    grid-row-start: 7;
+  }
+  .xl\:mui-r-grs-8 {
+    grid-row-start: 8;
+  }
+  .xl\:mui-r-grs-9 {
+    grid-row-start: 9;
+  }
+}

@@ -1,0 +1,179 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade font-weight. 
+  Controla o peso e a espessura da tipografia (de thin a black), 
+  utilizando os tokens do sistema de design (var(--font-weight-...)) 
+  agrupados em blocos @media por breakpoint para adequação responsiva.
+*/
+
+.mui-r-weight-thin {
+  font-weight: var(--font-weight-thin);
+}
+.mui-r-weight-extralight {
+  font-weight: var(--font-weight-extralight);
+}
+.mui-r-weight-light {
+  font-weight: var(--font-weight-light);
+}
+.mui-r-weight-regular {
+  font-weight: var(--font-weight-regular);
+}
+.mui-r-weight-medium {
+  font-weight: var(--font-weight-medium);
+}
+.mui-r-weight-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+.mui-r-weight-bold {
+  font-weight: var(--font-weight-bold);
+}
+.mui-r-weight-extrabold {
+  font-weight: var(--font-weight-extrabold);
+}
+.mui-r-weight-black {
+  font-weight: var(--font-weight-black);
+}
+@media (--xs) {
+  .xs\:mui-r-weight-thin {
+    font-weight: var(--font-weight-thin);
+  }
+  .xs\:mui-r-weight-extralight {
+    font-weight: var(--font-weight-extralight);
+  }
+  .xs\:mui-r-weight-light {
+    font-weight: var(--font-weight-light);
+  }
+  .xs\:mui-r-weight-regular {
+    font-weight: var(--font-weight-regular);
+  }
+  .xs\:mui-r-weight-medium {
+    font-weight: var(--font-weight-medium);
+  }
+  .xs\:mui-r-weight-semibold {
+    font-weight: var(--font-weight-semibold);
+  }
+  .xs\:mui-r-weight-bold {
+    font-weight: var(--font-weight-bold);
+  }
+  .xs\:mui-r-weight-extrabold {
+    font-weight: var(--font-weight-extrabold);
+  }
+  .xs\:mui-r-weight-black {
+    font-weight: var(--font-weight-black);
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-weight-thin {
+    font-weight: var(--font-weight-thin);
+  }
+  .sm\:mui-r-weight-extralight {
+    font-weight: var(--font-weight-extralight);
+  }
+  .sm\:mui-r-weight-light {
+    font-weight: var(--font-weight-light);
+  }
+  .sm\:mui-r-weight-regular {
+    font-weight: var(--font-weight-regular);
+  }
+  .sm\:mui-r-weight-medium {
+    font-weight: var(--font-weight-medium);
+  }
+  .sm\:mui-r-weight-semibold {
+    font-weight: var(--font-weight-semibold);
+  }
+  .sm\:mui-r-weight-bold {
+    font-weight: var(--font-weight-bold);
+  }
+  .sm\:mui-r-weight-extrabold {
+    font-weight: var(--font-weight-extrabold);
+  }
+  .sm\:mui-r-weight-black {
+    font-weight: var(--font-weight-black);
+  }
+}
+@media (--md) {
+  .md\:mui-r-weight-thin {
+    font-weight: var(--font-weight-thin);
+  }
+  .md\:mui-r-weight-extralight {
+    font-weight: var(--font-weight-extralight);
+  }
+  .md\:mui-r-weight-light {
+    font-weight: var(--font-weight-light);
+  }
+  .md\:mui-r-weight-regular {
+    font-weight: var(--font-weight-regular);
+  }
+  .md\:mui-r-weight-medium {
+    font-weight: var(--font-weight-medium);
+  }
+  .md\:mui-r-weight-semibold {
+    font-weight: var(--font-weight-semibold);
+  }
+  .md\:mui-r-weight-bold {
+    font-weight: var(--font-weight-bold);
+  }
+  .md\:mui-r-weight-extrabold {
+    font-weight: var(--font-weight-extrabold);
+  }
+  .md\:mui-r-weight-black {
+    font-weight: var(--font-weight-black);
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-weight-thin {
+    font-weight: var(--font-weight-thin);
+  }
+  .lg\:mui-r-weight-extralight {
+    font-weight: var(--font-weight-extralight);
+  }
+  .lg\:mui-r-weight-light {
+    font-weight: var(--font-weight-light);
+  }
+  .lg\:mui-r-weight-regular {
+    font-weight: var(--font-weight-regular);
+  }
+  .lg\:mui-r-weight-medium {
+    font-weight: var(--font-weight-medium);
+  }
+  .lg\:mui-r-weight-semibold {
+    font-weight: var(--font-weight-semibold);
+  }
+  .lg\:mui-r-weight-bold {
+    font-weight: var(--font-weight-bold);
+  }
+  .lg\:mui-r-weight-extrabold {
+    font-weight: var(--font-weight-extrabold);
+  }
+  .lg\:mui-r-weight-black {
+    font-weight: var(--font-weight-black);
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-weight-thin {
+    font-weight: var(--font-weight-thin);
+  }
+  .xl\:mui-r-weight-extralight {
+    font-weight: var(--font-weight-extralight);
+  }
+  .xl\:mui-r-weight-light {
+    font-weight: var(--font-weight-light);
+  }
+  .xl\:mui-r-weight-regular {
+    font-weight: var(--font-weight-regular);
+  }
+  .xl\:mui-r-weight-medium {
+    font-weight: var(--font-weight-medium);
+  }
+  .xl\:mui-r-weight-semibold {
+    font-weight: var(--font-weight-semibold);
+  }
+  .xl\:mui-r-weight-bold {
+    font-weight: var(--font-weight-bold);
+  }
+  .xl\:mui-r-weight-extrabold {
+    font-weight: var(--font-weight-extrabold);
+  }
+  .xl\:mui-r-weight-black {
+    font-weight: var(--font-weight-black);
+  }
+}

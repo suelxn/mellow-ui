@@ -1,0 +1,107 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade align-self. 
+  Controla o alinhamento individual de um item ao longo do eixo transversal no Flexbox ou Grid, 
+  sobrescrevendo o alinhamento geral do contêiner pai (start, center, end, baseline e stretch), 
+  agrupados em blocos @media por breakpoint para adequação responsiva.
+*/
+
+.mui-r-as-start {
+  align-self: start;
+}
+.mui-r-as-center {
+  align-self: center;
+}
+.mui-r-as-end {
+  align-self: end;
+}
+.mui-r-as-baseline {
+  align-self: baseline;
+}
+.mui-r-as-stretch {
+  align-self: stretch;
+}
+@media (--xs) {
+  .xs\:mui-r-as-start {
+    align-self: start;
+  }
+  .xs\:mui-r-as-center {
+    align-self: center;
+  }
+  .xs\:mui-r-as-end {
+    align-self: end;
+  }
+  .xs\:mui-r-as-baseline {
+    align-self: baseline;
+  }
+  .xs\:mui-r-as-stretch {
+    align-self: stretch;
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-as-start {
+    align-self: start;
+  }
+  .sm\:mui-r-as-center {
+    align-self: center;
+  }
+  .sm\:mui-r-as-end {
+    align-self: end;
+  }
+  .sm\:mui-r-as-baseline {
+    align-self: baseline;
+  }
+  .sm\:mui-r-as-stretch {
+    align-self: stretch;
+  }
+}
+@media (--md) {
+  .md\:mui-r-as-start {
+    align-self: start;
+  }
+  .md\:mui-r-as-center {
+    align-self: center;
+  }
+  .md\:mui-r-as-end {
+    align-self: end;
+  }
+  .md\:mui-r-as-baseline {
+    align-self: baseline;
+  }
+  .md\:mui-r-as-stretch {
+    align-self: stretch;
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-as-start {
+    align-self: start;
+  }
+  .lg\:mui-r-as-center {
+    align-self: center;
+  }
+  .lg\:mui-r-as-end {
+    align-self: end;
+  }
+  .lg\:mui-r-as-baseline {
+    align-self: baseline;
+  }
+  .lg\:mui-r-as-stretch {
+    align-self: stretch;
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-as-start {
+    align-self: start;
+  }
+  .xl\:mui-r-as-center {
+    align-self: center;
+  }
+  .xl\:mui-r-as-end {
+    align-self: end;
+  }
+  .xl\:mui-r-as-baseline {
+    align-self: baseline;
+  }
+  .xl\:mui-r-as-stretch {
+    align-self: stretch;
+  }
+}

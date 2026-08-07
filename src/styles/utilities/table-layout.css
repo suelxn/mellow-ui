@@ -1,0 +1,52 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade table-layout. 
+  Controla o algoritmo de layout e cálculo de largura das colunas e células de uma tabela 
+  (auto e fixed), agrupados em blocos @media por breakpoint para adequação responsiva do layout.
+*/
+
+.mui-r-tl-auto {
+  table-layout: auto;
+}
+.mui-r-tl-fixed {
+  table-layout: fixed;
+}
+@media (--xs) {
+  .xs\:mui-r-tl-auto {
+    table-layout: auto;
+  }
+  .xs\:mui-r-tl-fixed {
+    table-layout: fixed;
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-tl-auto {
+    table-layout: auto;
+  }
+  .sm\:mui-r-tl-fixed {
+    table-layout: fixed;
+  }
+}
+@media (--md) {
+  .md\:mui-r-tl-auto {
+    table-layout: auto;
+  }
+  .md\:mui-r-tl-fixed {
+    table-layout: fixed;
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-tl-auto {
+    table-layout: auto;
+  }
+  .lg\:mui-r-tl-fixed {
+    table-layout: fixed;
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-tl-auto {
+    table-layout: auto;
+  }
+  .xl\:mui-r-tl-fixed {
+    table-layout: fixed;
+  }
+}

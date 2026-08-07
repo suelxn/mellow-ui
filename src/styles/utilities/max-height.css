@@ -1,0 +1,35 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade max-height. 
+  Controla o limite máximo da dimensão de altura de um elemento na página, 
+  utilizando a variável --max-height integrada a consultas 
+  de mídia (@media) para adequação e ajuste responsivo por breakpoint.
+*/
+
+.mui-r-max-h {
+  max-height: var(--max-height);
+}
+@media (--xs) {
+  .xs\:mui-r-max-h {
+    max-height: var(--max-height-xs);
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-max-h {
+    max-height: var(--max-height-sm);
+  }
+}
+@media (--md) {
+  .md\:mui-r-max-h {
+    max-height: var(--max-height-md);
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-max-h {
+    max-height: var(--max-height-lg);
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-max-h {
+    max-height: var(--max-height-xl);
+  }
+}

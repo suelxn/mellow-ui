@@ -1,0 +1,162 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade align-content. 
+  Controla o alinhamento e a distribuição de espaço entre as linhas de conteúdo 
+  ao longo do eixo transversal em contêineres Flexbox multilinha ou Grid 
+  (start, center, end, baseline, stretch, space-between, space-around e space-evenly), 
+  agrupados em blocos @media por breakpoint para adequação responsiva do layout.
+*/
+
+.mui-r-ac-start {
+  align-content: start;
+}
+.mui-r-ac-center {
+  align-content: center;
+}
+.mui-r-ac-end {
+  align-content: end;
+}
+.mui-r-ac-baseline {
+  align-content: baseline;
+}
+.mui-r-ac-stretch {
+  align-content: stretch;
+}
+.mui-r-ac-space-between {
+  align-content: space-between;
+}
+.mui-r-ac-space-around {
+  align-content: space-around;
+}
+.mui-r-ac-space-evenly {
+  align-content: space-evenly;
+}
+@media (--xs) {
+  .xs\:mui-r-ac-start {
+    align-content: start;
+  }
+  .xs\:mui-r-ac-center {
+    align-content: center;
+  }
+  .xs\:mui-r-ac-end {
+    align-content: end;
+  }
+  .xs\:mui-r-ac-baseline {
+    align-content: baseline;
+  }
+  .xs\:mui-r-ac-stretch {
+    align-content: stretch;
+  }
+  .xs\:mui-r-ac-space-between {
+    align-content: space-between;
+  }
+  .xs\:mui-r-ac-space-around {
+    align-content: space-around;
+  }
+  .xs\:mui-r-ac-space-evenly {
+    align-content: space-evenly;
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-ac-start {
+    align-content: start;
+  }
+  .sm\:mui-r-ac-center {
+    align-content: center;
+  }
+  .sm\:mui-r-ac-end {
+    align-content: end;
+  }
+  .sm\:mui-r-ac-baseline {
+    align-content: baseline;
+  }
+  .sm\:mui-r-ac-stretch {
+    align-content: stretch;
+  }
+  .sm\:mui-r-ac-space-between {
+    align-content: space-between;
+  }
+  .sm\:mui-r-ac-space-around {
+    align-content: space-around;
+  }
+  .sm\:mui-r-ac-space-evenly {
+    align-content: space-evenly;
+  }
+}
+@media (--md) {
+  .md\:mui-r-ac-start {
+    align-content: start;
+  }
+  .md\:mui-r-ac-center {
+    align-content: center;
+  }
+  .md\:mui-r-ac-end {
+    align-content: end;
+  }
+  .md\:mui-r-ac-baseline {
+    align-content: baseline;
+  }
+  .md\:mui-r-ac-stretch {
+    align-content: stretch;
+  }
+  .md\:mui-r-ac-space-between {
+    align-content: space-between;
+  }
+  .md\:mui-r-ac-space-around {
+    align-content: space-around;
+  }
+  .md\:mui-r-ac-space-evenly {
+    align-content: space-evenly;
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-ac-start {
+    align-content: start;
+  }
+  .lg\:mui-r-ac-center {
+    align-content: center;
+  }
+  .lg\:mui-r-ac-end {
+    align-content: end;
+  }
+  .lg\:mui-r-ac-baseline {
+    align-content: baseline;
+  }
+  .lg\:mui-r-ac-stretch {
+    align-content: stretch;
+  }
+  .lg\:mui-r-ac-space-between {
+    align-content: space-between;
+  }
+  .lg\:mui-r-ac-space-around {
+    align-content: space-around;
+  }
+  .lg\:mui-r-ac-space-evenly {
+    align-content: space-evenly;
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-ac-start {
+    align-content: start;
+  }
+  .xl\:mui-r-ac-center {
+    align-content: center;
+  }
+  .xl\:mui-r-ac-end {
+    align-content: end;
+  }
+  .xl\:mui-r-ac-baseline {
+    align-content: baseline;
+  }
+  .xl\:mui-r-ac-stretch {
+    align-content: stretch;
+  }
+  .xl\:mui-r-ac-space-between {
+    align-content: space-between;
+  }
+  .xl\:mui-r-ac-space-around {
+    align-content: space-around;
+  }
+  .xl\:mui-r-ac-space-evenly {
+    align-content: space-evenly;
+  }
+}

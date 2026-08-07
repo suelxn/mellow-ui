@@ -1,0 +1,89 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade flex-direction. 
+  Controla a direção e o eixo principal de disposição dos itens em um contêiner Flexbox 
+  (row, column, row-reverse e column-reverse), agrupados em blocos @media por breakpoint 
+  para adequação e reordenação responsiva do layout.
+*/
+
+.mui-r-fd-row {
+  flex-direction: row;
+}
+.mui-r-fd-column {
+  flex-direction: column;
+}
+.mui-r-fd-row-reverse {
+  flex-direction: row-reverse;
+}
+.mui-r-fd-column-reverse {
+  flex-direction: column-reverse;
+}
+@media (--xs) {
+  .xs\:mui-r-fd-row {
+    flex-direction: row;
+  }
+  .xs\:mui-r-fd-column {
+    flex-direction: column;
+  }
+  .xs\:mui-r-fd-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .xs\:mui-r-fd-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-fd-row {
+    flex-direction: row;
+  }
+  .sm\:mui-r-fd-column {
+    flex-direction: column;
+  }
+  .sm\:mui-r-fd-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .sm\:mui-r-fd-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+@media (--md) {
+  .md\:mui-r-fd-row {
+    flex-direction: row;
+  }
+  .md\:mui-r-fd-column {
+    flex-direction: column;
+  }
+  .md\:mui-r-fd-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .md\:mui-r-fd-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-fd-row {
+    flex-direction: row;
+  }
+  .lg\:mui-r-fd-column {
+    flex-direction: column;
+  }
+  .lg\:mui-r-fd-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .lg\:mui-r-fd-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-fd-row {
+    flex-direction: row;
+  }
+  .xl\:mui-r-fd-column {
+    flex-direction: column;
+  }
+  .xl\:mui-r-fd-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .xl\:mui-r-fd-column-reverse {
+    flex-direction: column-reverse;
+  }
+}

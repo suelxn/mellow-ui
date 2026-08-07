@@ -1,0 +1,107 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade grid-auto-flow. 
+  Controla o algoritmo de posicionamento automático de itens não mapeados no CSS Grid, 
+  permitindo alternar a direção do fluxo (linhas ou colunas) e o preenchimento de lacunas (dense) 
+  via blocos @media por breakpoint.
+*/
+
+.mui-r-gaf-row {
+  grid-auto-flow: row;
+}
+.mui-r-gaf-column {
+  grid-auto-flow: column;
+}
+.mui-r-gaf-dense {
+  grid-auto-flow: dense;
+}
+.mui-r-gaf-row-dense {
+  grid-auto-flow: row dense;
+}
+.mui-r-gaf-column-dense {
+  grid-auto-flow: column dense;
+}
+@media (--xs) {
+  .xs\:mui-r-gaf-row {
+    grid-auto-flow: row;
+  }
+  .xs\:mui-r-gaf-column {
+    grid-auto-flow: column;
+  }
+  .xs\:mui-r-gaf-dense {
+    grid-auto-flow: dense;
+  }
+  .xs\:mui-r-gaf-row-dense {
+    grid-auto-flow: row dense;
+  }
+  .xs\:mui-r-gaf-column-dense {
+    grid-auto-flow: column dense;
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-gaf-row {
+    grid-auto-flow: row;
+  }
+  .sm\:mui-r-gaf-column {
+    grid-auto-flow: column;
+  }
+  .sm\:mui-r-gaf-dense {
+    grid-auto-flow: dense;
+  }
+  .sm\:mui-r-gaf-row-dense {
+    grid-auto-flow: row dense;
+  }
+  .sm\:mui-r-gaf-column-dense {
+    grid-auto-flow: column dense;
+  }
+}
+@media (--md) {
+  .md\:mui-r-gaf-row {
+    grid-auto-flow: row;
+  }
+  .md\:mui-r-gaf-column {
+    grid-auto-flow: column;
+  }
+  .md\:mui-r-gaf-dense {
+    grid-auto-flow: dense;
+  }
+  .md\:mui-r-gaf-row-dense {
+    grid-auto-flow: row dense;
+  }
+  .md\:mui-r-gaf-column-dense {
+    grid-auto-flow: column dense;
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-gaf-row {
+    grid-auto-flow: row;
+  }
+  .lg\:mui-r-gaf-column {
+    grid-auto-flow: column;
+  }
+  .lg\:mui-r-gaf-dense {
+    grid-auto-flow: dense;
+  }
+  .lg\:mui-r-gaf-row-dense {
+    grid-auto-flow: row dense;
+  }
+  .lg\:mui-r-gaf-column-dense {
+    grid-auto-flow: column dense;
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-gaf-row {
+    grid-auto-flow: row;
+  }
+  .xl\:mui-r-gaf-column {
+    grid-auto-flow: column;
+  }
+  .xl\:mui-r-gaf-dense {
+    grid-auto-flow: dense;
+  }
+  .xl\:mui-r-gaf-row-dense {
+    grid-auto-flow: row dense;
+  }
+  .xl\:mui-r-gaf-column-dense {
+    grid-auto-flow: column dense;
+  }
+}

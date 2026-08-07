@@ -12,6 +12,8 @@
 
 # testing
 /coverage
+.vitest-attachments
+**/__screenshots__
 
 # next.js
 /.next/
@@ -19,6 +21,7 @@
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store

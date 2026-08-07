@@ -1,0 +1,209 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade grid-row-end. 
+  Controla a linha horizontal final onde a exibição de um item termina no CSS Grid, 
+  disponibilizando uma escala fixa de 1 a 9 via blocos @media por breakpoint 
+  e suporte a valores customizados usando a variável --grid-row-end 
+  com media queries (@media).
+*/
+
+.mui-r-gre-1 {
+  grid-row-end: 1;
+}
+.mui-r-gre-2 {
+  grid-row-end: 2;
+}
+.mui-r-gre-3 {
+  grid-row-end: 3;
+}
+.mui-r-gre-4 {
+  grid-row-end: 4;
+}
+.mui-r-gre-5 {
+  grid-row-end: 5;
+}
+.mui-r-gre-6 {
+  grid-row-end: 6;
+}
+.mui-r-gre-7 {
+  grid-row-end: 7;
+}
+.mui-r-gre-8 {
+  grid-row-end: 8;
+}
+.mui-r-gre-9 {
+  grid-row-end: 9;
+}
+
+.mui-r-gre {
+  grid-row-end: var(--grid-row-end);
+}
+@media (--xs) {
+  .xs\:mui-r-gre {
+    grid-row-end: var(--grid-row-end-xs);
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-gre {
+    grid-row-end: var(--grid-row-end-sm);
+  }
+}
+@media (--md) {
+  .md\:mui-r-gre {
+    grid-row-end: var(--grid-row-end-md);
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-gre {
+    grid-row-end: var(--grid-row-end-lg);
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-gre {
+    grid-row-end: var(--grid-row-end-xl);
+  }
+}
+@media (--xs) {
+  .xs\:mui-r-gre-1 {
+    grid-row-end: 1;
+  }
+  .xs\:mui-r-gre-2 {
+    grid-row-end: 2;
+  }
+  .xs\:mui-r-gre-3 {
+    grid-row-end: 3;
+  }
+  .xs\:mui-r-gre-4 {
+    grid-row-end: 4;
+  }
+  .xs\:mui-r-gre-5 {
+    grid-row-end: 5;
+  }
+  .xs\:mui-r-gre-6 {
+    grid-row-end: 6;
+  }
+  .xs\:mui-r-gre-7 {
+    grid-row-end: 7;
+  }
+  .xs\:mui-r-gre-8 {
+    grid-row-end: 8;
+  }
+  .xs\:mui-r-gre-9 {
+    grid-row-end: 9;
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-gre-1 {
+    grid-row-end: 1;
+  }
+  .sm\:mui-r-gre-2 {
+    grid-row-end: 2;
+  }
+  .sm\:mui-r-gre-3 {
+    grid-row-end: 3;
+  }
+  .sm\:mui-r-gre-4 {
+    grid-row-end: 4;
+  }
+  .sm\:mui-r-gre-5 {
+    grid-row-end: 5;
+  }
+  .sm\:mui-r-gre-6 {
+    grid-row-end: 6;
+  }
+  .sm\:mui-r-gre-7 {
+    grid-row-end: 7;
+  }
+  .sm\:mui-r-gre-8 {
+    grid-row-end: 8;
+  }
+  .sm\:mui-r-gre-9 {
+    grid-row-end: 9;
+  }
+}
+@media (--md) {
+  .md\:mui-r-gre-1 {
+    grid-row-end: 1;
+  }
+  .md\:mui-r-gre-2 {
+    grid-row-end: 2;
+  }
+  .md\:mui-r-gre-3 {
+    grid-row-end: 3;
+  }
+  .md\:mui-r-gre-4 {
+    grid-row-end: 4;
+  }
+  .md\:mui-r-gre-5 {
+    grid-row-end: 5;
+  }
+  .md\:mui-r-gre-6 {
+    grid-row-end: 6;
+  }
+  .md\:mui-r-gre-7 {
+    grid-row-end: 7;
+  }
+  .md\:mui-r-gre-8 {
+    grid-row-end: 8;
+  }
+  .md\:mui-r-gre-9 {
+    grid-row-end: 9;
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-gre-1 {
+    grid-row-end: 1;
+  }
+  .lg\:mui-r-gre-2 {
+    grid-row-end: 2;
+  }
+  .lg\:mui-r-gre-3 {
+    grid-row-end: 3;
+  }
+  .lg\:mui-r-gre-4 {
+    grid-row-end: 4;
+  }
+  .lg\:mui-r-gre-5 {
+    grid-row-end: 5;
+  }
+  .lg\:mui-r-gre-6 {
+    grid-row-end: 6;
+  }
+  .lg\:mui-r-gre-7 {
+    grid-row-end: 7;
+  }
+  .lg\:mui-r-gre-8 {
+    grid-row-end: 8;
+  }
+  .lg\:mui-r-gre-9 {
+    grid-row-end: 9;
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-gre-1 {
+    grid-row-end: 1;
+  }
+  .xl\:mui-r-gre-2 {
+    grid-row-end: 2;
+  }
+  .xl\:mui-r-gre-3 {
+    grid-row-end: 3;
+  }
+  .xl\:mui-r-gre-4 {
+    grid-row-end: 4;
+  }
+  .xl\:mui-r-gre-5 {
+    grid-row-end: 5;
+  }
+  .xl\:mui-r-gre-6 {
+    grid-row-end: 6;
+  }
+  .xl\:mui-r-gre-7 {
+    grid-row-end: 7;
+  }
+  .xl\:mui-r-gre-8 {
+    grid-row-end: 8;
+  }
+  .xl\:mui-r-gre-9 {
+    grid-row-end: 9;
+  }
+}

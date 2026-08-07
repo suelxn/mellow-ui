@@ -1,0 +1,70 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade text-align. 
+  Controla o alinhamento horizontal do texto e elementos inline (left, center e right), 
+  agrupados em blocos @media por breakpoint para adequação tipográfica e responsiva do layout.
+*/
+
+.mui-r-ta-left {
+  text-align: left;
+}
+.mui-r-ta-center {
+  text-align: center;
+}
+.mui-r-ta-right {
+  text-align: right;
+}
+@media (--xs) {
+  .xs\:mui-r-ta-left {
+    text-align: left;
+  }
+  .xs\:mui-r-ta-center {
+    text-align: center;
+  }
+  .xs\:mui-r-ta-right {
+    text-align: right;
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-ta-left {
+    text-align: left;
+  }
+  .sm\:mui-r-ta-center {
+    text-align: center;
+  }
+  .sm\:mui-r-ta-right {
+    text-align: right;
+  }
+}
+@media (--md) {
+  .md\:mui-r-ta-left {
+    text-align: left;
+  }
+  .md\:mui-r-ta-center {
+    text-align: center;
+  }
+  .md\:mui-r-ta-right {
+    text-align: right;
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-ta-left {
+    text-align: left;
+  }
+  .lg\:mui-r-ta-center {
+    text-align: center;
+  }
+  .lg\:mui-r-ta-right {
+    text-align: right;
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-ta-left {
+    text-align: left;
+  }
+  .xl\:mui-r-ta-center {
+    text-align: center;
+  }
+  .xl\:mui-r-ta-right {
+    text-align: right;
+  }
+}

@@ -1,0 +1,107 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade justify-self. 
+  Controla o alinhamento individual de um item ao longo do eixo inline em contêineres CSS Grid, 
+  sobrescrevendo o alinhamento geral do contêiner pai (start, center, end, baseline e stretch), 
+  agrupados em blocos @media por breakpoint para adequação responsiva.
+*/
+
+.mui-r-js-start {
+  justify-self: start;
+}
+.mui-r-js-center {
+  justify-self: center;
+}
+.mui-r-js-end {
+  justify-self: end;
+}
+.mui-r-js-baseline {
+  justify-self: baseline;
+}
+.mui-r-js-stretch {
+  justify-self: stretch;
+}
+@media (--xs) {
+  .xs\:mui-r-js-start {
+    justify-self: start;
+  }
+  .xs\:mui-r-js-center {
+    justify-self: center;
+  }
+  .xs\:mui-r-js-end {
+    justify-self: end;
+  }
+  .xs\:mui-r-js-baseline {
+    justify-self: baseline;
+  }
+  .xs\:mui-r-js-stretch {
+    justify-self: stretch;
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-js-start {
+    justify-self: start;
+  }
+  .sm\:mui-r-js-center {
+    justify-self: center;
+  }
+  .sm\:mui-r-js-end {
+    justify-self: end;
+  }
+  .sm\:mui-r-js-baseline {
+    justify-self: baseline;
+  }
+  .sm\:mui-r-js-stretch {
+    justify-self: stretch;
+  }
+}
+@media (--md) {
+  .md\:mui-r-js-start {
+    justify-self: start;
+  }
+  .md\:mui-r-js-center {
+    justify-self: center;
+  }
+  .md\:mui-r-js-end {
+    justify-self: end;
+  }
+  .md\:mui-r-js-baseline {
+    justify-self: baseline;
+  }
+  .md\:mui-r-js-stretch {
+    justify-self: stretch;
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-js-start {
+    justify-self: start;
+  }
+  .lg\:mui-r-js-center {
+    justify-self: center;
+  }
+  .lg\:mui-r-js-end {
+    justify-self: end;
+  }
+  .lg\:mui-r-js-baseline {
+    justify-self: baseline;
+  }
+  .lg\:mui-r-js-stretch {
+    justify-self: stretch;
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-js-start {
+    justify-self: start;
+  }
+  .xl\:mui-r-js-center {
+    justify-self: center;
+  }
+  .xl\:mui-r-js-end {
+    justify-self: end;
+  }
+  .xl\:mui-r-js-baseline {
+    justify-self: baseline;
+  }
+  .xl\:mui-r-js-stretch {
+    justify-self: stretch;
+  }
+}

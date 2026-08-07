@@ -1,0 +1,35 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade height. 
+  Controla a dimensão de altura de um elemento na página, 
+  utilizando a variável --height integrada a consultas 
+  de mídia (@media) para adequação e ajuste responsivo por breakpoint.
+*/
+
+.mui-r-h {
+  height: var(--height);
+}
+@media (--xs) {
+  .xs\:mui-r-h {
+    height: var(--height-xs);
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-h {
+    height: var(--height-sm);
+  }
+}
+@media (--md) {
+  .md\:mui-r-h {
+    height: var(--height-md);
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-h {
+    height: var(--height-lg);
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-h {
+    height: var(--height-xl);
+  }
+}

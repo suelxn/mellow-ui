@@ -15,6 +15,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Saídas de build geradas localmente — nunca devem ser lintadas.
+    "dist/**",
+    "storybook-static/**",
   ]),
   ...storybook.configs["flat/recommended"]
 ]);

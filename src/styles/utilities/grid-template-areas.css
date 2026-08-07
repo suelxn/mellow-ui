@@ -1,0 +1,36 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade grid-template-areas. 
+  Controla a estrutura visual e a disposição de áreas nomeadas do layout 
+  em um contêiner CSS Grid (como cabeçalho, barra lateral e conteúdo), 
+  utilizando a variável --grid-template-areas integrada a consultas 
+  de mídia (@media) para adequação responsiva por breakpoint.
+*/
+
+.mui-r-gta {
+  grid-template-areas: var(--grid-template-areas);
+}
+@media (--xs) {
+  .xs\:mui-r-gta {
+    grid-template-areas: var(--grid-template-areas-xs);
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-gta {
+    grid-template-areas: var(--grid-template-areas-sm);
+  }
+}
+@media (--md) {
+  .md\:mui-r-gta {
+    grid-template-areas: var(--grid-template-areas-md);
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-gta {
+    grid-template-areas: var(--grid-template-areas-lg);
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-gta {
+    grid-template-areas: var(--grid-template-areas-xl);
+  }
+}

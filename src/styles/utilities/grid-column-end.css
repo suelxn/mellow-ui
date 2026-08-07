@@ -1,0 +1,209 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade grid-column-end. 
+  Controla a linha vertical final onde a exibição de um item termina no CSS Grid, 
+  disponibilizando uma escala fixa de 1 a 9 via blocos @media por breakpoint 
+  e suporte a valores customizados usando a variável --grid-column-end 
+  com media queries (@media).
+*/
+
+.mui-r-gce-1 {
+  grid-column-end: 1;
+}
+.mui-r-gce-2 {
+  grid-column-end: 2;
+}
+.mui-r-gce-3 {
+  grid-column-end: 3;
+}
+.mui-r-gce-4 {
+  grid-column-end: 4;
+}
+.mui-r-gce-5 {
+  grid-column-end: 5;
+}
+.mui-r-gce-6 {
+  grid-column-end: 6;
+}
+.mui-r-gce-7 {
+  grid-column-end: 7;
+}
+.mui-r-gce-8 {
+  grid-column-end: 8;
+}
+.mui-r-gce-9 {
+  grid-column-end: 9;
+}
+
+.mui-r-gce {
+  grid-column-end: var(--grid-column-end);
+}
+@media (--xs) {
+  .xs\:mui-r-gce {
+    grid-column-end: var(--grid-column-end-xs);
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-gce {
+    grid-column-end: var(--grid-column-end-sm);
+  }
+}
+@media (--md) {
+  .md\:mui-r-gce {
+    grid-column-end: var(--grid-column-end-md);
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-gce {
+    grid-column-end: var(--grid-column-end-lg);
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-gce {
+    grid-column-end: var(--grid-column-end-xl);
+  }
+}
+@media (--xs) {
+  .xs\:mui-r-gce-1 {
+    grid-column-end: 1;
+  }
+  .xs\:mui-r-gce-2 {
+    grid-column-end: 2;
+  }
+  .xs\:mui-r-gce-3 {
+    grid-column-end: 3;
+  }
+  .xs\:mui-r-gce-4 {
+    grid-column-end: 4;
+  }
+  .xs\:mui-r-gce-5 {
+    grid-column-end: 5;
+  }
+  .xs\:mui-r-gce-6 {
+    grid-column-end: 6;
+  }
+  .xs\:mui-r-gce-7 {
+    grid-column-end: 7;
+  }
+  .xs\:mui-r-gce-8 {
+    grid-column-end: 8;
+  }
+  .xs\:mui-r-gce-9 {
+    grid-column-end: 9;
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-gce-1 {
+    grid-column-end: 1;
+  }
+  .sm\:mui-r-gce-2 {
+    grid-column-end: 2;
+  }
+  .sm\:mui-r-gce-3 {
+    grid-column-end: 3;
+  }
+  .sm\:mui-r-gce-4 {
+    grid-column-end: 4;
+  }
+  .sm\:mui-r-gce-5 {
+    grid-column-end: 5;
+  }
+  .sm\:mui-r-gce-6 {
+    grid-column-end: 6;
+  }
+  .sm\:mui-r-gce-7 {
+    grid-column-end: 7;
+  }
+  .sm\:mui-r-gce-8 {
+    grid-column-end: 8;
+  }
+  .sm\:mui-r-gce-9 {
+    grid-column-end: 9;
+  }
+}
+@media (--md) {
+  .md\:mui-r-gce-1 {
+    grid-column-end: 1;
+  }
+  .md\:mui-r-gce-2 {
+    grid-column-end: 2;
+  }
+  .md\:mui-r-gce-3 {
+    grid-column-end: 3;
+  }
+  .md\:mui-r-gce-4 {
+    grid-column-end: 4;
+  }
+  .md\:mui-r-gce-5 {
+    grid-column-end: 5;
+  }
+  .md\:mui-r-gce-6 {
+    grid-column-end: 6;
+  }
+  .md\:mui-r-gce-7 {
+    grid-column-end: 7;
+  }
+  .md\:mui-r-gce-8 {
+    grid-column-end: 8;
+  }
+  .md\:mui-r-gce-9 {
+    grid-column-end: 9;
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-gce-1 {
+    grid-column-end: 1;
+  }
+  .lg\:mui-r-gce-2 {
+    grid-column-end: 2;
+  }
+  .lg\:mui-r-gce-3 {
+    grid-column-end: 3;
+  }
+  .lg\:mui-r-gce-4 {
+    grid-column-end: 4;
+  }
+  .lg\:mui-r-gce-5 {
+    grid-column-end: 5;
+  }
+  .lg\:mui-r-gce-6 {
+    grid-column-end: 6;
+  }
+  .lg\:mui-r-gce-7 {
+    grid-column-end: 7;
+  }
+  .lg\:mui-r-gce-8 {
+    grid-column-end: 8;
+  }
+  .lg\:mui-r-gce-9 {
+    grid-column-end: 9;
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-gce-1 {
+    grid-column-end: 1;
+  }
+  .xl\:mui-r-gce-2 {
+    grid-column-end: 2;
+  }
+  .xl\:mui-r-gce-3 {
+    grid-column-end: 3;
+  }
+  .xl\:mui-r-gce-4 {
+    grid-column-end: 4;
+  }
+  .xl\:mui-r-gce-5 {
+    grid-column-end: 5;
+  }
+  .xl\:mui-r-gce-6 {
+    grid-column-end: 6;
+  }
+  .xl\:mui-r-gce-7 {
+    grid-column-end: 7;
+  }
+  .xl\:mui-r-gce-8 {
+    grid-column-end: 8;
+  }
+  .xl\:mui-r-gce-9 {
+    grid-column-end: 9;
+  }
+}

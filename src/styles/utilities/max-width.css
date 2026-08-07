@@ -1,0 +1,35 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade max-width. 
+  Controla o limite máximo de largura de um elemento na página, 
+  utilizando a variável --max-width integrada a consultas 
+  de mídia (@media) para adequação e ajuste responsivo por breakpoint.
+*/
+
+.mui-r-max-w {
+  max-width: var(--max-width);
+}
+@media (--xs) {
+  .xs\:mui-r-max-w {
+    max-width: var(--max-width-xs);
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-max-w {
+    max-width: var(--max-width-sm);
+  }
+}
+@media (--md) {
+  .md\:mui-r-max-w {
+    max-width: var(--max-width-md);
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-max-w {
+    max-width: var(--max-width-lg);
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-max-w {
+    max-width: var(--max-width-xl);
+  }
+}

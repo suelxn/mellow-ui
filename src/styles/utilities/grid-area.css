@@ -1,0 +1,41 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade grid-area. 
+  Controla a associação de um item a uma área nomeada do layout 
+  ou define seu posicionamento abreviado em um contêiner CSS Grid, 
+  utilizando a variável --grid-area integrada a consultas 
+  de mídia (@media) para adequação responsiva por breakpoint.
+*/
+
+.mui-r-ga {
+  grid-area: var(--grid-area);
+}
+
+@media (--xs) {
+  .xs\:mui-r-ga {
+    grid-area: var(--grid-area-xs);
+  }
+}
+
+@media (--sm) {
+  .sm\:mui-r-ga {
+    grid-area: var(--grid-area-sm);
+  }
+}
+
+@media (--md) {
+  .md\:mui-r-ga {
+    grid-area: var(--grid-area-md);
+  }
+}
+
+@media (--lg) {
+  .lg\:mui-r-ga {
+    grid-area: var(--grid-area-lg);
+  }
+}
+
+@media (--xl) {
+  .xl\:mui-r-ga {
+    grid-area: var(--grid-area-xl);
+  }
+}

@@ -1,0 +1,89 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade vertical-align. 
+  Controla o alinhamento vertical de elementos inline, inline-block ou células de tabela 
+  (baseline, top, middle e bottom), agrupados em blocos @media por breakpoint 
+  para adequação e ajuste responsivo do layout.
+*/
+
+.mui-r-va-baseline {
+  vertical-align: baseline;
+}
+.mui-r-va-top {
+  vertical-align: top;
+}
+.mui-r-va-middle {
+  vertical-align: middle;
+}
+.mui-r-va-bottom {
+  vertical-align: bottom;
+}
+@media (--xs) {
+  .xs\:mui-r-va-baseline {
+    vertical-align: baseline;
+  }
+  .xs\:mui-r-va-top {
+    vertical-align: top;
+  }
+  .xs\:mui-r-va-middle {
+    vertical-align: middle;
+  }
+  .xs\:mui-r-va-bottom {
+    vertical-align: bottom;
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-va-baseline {
+    vertical-align: baseline;
+  }
+  .sm\:mui-r-va-top {
+    vertical-align: top;
+  }
+  .sm\:mui-r-va-middle {
+    vertical-align: middle;
+  }
+  .sm\:mui-r-va-bottom {
+    vertical-align: bottom;
+  }
+}
+@media (--md) {
+  .md\:mui-r-va-baseline {
+    vertical-align: baseline;
+  }
+  .md\:mui-r-va-top {
+    vertical-align: top;
+  }
+  .md\:mui-r-va-middle {
+    vertical-align: middle;
+  }
+  .md\:mui-r-va-bottom {
+    vertical-align: bottom;
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-va-baseline {
+    vertical-align: baseline;
+  }
+  .lg\:mui-r-va-top {
+    vertical-align: top;
+  }
+  .lg\:mui-r-va-middle {
+    vertical-align: middle;
+  }
+  .lg\:mui-r-va-bottom {
+    vertical-align: bottom;
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-va-baseline {
+    vertical-align: baseline;
+  }
+  .xl\:mui-r-va-top {
+    vertical-align: top;
+  }
+  .xl\:mui-r-va-middle {
+    vertical-align: middle;
+  }
+  .xl\:mui-r-va-bottom {
+    vertical-align: bottom;
+  }
+}

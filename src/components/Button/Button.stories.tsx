@@ -1,52 +1,55 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { Button } from './Button';
+/*
+  Stories de EXEMPLO do Button (ver Button.tsx). Servem para validar a pipeline do
+  Storybook/Vitest. APAGAR junto com o resto da pasta quando o Button de verdade do
+  Design System for construído.
+*/
 
-const meta: Meta<typeof Button> = {
-  title: 'Components/Button',
+import type { Meta, StoryObj } from '@storybook/nextjs-vite';
+
+import { Button } from './Button';
+import { buttonSizes, buttonVariants } from './Button.props';
+import { accentColors } from '../../props/color.prop';
+
+const meta = {
+  title: 'Componentes/Button (exemplo)',
   component: Button,
-  tags: ['autodocs'],
-  argTypes: {
-    variant: {
-      control: 'select',
-      options: ['primary', 'secondary', 'outline', 'ghost', 'danger'],
-    },
-    size: {
-      control: 'radio',
-      options: ['sm', 'md', 'lg'],
-    },
-    isLoading: { control: 'boolean' },
-    fullWidth: { control: 'boolean' },
-    disabled: { control: 'boolean' },
+  args: {
+    children: 'Button',
   },
-};
+  argTypes: {
+    variant: { control: 'select', options: buttonVariants },
+    size: { control: 'select', options: buttonSizes },
+    color: { control: 'select', options: accentColors },
+  },
+} satisfies Meta<typeof Button>;
 
 export default meta;
-type Story = StoryObj<typeof Button>;
 
-export const Primary: Story = {
-  args: {
-    children: 'Button',
-    variant: 'primary',
-  },
+type Story = StoryObj<typeof meta>;
+
+export const Solid: Story = {
+  args: { variant: 'solid' },
 };
 
-export const Secondary: Story = {
-  args: {
-    children: 'Button',
-    variant: 'secondary',
-  },
+export const Soft: Story = {
+  args: { variant: 'soft' },
 };
 
 export const Outline: Story = {
-  args: {
-    children: 'Button',
-    variant: 'outline',
-  },
+  args: { variant: 'outline' },
 };
 
-export const Loading: Story = {
+export const Ghost: Story = {
+  args: { variant: 'ghost' },
+};
+
+export const Disabled: Story = {
+  args: { variant: 'solid', disabled: true },
+};
+
+export const AsChild: Story = {
   args: {
-    children: 'Carregando',
-    isLoading: true,
+    asChild: true,
+    children: <a href="#exemplo">Button como link (asChild)</a>,
   },
 };

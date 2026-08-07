@@ -1,18 +1,13 @@
-import { ButtonHTMLAttributes, ReactNode } from 'react';
-import { VariantProps } from 'class-variance-authority';
-import { buttonVariants } from './Button.styles';
+import type React from 'react';
 
-export type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger';
-export type ButtonSize = 'sm' | 'md' | 'lg';
+import type { GetPropDefTypes } from '../../props/prop-def';
+import type { buttonPropDefs } from './Button.props';
 
-export interface ButtonProps
-  extends ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
-  children?: ReactNode;
-  variant?: ButtonVariant;
-  size?: ButtonSize;
-  isLoading?: boolean;
-  leftIcon?: ReactNode;
-  rightIcon?: ReactNode;
-  fullWidth?: boolean;
-}
+type ButtonOwnProps = GetPropDefTypes<typeof buttonPropDefs>;
+
+type ButtonProps = ButtonOwnProps &
+  Omit<React.ComponentPropsWithoutRef<'button'>, 'color'> & {
+    ref?: React.Ref<HTMLButtonElement>;
+  };
+
+export type { ButtonOwnProps, ButtonProps };

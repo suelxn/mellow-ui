@@ -1,0 +1,82 @@
+/* ==========================================================================
+   PRIMITIVE COLORS
+   ========================================================================== */
+
+/* Blue */
+
+/* Tema Light */
+:root,
+.light,
+.light-theme {
+  --blue-50: #E6E6F9;
+  --blue-100: #C2C3F2;
+  --blue-200: #9294E6;
+  --blue-300: #6062D9;
+  --blue-400: #3235C9;
+  --blue-500: #1215B3; /* Cor principal / Accent */
+  --blue-600: #070A9E;
+  --blue-700: #01018F;
+  --blue-800: #01016E;
+  --blue-900: #000045;
+}
+
+/* Tema Dark */
+.dark,
+.dark-theme {
+  --blue-50: #000045;
+  --blue-100: #01016E;
+  --blue-200: #01018F;
+  --blue-300: #070A9E;
+  --blue-400: #1215B3;
+  --blue-500: #3235C9; /* Tom principal adaptado para contraste em fundo escuro */
+  --blue-600: #6062D9;
+  --blue-700: #9294E6;
+  --blue-800: #C2C3F2;
+  --blue-900: #E6E6F9;
+}
+
+/* Regras globais de contraste */
+:root {
+  /* Cor do texto/ícone sobre o tom de destaque (--blue-500) */
+  --blue-contrast: #ffffff;
+}
+
+/* ==========================================================================
+   SEMANTIC ROLES / MAPPING
+   ========================================================================== */
+
+/* Mapeamento dos papéis para Light Mode */
+:root,
+.light,
+.light-theme {
+  --blue-surface: #C2C3F2cc; /* Mapeado para o tom suave --blue-100 com transparência */
+  --blue-indicator: var(--blue-500); /* Indicador aponta para a cor sólida principal */
+  --blue-track: var(--blue-500); /* Track aponta para a cor sólida principal */
+
+  /* Suporte a telas de ampla gama de cores (Display P3) */
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      --blue-surface: color(display-p3 0.761 0.765 0.949 / 0.8);
+    }
+  }
+}
+
+/* Mapeamento dos papéis para Dark Mode */
+.dark,
+.dark-theme {
+  --blue-surface: #00004580; /* Mapeado para o tom escuro com transparência */
+  --blue-indicator: var(--blue-500); /* Indicador aponta para a cor sólida principal dark */
+  --blue-track: var(--blue-500); /* Track aponta para a cor sólida principal dark */
+
+  /* Suporte a telas de ampla gama de cores (Display P3) no tema escuro */
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      --blue-surface: color(display-p3 0 0 0.270 / 0.5);
+    }
+  }
+
+  /* Mistura refinada de cores usando OKLAB para o track no modo escuro */
+  @supports (color: color-mix(in oklab, white, black)) {
+    --blue-track: color-mix(in oklab, var(--blue-400), var(--blue-500) 75%);
+  }
+}

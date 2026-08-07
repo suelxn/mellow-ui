@@ -1,5 +1,9 @@
+/*
+  Tailwind é usado só neste playground local (app/), para prototipar telas rapidamente.
+  Não é publicado com a biblioteca: "build:lib" copia apenas src/styles/**, então nada
+  daqui vaza para o pacote consumido via npm. Os componentes do Design System nunca devem
+  depender de classes do Tailwind — só dos tokens e utilitários próprios em src/styles.
+*/
 @import "tailwindcss";
 
-@import "../tokens/index.css";
-@import "../themes/index.css";
-@import "../styles/index.css";
+@import "../src/styles/index.css";

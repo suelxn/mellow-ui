@@ -1,0 +1,89 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade justify-content. 
+  Controla o alinhamento e a distribuição de espaço entre os itens ao longo do eixo principal 
+  em contêineres Flexbox ou Grid (flex-start, center, flex-end e space-between), 
+  agrupados em blocos @media por breakpoint para adequação responsiva do layout.
+*/
+
+.mui-r-jc-start {
+  justify-content: flex-start;
+}
+.mui-r-jc-center {
+  justify-content: center;
+}
+.mui-r-jc-end {
+  justify-content: flex-end;
+}
+.mui-r-jc-space-between {
+  justify-content: space-between;
+}
+@media (--xs) {
+  .xs\:mui-r-jc-start {
+    justify-content: flex-start;
+  }
+  .xs\:mui-r-jc-center {
+    justify-content: center;
+  }
+  .xs\:mui-r-jc-end {
+    justify-content: flex-end;
+  }
+  .xs\:mui-r-jc-space-between {
+    justify-content: space-between;
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-jc-start {
+    justify-content: flex-start;
+  }
+  .sm\:mui-r-jc-center {
+    justify-content: center;
+  }
+  .sm\:mui-r-jc-end {
+    justify-content: flex-end;
+  }
+  .sm\:mui-r-jc-space-between {
+    justify-content: space-between;
+  }
+}
+@media (--md) {
+  .md\:mui-r-jc-start {
+    justify-content: flex-start;
+  }
+  .md\:mui-r-jc-center {
+    justify-content: center;
+  }
+  .md\:mui-r-jc-end {
+    justify-content: flex-end;
+  }
+  .md\:mui-r-jc-space-between {
+    justify-content: space-between;
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-jc-start {
+    justify-content: flex-start;
+  }
+  .lg\:mui-r-jc-center {
+    justify-content: center;
+  }
+  .lg\:mui-r-jc-end {
+    justify-content: flex-end;
+  }
+  .lg\:mui-r-jc-space-between {
+    justify-content: space-between;
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-jc-start {
+    justify-content: flex-start;
+  }
+  .xl\:mui-r-jc-center {
+    justify-content: center;
+  }
+  .xl\:mui-r-jc-end {
+    justify-content: flex-end;
+  }
+  .xl\:mui-r-jc-space-between {
+    justify-content: space-between;
+  }
+}

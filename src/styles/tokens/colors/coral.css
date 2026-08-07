@@ -1,0 +1,82 @@
+/* ==========================================================================
+   PRIMITIVE COLORS
+   ========================================================================== */
+
+/* Coral */
+
+/* Tema Light */
+:root,
+.light,
+.light-theme {
+  --coral-50: #FFF7ED;
+  --coral-100: #FFEDD5;
+  --coral-200: #FED7AA;
+  --coral-300: #FDBA74;
+  --coral-400: #FB923C;
+  --coral-500: #F97316; /* Cor principal / Accent */
+  --coral-600: #EA580C;
+  --coral-700: #C2410C;
+  --coral-800: #9A3412;
+  --coral-900: #7C2D12;
+}
+
+/* Tema Dark */
+.dark,
+.dark-theme {
+  --coral-50: #7C2D12;
+  --coral-100: #9A3412;
+  --coral-200: #C2410C;
+  --coral-300: #EA580C;
+  --coral-400: #F97316;
+  --coral-500: #FB923C; /* Tom principal adaptado para contraste em fundo escuro */
+  --coral-600: #FDBA74;
+  --coral-700: #FED7AA;
+  --coral-800: #FFEDD5;
+  --coral-900: #FFF7ED;
+}
+
+/* Regras globais de contraste */
+:root {
+  /* Cor do texto/ícone sobre o tom de destaque (--coral-500) */
+  --coral-contrast: #1d1d1d;
+}
+
+/* ==========================================================================
+   SEMANTIC ROLES / MAPPING
+   ========================================================================== */
+
+/* Mapeamento dos papéis para Light Mode */
+:root,
+.light,
+.light-theme {
+  --coral-surface: #FFEDD5cc; /* Mapeado para o tom suave --coral-100 com transparência */
+  --coral-indicator: var(--coral-500);
+  --coral-track: var(--coral-500);
+
+  /* Suporte a telas de ampla gama de cores (Display P3) */
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      --coral-surface: color(display-p3 0.996 0.929 0.835 / 0.8);
+    }
+  }
+}
+
+/* Mapeamento dos papéis para Dark Mode */
+.dark,
+.dark-theme {
+  --coral-surface: #7C2D1280; /* Mapeado para o tom escuro com transparência */
+  --coral-indicator: var(--coral-500);
+  --coral-track: var(--coral-500);
+
+  /* Suporte a telas de ampla gama de cores (Display P3) no tema escuro */
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      --coral-surface: color(display-p3 0.486 0.176 0.071 / 0.5);
+    }
+  }
+
+  /* Mistura refinada de cores usando OKLAB para o track no modo escuro */
+  @supports (color: color-mix(in oklab, white, black)) {
+    --coral-track: color-mix(in oklab, var(--coral-400), var(--coral-500) 75%);
+  }
+}

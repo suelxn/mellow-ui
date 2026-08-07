@@ -1,0 +1,82 @@
+/* ==========================================================================
+   PRIMITIVE COLORS
+   ========================================================================== */
+
+/* Mint */
+
+/* Tema Light */
+:root,
+.light,
+.light-theme {
+  --mint-50: #F0FDFA;
+  --mint-100: #CCFBF1;
+  --mint-200: #99F6E4;
+  --mint-300: #5EEAD4;
+  --mint-400: #2DD4BF;
+  --mint-500: #14B8A6; /* Cor principal / Accent */
+  --mint-600: #0D9488;
+  --mint-700: #0F766E;
+  --mint-800: #115E59;
+  --mint-900: #134E4A;
+}
+
+/* Tema Dark */
+.dark,
+.dark-theme {
+  --mint-50: #134E4A;
+  --mint-100: #115E59;
+  --mint-200: #0F766E;
+  --mint-300: #0D9488;
+  --mint-400: #14B8A6;
+  --mint-500: #2DD4BF; /* Tom principal adaptado para contraste em fundo escuro */
+  --mint-600: #5EEAD4;
+  --mint-700: #99F6E4;
+  --mint-800: #CCFBF1;
+  --mint-900: #F0FDFA;
+}
+
+/* Regras globais de contraste */
+:root {
+  /* Cor do texto/ícone sobre o tom de destaque (--mint-500) */
+  --mint-contrast: #1d1d1d;
+}
+
+/* ==========================================================================
+   SEMANTIC ROLES / MAPPING
+   ========================================================================== */
+
+/* Mapeamento dos papéis para Light Mode */
+:root,
+.light,
+.light-theme {
+  --mint-surface: #CCFBF1cc; /* Mapeado para o tom suave --mint-100 com transparência */
+  --mint-indicator: var(--mint-500);
+  --mint-track: var(--mint-500);
+
+  /* Suporte a telas de ampla gama de cores (Display P3) */
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      --mint-surface: color(display-p3 0.800 0.984 0.945 / 0.8);
+    }
+  }
+}
+
+/* Mapeamento dos papéis para Dark Mode */
+.dark,
+.dark-theme {
+  --mint-surface: #134E4A80; /* Mapeado para o tom escuro com transparência */
+  --mint-indicator: var(--mint-500);
+  --mint-track: var(--mint-500);
+
+  /* Suporte a telas de ampla gama de cores (Display P3) no tema escuro */
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      --mint-surface: color(display-p3 0.075 0.306 0.290 / 0.5);
+    }
+  }
+
+  /* Mistura refinada de cores usando OKLAB para o track no modo escuro */
+  @supports (color: color-mix(in oklab, white, black)) {
+    --mint-track: color-mix(in oklab, var(--mint-400), var(--mint-500) 75%);
+  }
+}

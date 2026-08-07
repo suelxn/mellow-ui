@@ -1,0 +1,107 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade align-items. 
+  Controla o alinhamento coletivo dos elementos filhos ao longo do eixo transversal 
+  em contêineres Flexbox ou Grid (flex-start, center, flex-end, baseline e stretch), 
+  agrupados em blocos @media por breakpoint para adequação responsiva do layout.
+*/
+
+.mui-r-ai-start {
+  align-items: flex-start;
+}
+.mui-r-ai-center {
+  align-items: center;
+}
+.mui-r-ai-end {
+  align-items: flex-end;
+}
+.mui-r-ai-baseline {
+  align-items: baseline;
+}
+.mui-r-ai-stretch {
+  align-items: stretch;
+}
+@media (--xs) {
+  .xs\:mui-r-ai-start {
+    align-items: flex-start;
+  }
+  .xs\:mui-r-ai-center {
+    align-items: center;
+  }
+  .xs\:mui-r-ai-end {
+    align-items: flex-end;
+  }
+  .xs\:mui-r-ai-baseline {
+    align-items: baseline;
+  }
+  .xs\:mui-r-ai-stretch {
+    align-items: stretch;
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-ai-start {
+    align-items: flex-start;
+  }
+  .sm\:mui-r-ai-center {
+    align-items: center;
+  }
+  .sm\:mui-r-ai-end {
+    align-items: flex-end;
+  }
+  .sm\:mui-r-ai-baseline {
+    align-items: baseline;
+  }
+  .sm\:mui-r-ai-stretch {
+    align-items: stretch;
+  }
+}
+@media (--md) {
+  .md\:mui-r-ai-start {
+    align-items: flex-start;
+  }
+  .md\:mui-r-ai-center {
+    align-items: center;
+  }
+  .md\:mui-r-ai-end {
+    align-items: flex-end;
+  }
+  .md\:mui-r-ai-baseline {
+    align-items: baseline;
+  }
+  .md\:mui-r-ai-stretch {
+    align-items: stretch;
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-ai-start {
+    align-items: flex-start;
+  }
+  .lg\:mui-r-ai-center {
+    align-items: center;
+  }
+  .lg\:mui-r-ai-end {
+    align-items: flex-end;
+  }
+  .lg\:mui-r-ai-baseline {
+    align-items: baseline;
+  }
+  .lg\:mui-r-ai-stretch {
+    align-items: stretch;
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-ai-start {
+    align-items: flex-start;
+  }
+  .xl\:mui-r-ai-center {
+    align-items: center;
+  }
+  .xl\:mui-r-ai-end {
+    align-items: flex-end;
+  }
+  .xl\:mui-r-ai-baseline {
+    align-items: baseline;
+  }
+  .xl\:mui-r-ai-stretch {
+    align-items: stretch;
+  }
+}

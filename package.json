@@ -2,6 +2,30 @@
   "name": "mellow-ui",
   "version": "0.1.0",
   "private": false,
+  "description": "Design System em React/TypeScript — componentes acessíveis, tokens de design e utilitários de layout, sem dependência do Radix UI, documentados via Storybook.",
+  "license": "MIT",
+  "author": "Suelen",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suelxn/mellow-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/suelxn/mellow-ui/issues"
+  },
+  "homepage": "https://github.com/suelxn/mellow-ui#readme",
+  "keywords": [
+    "design-system",
+    "react",
+    "typescript",
+    "ui",
+    "components",
+    "storybook"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -16,52 +40,69 @@
     "./components/*": {
       "types": "./dist/components/*/index.d.ts",
       "default": "./dist/components/*/index.js"
-    }
+    },
+    "./styles/*": "./dist/styles/*"
   },
   "scripts": {
-    "build:lib": "tsc --project tsconfig.json --outDir dist --declaration --module esnext --skipLibCheck && npm run copy:css",
-    "copy:css": "cp -r src/tokens dist/ && cp -r src/styles dist/ && cp -r src/themes dist/",
+    "build:lib": "rimraf dist && tsc --project tsconfig.json --outDir dist --declaration --module esnext --skipLibCheck && npm run copy:css",
+    "copy:css": "copyfiles -u 1 \"src/styles/**/*\" \"src/components/**/*.css\" dist",
     "build": "npm run build:lib && npm run build-storybook",
     "prepublishOnly": "npm run build:lib",
     "dev": "next dev",
     "start": "next start",
     "lint": "eslint",
+    "test": "vitest run",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "peerDependencies": {
+    "@phosphor-icons/react": "^2.1.10",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
-  "dependencies": {
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "next": "16.2.9",
-    "tailwind-merge": "^3.6.0"
+  "peerDependenciesMeta": {
+    "@phosphor-icons/react": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^5.2.1",
+    "@phosphor-icons/react": "^2.1.10",
     "@storybook/addon-a11y": "^10.5.4",
     "@storybook/addon-docs": "^10.5.4",
     "@storybook/addon-mcp": "^0.7.0",
     "@storybook/addon-vitest": "^10.5.4",
+    "@storybook/mcp": "^0.8.0",
     "@storybook/nextjs-vite": "^10.5.4",
     "@tailwindcss/postcss": "^4",
+    "@testing-library/react": "^16.3.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@vitest/browser-playwright": "^4.1.9",
-    "@vitest/coverage-v8": "^4.1.9",
+    "@vitest/browser": "^4.1.10",
+    "@vitest/browser-playwright": "^4.1.10",
+    "@vitest/coverage-v8": "^4.1.10",
+    "copyfiles": "^2.4.1",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
     "eslint-plugin-storybook": "^10.5.4",
+    "next": "^16.3.0",
     "playwright": "^1.61.1",
+    "postcss": "^8.5.26",
+    "postcss-custom-media": "^12.0.1",
     "react": "19.2.4",
     "react-dom": "19.2.4",
+    "rimraf": "^6.0.1",
+    "sharp": "^0.35.3",
     "storybook": "^10.5.4",
     "tailwindcss": "^4",
     "typescript": "^5",
+    "valibot": "^1.4.2",
     "vite": "^8.1.0",
-    "vitest": "^4.1.9"
+    "vitest": "^4.1.10"
+  },
+  "overrides": {
+    "aria-query": "5.3.2"
   }
 }
+

@@ -1,0 +1,107 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade position. 
+  Controla o método de posicionamento de um elemento no fluxo da página 
+  (static, absolute, relative, fixed e sticky), agrupados em blocos @media por breakpoint 
+  para adequação e alteração do comportamento de layout por breakpoint.
+*/
+
+.mui-r-position-static {
+  position: static;
+}
+.mui-r-position-absolute {
+  position: absolute;
+}
+.mui-r-position-relative {
+  position: relative;
+}
+.mui-r-position-fixed {
+  position: fixed;
+}
+.mui-r-position-sticky {
+  position: sticky;
+}
+@media (--xs) {
+  .xs\:mui-r-position-static {
+    position: static;
+  }
+  .xs\:mui-r-position-absolute {
+    position: absolute;
+  }
+  .xs\:mui-r-position-relative {
+    position: relative;
+  }
+  .xs\:mui-r-position-fixed {
+    position: fixed;
+  }
+  .xs\:mui-r-position-sticky {
+    position: sticky;
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-position-static {
+    position: static;
+  }
+  .sm\:mui-r-position-absolute {
+    position: absolute;
+  }
+  .sm\:mui-r-position-relative {
+    position: relative;
+  }
+  .sm\:mui-r-position-fixed {
+    position: fixed;
+  }
+  .sm\:mui-r-position-sticky {
+    position: sticky;
+  }
+}
+@media (--md) {
+  .md\:mui-r-position-static {
+    position: static;
+  }
+  .md\:mui-r-position-absolute {
+    position: absolute;
+  }
+  .md\:mui-r-position-relative {
+    position: relative;
+  }
+  .md\:mui-r-position-fixed {
+    position: fixed;
+  }
+  .md\:mui-r-position-sticky {
+    position: sticky;
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-position-static {
+    position: static;
+  }
+  .lg\:mui-r-position-absolute {
+    position: absolute;
+  }
+  .lg\:mui-r-position-relative {
+    position: relative;
+  }
+  .lg\:mui-r-position-fixed {
+    position: fixed;
+  }
+  .lg\:mui-r-position-sticky {
+    position: sticky;
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-position-static {
+    position: static;
+  }
+  .xl\:mui-r-position-absolute {
+    position: absolute;
+  }
+  .xl\:mui-r-position-relative {
+    position: relative;
+  }
+  .xl\:mui-r-position-fixed {
+    position: fixed;
+  }
+  .xl\:mui-r-position-sticky {
+    position: sticky;
+  }
+}

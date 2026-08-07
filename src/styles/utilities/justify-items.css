@@ -1,0 +1,107 @@
+/* 
+  Define classes utilitárias responsivas para a propriedade justify-items. 
+  Controla o alinhamento coletivo dos elementos filhos ao longo do eixo inline 
+  em contêineres CSS Grid (start, center, end, baseline e stretch), 
+  agrupados em blocos @media por breakpoint para adequação responsiva do layout.
+*/
+
+.mui-r-ji-start {
+  justify-items: start;
+}
+.mui-r-ji-center {
+  justify-items: center;
+}
+.mui-r-ji-end {
+  justify-items: end;
+}
+.mui-r-ji-baseline {
+  justify-items: baseline;
+}
+.mui-r-ji-stretch {
+  justify-items: stretch;
+}
+@media (--xs) {
+  .xs\:mui-r-ji-start {
+    justify-items: start;
+  }
+  .xs\:mui-r-ji-center {
+    justify-items: center;
+  }
+  .xs\:mui-r-ji-end {
+    justify-items: end;
+  }
+  .xs\:mui-r-ji-baseline {
+    justify-items: baseline;
+  }
+  .xs\:mui-r-ji-stretch {
+    justify-items: stretch;
+  }
+}
+@media (--sm) {
+  .sm\:mui-r-ji-start {
+    justify-items: start;
+  }
+  .sm\:mui-r-ji-center {
+    justify-items: center;
+  }
+  .sm\:mui-r-ji-end {
+    justify-items: end;
+  }
+  .sm\:mui-r-ji-baseline {
+    justify-items: baseline;
+  }
+  .sm\:mui-r-ji-stretch {
+    justify-items: stretch;
+  }
+}
+@media (--md) {
+  .md\:mui-r-ji-start {
+    justify-items: start;
+  }
+  .md\:mui-r-ji-center {
+    justify-items: center;
+  }
+  .md\:mui-r-ji-end {
+    justify-items: end;
+  }
+  .md\:mui-r-ji-baseline {
+    justify-items: baseline;
+  }
+  .md\:mui-r-ji-stretch {
+    justify-items: stretch;
+  }
+}
+@media (--lg) {
+  .lg\:mui-r-ji-start {
+    justify-items: start;
+  }
+  .lg\:mui-r-ji-center {
+    justify-items: center;
+  }
+  .lg\:mui-r-ji-end {
+    justify-items: end;
+  }
+  .lg\:mui-r-ji-baseline {
+    justify-items: baseline;
+  }
+  .lg\:mui-r-ji-stretch {
+    justify-items: stretch;
+  }
+}
+@media (--xl) {
+  .xl\:mui-r-ji-start {
+    justify-items: start;
+  }
+  .xl\:mui-r-ji-center {
+    justify-items: center;
+  }
+  .xl\:mui-r-ji-end {
+    justify-items: end;
+  }
+  .xl\:mui-r-ji-baseline {
+    justify-items: baseline;
+  }
+  .xl\:mui-r-ji-stretch {
+    justify-items: stretch;
+  }
+}

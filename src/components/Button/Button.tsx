@@ -1,42 +1,40 @@
-import React, { forwardRef } from 'react';
-import { ButtonProps } from './Button.types';
-import { buttonVariants } from './Button.styles';
-import { DEFAULT_BUTTON_VARIANT, DEFAULT_BUTTON_SIZE } from './Button.constants';
-import { LoadingSpinner } from './Button.icons';
-import { cn } from './Button.utils';
+'use client';
 
-export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  (
-    {
-      children,
-      className,
-      variant = DEFAULT_BUTTON_VARIANT,
-      size = DEFAULT_BUTTON_SIZE,
-      isLoading = false,
-      leftIcon,
-      rightIcon,
-      fullWidth = false,
-      disabled,
-      ...props
-    },
-    ref
-  ) => {
-    const isDisabled = disabled || isLoading;
+/*
+  Componente de EXEMPLO, criado só para validar a pipeline de build/lint/teste (ver
+  Button.test.tsx e Button.stories.tsx) e servir de referência de uso do sistema de props
+  (asChild) e dos tokens de cor/tamanho/radius do Design System.
 
-    return (
-      <button
-        ref={ref}
-        disabled={isDisabled}
-        className={cn(buttonVariants({ variant, size, fullWidth, className }))}
-        {...props}
-      >
-        {isLoading && <LoadingSpinner size={size} />}
-        {!isLoading && leftIcon && <span className="inline-flex shrink-0">{leftIcon}</span>}
-        {children && <span>{children}</span>}
-        {!isLoading && rightIcon && <span className="inline-flex shrink-0">{rightIcon}</span>}
-      </button>
-    );
-  }
-);
+  Não é, e não pretende ser, a implementação final do Button. Quando a fase de construção dos componentes começar, APAGAR esta pasta e substitua pelo Button de verdade.
+*/
 
-Button.displayName = 'Button';
+import * as React from 'react';
+
+import { Slot } from '../../core';
+import { buttonPropDefs } from './Button.props';
+import type { ButtonProps } from './Button.types';
+
+function Button({
+  asChild,
+  variant = buttonPropDefs.variant.default,
+  size = buttonPropDefs.size.default,
+  color,
+  className,
+  ref,
+  ...props
+}: ButtonProps) {
+  const Comp: React.ElementType = asChild ? Slot : 'button';
+
+  return (
+    <Comp
+      ref={ref}
+      data-variant={variant}
+      data-size={size}
+      data-accent-color={color}
+      className={['mui-Button', className].filter(Boolean).join(' ')}
+      {...props}
+    />
+  );
+}
+
+export { Button };
