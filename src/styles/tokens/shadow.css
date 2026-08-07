@@ -1,69 +1,69 @@
 :where(.mellow-ui) {
   --shadow-xs:
-    inset 0 0 0 1px color-mix(in srgb, var(--neutral-950) 15%, transparent),
-    inset 0 1.5px 2px 0 color-mix(in srgb, var(--neutral-950) 5%, transparent),
-    inset 0 1.5px 2px 0 color-mix(in srgb, var(--neutral-950) 5%, transparent);
+    inset 0 0 0 1px color-mix(in srgb, var(--gray-950) 15%, transparent),
+    inset 0 1.5px 2px 0 color-mix(in srgb, var(--gray-950) 5%, transparent),
+    inset 0 1.5px 2px 0 color-mix(in srgb, var(--gray-950) 5%, transparent);
 
   --shadow-sm:
-    0 0 0 1px color-mix(in srgb, var(--neutral-950) 8%, transparent),
-    0 0 0 0.5px color-mix(in srgb, var(--neutral-950) 3%, transparent),
-    0 1px 1px 0 color-mix(in srgb, var(--neutral-950) 5%, transparent),
-    0 2px 1px -1px color-mix(in srgb, var(--neutral-950) 3%, transparent),
-    0 1px 3px 0 color-mix(in srgb, var(--neutral-950) 3%, transparent);
+    0 0 0 1px color-mix(in srgb, var(--gray-950) 8%, transparent),
+    0 0 0 0.5px color-mix(in srgb, var(--gray-950) 3%, transparent),
+    0 1px 1px 0 color-mix(in srgb, var(--gray-950) 5%, transparent),
+    0 2px 1px -1px color-mix(in srgb, var(--gray-950) 3%, transparent),
+    0 1px 3px 0 color-mix(in srgb, var(--gray-950) 3%, transparent);
 
   --shadow-md:
-    0 0 0 1px color-mix(in srgb, var(--neutral-950) 8%, transparent),
-    0 2px 3px -2px color-mix(in srgb, var(--neutral-950) 8%, transparent),
-    0 3px 12px -4px color-mix(in srgb, var(--neutral-950) 5%, transparent),
-    0 4px 16px -8px color-mix(in srgb, var(--neutral-950) 5%, transparent);
+    0 0 0 1px color-mix(in srgb, var(--gray-950) 8%, transparent),
+    0 2px 3px -2px color-mix(in srgb, var(--gray-950) 8%, transparent),
+    0 3px 12px -4px color-mix(in srgb, var(--gray-950) 5%, transparent),
+    0 4px 16px -8px color-mix(in srgb, var(--gray-950) 5%, transparent);
 
   --shadow-lg:
-    0 0 0 1px color-mix(in srgb, var(--neutral-950) 8%, transparent),
-    0 8px 40px color-mix(in srgb, var(--neutral-950) 3%, transparent),
-    0 12px 32px -16px color-mix(in srgb, var(--neutral-950) 8%, transparent);
+    0 0 0 1px color-mix(in srgb, var(--gray-950) 8%, transparent),
+    0 8px 40px color-mix(in srgb, var(--gray-950) 3%, transparent),
+    0 12px 32px -16px color-mix(in srgb, var(--gray-950) 8%, transparent);
 
   --shadow-xl:
-    0 0 0 1px color-mix(in srgb, var(--neutral-950) 8%, transparent),
-    0 12px 60px color-mix(in srgb, var(--neutral-950) 8%, transparent),
-    0 12px 32px -16px color-mix(in srgb, var(--neutral-950) 15%, transparent);
+    0 0 0 1px color-mix(in srgb, var(--gray-950) 8%, transparent),
+    0 12px 60px color-mix(in srgb, var(--gray-950) 8%, transparent),
+    0 12px 32px -16px color-mix(in srgb, var(--gray-950) 15%, transparent);
 
   --shadow-2xl:
-    0 0 0 1px color-mix(in srgb, var(--neutral-950) 8%, transparent),
-    0 12px 60px color-mix(in srgb, var(--neutral-950) 8%, transparent),
-    0 16px 64px color-mix(in srgb, var(--neutral-950) 5%, transparent),
-    0 16px 36px -20px color-mix(in srgb, var(--neutral-950) 25%, transparent);
+    0 0 0 1px color-mix(in srgb, var(--gray-950) 8%, transparent),
+    0 12px 60px color-mix(in srgb, var(--gray-950) 8%, transparent),
+    0 16px 64px color-mix(in srgb, var(--gray-950) 5%, transparent),
+    0 16px 36px -20px color-mix(in srgb, var(--gray-950) 25%, transparent);
 }
 
 @supports (color: color-mix(in oklab, white, black)) {
   :where(.mellow-ui) {
     --shadow-sm:
-      0 0 0 1px color-mix(in oklab, color-mix(in srgb, var(--neutral-950) 8%, transparent), var(--neutral-300) 25%),
-      0 0 0 0.5px color-mix(in srgb, var(--neutral-950) 3%, transparent),
-      0 1px 1px 0 color-mix(in srgb, var(--neutral-950) 5%, transparent),
-      0 2px 1px -1px color-mix(in srgb, var(--neutral-950) 3%, transparent),
-      0 1px 3px 0 color-mix(in srgb, var(--neutral-950) 3%, transparent);
+      0 0 0 1px color-mix(in oklab, color-mix(in srgb, var(--gray-950) 8%, transparent), var(--gray-300) 25%),
+      0 0 0 0.5px color-mix(in srgb, var(--gray-950) 3%, transparent),
+      0 1px 1px 0 color-mix(in srgb, var(--gray-950) 5%, transparent),
+      0 2px 1px -1px color-mix(in srgb, var(--gray-950) 3%, transparent),
+      0 1px 3px 0 color-mix(in srgb, var(--gray-950) 3%, transparent);
 
     --shadow-md:
-      0 0 0 1px color-mix(in oklab, color-mix(in srgb, var(--neutral-950) 8%, transparent), var(--neutral-300) 25%),
-      0 2px 3px -2px color-mix(in srgb, var(--neutral-950) 8%, transparent),
-      0 3px 12px -4px color-mix(in srgb, var(--neutral-950) 5%, transparent),
-      0 4px 16px -8px color-mix(in srgb, var(--neutral-950) 5%, transparent);
+      0 0 0 1px color-mix(in oklab, color-mix(in srgb, var(--gray-950) 8%, transparent), var(--gray-300) 25%),
+      0 2px 3px -2px color-mix(in srgb, var(--gray-950) 8%, transparent),
+      0 3px 12px -4px color-mix(in srgb, var(--gray-950) 5%, transparent),
+      0 4px 16px -8px color-mix(in srgb, var(--gray-950) 5%, transparent);
 
     --shadow-lg:
-      0 0 0 1px color-mix(in oklab, color-mix(in srgb, var(--neutral-950) 8%, transparent), var(--neutral-300) 25%),
-      0 8px 40px color-mix(in srgb, var(--neutral-950) 3%, transparent),
-      0 12px 32px -16px color-mix(in srgb, var(--neutral-950) 8%, transparent);
+      0 0 0 1px color-mix(in oklab, color-mix(in srgb, var(--gray-950) 8%, transparent), var(--gray-300) 25%),
+      0 8px 40px color-mix(in srgb, var(--gray-950) 3%, transparent),
+      0 12px 32px -16px color-mix(in srgb, var(--gray-950) 8%, transparent);
 
     --shadow-xl:
-      0 0 0 1px color-mix(in oklab, color-mix(in srgb, var(--neutral-950) 8%, transparent), var(--neutral-300) 25%),
-      0 12px 60px color-mix(in srgb, var(--neutral-950) 8%, transparent),
-      0 12px 32px -16px color-mix(in srgb, var(--neutral-950) 15%, transparent);
+      0 0 0 1px color-mix(in oklab, color-mix(in srgb, var(--gray-950) 8%, transparent), var(--gray-300) 25%),
+      0 12px 60px color-mix(in srgb, var(--gray-950) 8%, transparent),
+      0 12px 32px -16px color-mix(in srgb, var(--gray-950) 15%, transparent);
 
     --shadow-2xl:
-      0 0 0 1px color-mix(in oklab, color-mix(in srgb, var(--neutral-950) 8%, transparent), var(--neutral-300) 25%),
-      0 12px 60px color-mix(in srgb, var(--neutral-950) 8%, transparent),
-      0 16px 64px color-mix(in srgb, var(--neutral-950) 5%, transparent),
-      0 16px 36px -20px color-mix(in srgb, var(--neutral-950) 25%, transparent);
+      0 0 0 1px color-mix(in oklab, color-mix(in srgb, var(--gray-950) 8%, transparent), var(--gray-300) 25%),
+      0 12px 60px color-mix(in srgb, var(--gray-950) 8%, transparent),
+      0 16px 64px color-mix(in srgb, var(--gray-950) 5%, transparent),
+      0 16px 36px -20px color-mix(in srgb, var(--gray-950) 25%, transparent);
   }
 }
 
@@ -71,71 +71,71 @@
 :is(.dark, .dark-theme),
 :is(.dark, .dark-theme) :where(.mellow-ui:not(.light, .light-theme)) {
   --shadow-xs:
-    inset 0 -1px 1px 0 color-mix(in srgb, var(--neutral-950) 10%, transparent),
-    inset 0 0 0 1px color-mix(in srgb, var(--neutral-950) 10%, transparent),
-    inset 0 3px 4px 0 color-mix(in srgb, var(--neutral-0) 20%, transparent),
-    inset 0 0 0 1px color-mix(in srgb, var(--neutral-950) 12%, transparent);
+    inset 0 -1px 1px 0 color-mix(in srgb, var(--gray-950) 10%, transparent),
+    inset 0 0 0 1px color-mix(in srgb, var(--gray-950) 10%, transparent),
+    inset 0 3px 4px 0 color-mix(in srgb, var(--gray-0) 20%, transparent),
+    inset 0 0 0 1px color-mix(in srgb, var(--gray-950) 12%, transparent);
 
   --shadow-sm:
-    0 0 0 1px color-mix(in srgb, var(--neutral-950) 20%, transparent),
-    0 0 0 0.5px color-mix(in srgb, var(--neutral-0) 10%, transparent),
-    0 1px 1px 0 color-mix(in srgb, var(--neutral-0) 25%, transparent),
-    0 2px 1px -1px color-mix(in srgb, var(--neutral-0) 25%, transparent),
-    0 1px 3px 0 color-mix(in srgb, var(--neutral-0) 20%, transparent);
+    0 0 0 1px color-mix(in srgb, var(--gray-950) 20%, transparent),
+    0 0 0 0.5px color-mix(in srgb, var(--gray-0) 10%, transparent),
+    0 1px 1px 0 color-mix(in srgb, var(--gray-0) 25%, transparent),
+    0 2px 1px -1px color-mix(in srgb, var(--gray-0) 25%, transparent),
+    0 1px 3px 0 color-mix(in srgb, var(--gray-0) 20%, transparent);
 
   --shadow-md:
-    0 0 0 1px color-mix(in srgb, var(--neutral-950) 20%, transparent),
-    0 2px 3px -2px color-mix(in srgb, var(--neutral-0) 10%, transparent),
-    0 3px 8px -2px color-mix(in srgb, var(--neutral-0) 25%, transparent),
-    0 4px 12px -4px color-mix(in srgb, var(--neutral-0) 30%, transparent);
+    0 0 0 1px color-mix(in srgb, var(--gray-950) 20%, transparent),
+    0 2px 3px -2px color-mix(in srgb, var(--gray-0) 10%, transparent),
+    0 3px 8px -2px color-mix(in srgb, var(--gray-0) 25%, transparent),
+    0 4px 12px -4px color-mix(in srgb, var(--gray-0) 30%, transparent);
 
   --shadow-lg:
-    0 0 0 1px color-mix(in srgb, var(--neutral-950) 20%, transparent),
-    0 8px 40px color-mix(in srgb, var(--neutral-0) 10%, transparent),
-    0 12px 32px -16px color-mix(in srgb, var(--neutral-0) 20%, transparent);
+    0 0 0 1px color-mix(in srgb, var(--gray-950) 20%, transparent),
+    0 8px 40px color-mix(in srgb, var(--gray-0) 10%, transparent),
+    0 12px 32px -16px color-mix(in srgb, var(--gray-0) 20%, transparent);
 
   --shadow-xl:
-    0 0 0 1px color-mix(in srgb, var(--neutral-950) 20%, transparent),
-    0 12px 60px color-mix(in srgb, var(--neutral-0) 20%, transparent),
-    0 12px 32px -16px color-mix(in srgb, var(--neutral-0) 30%, transparent);
+    0 0 0 1px color-mix(in srgb, var(--gray-950) 20%, transparent),
+    0 12px 60px color-mix(in srgb, var(--gray-0) 20%, transparent),
+    0 12px 32px -16px color-mix(in srgb, var(--gray-0) 30%, transparent);
 
   --shadow-2xl:
-    0 0 0 1px color-mix(in srgb, var(--neutral-950) 20%, transparent),
-    0 12px 60px color-mix(in srgb, var(--neutral-0) 15%, transparent),
-    0 16px 64px color-mix(in srgb, var(--neutral-0) 25%, transparent),
-    0 16px 36px -20px color-mix(in srgb, var(--neutral-0) 50%, transparent);
+    0 0 0 1px color-mix(in srgb, var(--gray-950) 20%, transparent),
+    0 12px 60px color-mix(in srgb, var(--gray-0) 15%, transparent),
+    0 16px 64px color-mix(in srgb, var(--gray-0) 25%, transparent),
+    0 16px 36px -20px color-mix(in srgb, var(--gray-0) 50%, transparent);
 }
 
 @supports (color: color-mix(in oklab, white, black)) {
   :is(.dark, .dark-theme),
   :is(.dark, .dark-theme) :where(.mellow-ui:not(.light, .light-theme)) {
     --shadow-sm:
-      0 0 0 1px color-mix(in oklab, color-mix(in srgb, var(--neutral-950) 20%, transparent), var(--neutral-600) 25%),
-      0 0 0 0.5px color-mix(in srgb, var(--neutral-0) 10%, transparent),
-      0 1px 1px 0 color-mix(in srgb, var(--neutral-0) 25%, transparent),
-      0 2px 1px -1px color-mix(in srgb, var(--neutral-0) 25%, transparent),
-      0 1px 3px 0 color-mix(in srgb, var(--neutral-0) 20%, transparent);
+      0 0 0 1px color-mix(in oklab, color-mix(in srgb, var(--gray-950) 20%, transparent), var(--gray-600) 25%),
+      0 0 0 0.5px color-mix(in srgb, var(--gray-0) 10%, transparent),
+      0 1px 1px 0 color-mix(in srgb, var(--gray-0) 25%, transparent),
+      0 2px 1px -1px color-mix(in srgb, var(--gray-0) 25%, transparent),
+      0 1px 3px 0 color-mix(in srgb, var(--gray-0) 20%, transparent);
 
     --shadow-md:
-      0 0 0 1px color-mix(in oklab, color-mix(in srgb, var(--neutral-950) 20%, transparent), var(--neutral-600) 25%),
-      0 2px 3px -2px color-mix(in srgb, var(--neutral-0) 10%, transparent),
-      0 3px 8px -2px color-mix(in srgb, var(--neutral-0) 25%, transparent),
-      0 4px 12px -4px color-mix(in srgb, var(--neutral-0) 30%, transparent);
+      0 0 0 1px color-mix(in oklab, color-mix(in srgb, var(--gray-950) 20%, transparent), var(--gray-600) 25%),
+      0 2px 3px -2px color-mix(in srgb, var(--gray-0) 10%, transparent),
+      0 3px 8px -2px color-mix(in srgb, var(--gray-0) 25%, transparent),
+      0 4px 12px -4px color-mix(in srgb, var(--gray-0) 30%, transparent);
 
     --shadow-lg:
-      0 0 0 1px color-mix(in oklab, color-mix(in srgb, var(--neutral-950) 20%, transparent), var(--neutral-600) 25%),
-      0 8px 40px color-mix(in srgb, var(--neutral-0) 10%, transparent),
-      0 12px 32px -16px color-mix(in srgb, var(--neutral-0) 20%, transparent);
+      0 0 0 1px color-mix(in oklab, color-mix(in srgb, var(--gray-950) 20%, transparent), var(--gray-600) 25%),
+      0 8px 40px color-mix(in srgb, var(--gray-0) 10%, transparent),
+      0 12px 32px -16px color-mix(in srgb, var(--gray-0) 20%, transparent);
 
     --shadow-xl:
-      0 0 0 1px color-mix(in oklab, color-mix(in srgb, var(--neutral-950) 20%, transparent), var(--neutral-600) 25%),
-      0 12px 60px color-mix(in srgb, var(--neutral-0) 20%, transparent),
-      0 12px 32px -16px color-mix(in srgb, var(--neutral-0) 30%, transparent);
+      0 0 0 1px color-mix(in oklab, color-mix(in srgb, var(--gray-950) 20%, transparent), var(--gray-600) 25%),
+      0 12px 60px color-mix(in srgb, var(--gray-0) 20%, transparent),
+      0 12px 32px -16px color-mix(in srgb, var(--gray-0) 30%, transparent);
 
     --shadow-2xl:
-      0 0 0 1px color-mix(in oklab, color-mix(in srgb, var(--neutral-950) 20%, transparent), var(--neutral-600) 25%),
-      0 12px 60px color-mix(in srgb, var(--neutral-0) 15%, transparent),
-      0 16px 64px color-mix(in srgb, var(--neutral-0) 25%, transparent),
-      0 16px 36px -20px color-mix(in srgb, var(--neutral-0) 50%, transparent);
+      0 0 0 1px color-mix(in oklab, color-mix(in srgb, var(--gray-950) 20%, transparent), var(--gray-600) 25%),
+      0 12px 60px color-mix(in srgb, var(--gray-0) 15%, transparent),
+      0 16px 64px color-mix(in srgb, var(--gray-0) 25%, transparent),
+      0 16px 36px -20px color-mix(in srgb, var(--gray-0) 50%, transparent);
   }
 }

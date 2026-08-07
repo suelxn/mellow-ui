@@ -5,85 +5,85 @@
   agrupados em blocos @media por breakpoint para adequação responsiva do layout.
 */
 
-.rt-r-jc-start {
+.mui-r-jc-start {
   justify-content: flex-start;
 }
-.rt-r-jc-center {
+.mui-r-jc-center {
   justify-content: center;
 }
-.rt-r-jc-end {
+.mui-r-jc-end {
   justify-content: flex-end;
 }
-.rt-r-jc-space-between {
+.mui-r-jc-space-between {
   justify-content: space-between;
 }
 @media (--xs) {
-  .xs\:rt-r-jc-start {
+  .xs\:mui-r-jc-start {
     justify-content: flex-start;
   }
-  .xs\:rt-r-jc-center {
+  .xs\:mui-r-jc-center {
     justify-content: center;
   }
-  .xs\:rt-r-jc-end {
+  .xs\:mui-r-jc-end {
     justify-content: flex-end;
   }
-  .xs\:rt-r-jc-space-between {
+  .xs\:mui-r-jc-space-between {
     justify-content: space-between;
   }
 }
 @media (--sm) {
-  .sm\:rt-r-jc-start {
+  .sm\:mui-r-jc-start {
     justify-content: flex-start;
   }
-  .sm\:rt-r-jc-center {
+  .sm\:mui-r-jc-center {
     justify-content: center;
   }
-  .sm\:rt-r-jc-end {
+  .sm\:mui-r-jc-end {
     justify-content: flex-end;
   }
-  .sm\:rt-r-jc-space-between {
+  .sm\:mui-r-jc-space-between {
     justify-content: space-between;
   }
 }
 @media (--md) {
-  .md\:rt-r-jc-start {
+  .md\:mui-r-jc-start {
     justify-content: flex-start;
   }
-  .md\:rt-r-jc-center {
+  .md\:mui-r-jc-center {
     justify-content: center;
   }
-  .md\:rt-r-jc-end {
+  .md\:mui-r-jc-end {
     justify-content: flex-end;
   }
-  .md\:rt-r-jc-space-between {
+  .md\:mui-r-jc-space-between {
     justify-content: space-between;
   }
 }
 @media (--lg) {
-  .lg\:rt-r-jc-start {
+  .lg\:mui-r-jc-start {
     justify-content: flex-start;
   }
-  .lg\:rt-r-jc-center {
+  .lg\:mui-r-jc-center {
     justify-content: center;
   }
-  .lg\:rt-r-jc-end {
+  .lg\:mui-r-jc-end {
     justify-content: flex-end;
   }
-  .lg\:rt-r-jc-space-between {
+  .lg\:mui-r-jc-space-between {
     justify-content: space-between;
   }
 }
 @media (--xl) {
-  .xl\:rt-r-jc-start {
+  .xl\:mui-r-jc-start {
     justify-content: flex-start;
   }
-  .xl\:rt-r-jc-center {
+  .xl\:mui-r-jc-center {
     justify-content: center;
   }
-  .xl\:rt-r-jc-end {
+  .xl\:mui-r-jc-end {
     justify-content: flex-end;
   }
-  .xl\:rt-r-jc-space-between {
+  .xl\:mui-r-jc-space-between {
     justify-content: space-between;
   }
 }

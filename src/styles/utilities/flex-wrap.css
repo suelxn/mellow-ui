@@ -5,67 +5,67 @@
   blocos @media por breakpoint para adaptação conforme o tamanho da tela.
 */
 
-.rt-r-fw-nowrap {
+.mui-r-fw-nowrap {
   flex-wrap: nowrap;
 }
-.rt-r-fw-wrap {
+.mui-r-fw-wrap {
   flex-wrap: wrap;
 }
-.rt-r-fw-wrap-reverse {
+.mui-r-fw-wrap-reverse {
   flex-wrap: wrap-reverse;
 }
 @media (--xs) {
-  .xs\:rt-r-fw-nowrap {
+  .xs\:mui-r-fw-nowrap {
     flex-wrap: nowrap;
   }
-  .xs\:rt-r-fw-wrap {
+  .xs\:mui-r-fw-wrap {
     flex-wrap: wrap;
   }
-  .xs\:rt-r-fw-wrap-reverse {
+  .xs\:mui-r-fw-wrap-reverse {
     flex-wrap: wrap-reverse;
   }
 }
 @media (--sm) {
-  .sm\:rt-r-fw-nowrap {
+  .sm\:mui-r-fw-nowrap {
     flex-wrap: nowrap;
   }
-  .sm\:rt-r-fw-wrap {
+  .sm\:mui-r-fw-wrap {
     flex-wrap: wrap;
   }
-  .sm\:rt-r-fw-wrap-reverse {
+  .sm\:mui-r-fw-wrap-reverse {
     flex-wrap: wrap-reverse;
   }
 }
 @media (--md) {
-  .md\:rt-r-fw-nowrap {
+  .md\:mui-r-fw-nowrap {
     flex-wrap: nowrap;
   }
-  .md\:rt-r-fw-wrap {
+  .md\:mui-r-fw-wrap {
     flex-wrap: wrap;
   }
-  .md\:rt-r-fw-wrap-reverse {
+  .md\:mui-r-fw-wrap-reverse {
     flex-wrap: wrap-reverse;
   }
 }
 @media (--lg) {
-  .lg\:rt-r-fw-nowrap {
+  .lg\:mui-r-fw-nowrap {
     flex-wrap: nowrap;
   }
-  .lg\:rt-r-fw-wrap {
+  .lg\:mui-r-fw-wrap {
     flex-wrap: wrap;
   }
-  .lg\:rt-r-fw-wrap-reverse {
+  .lg\:mui-r-fw-wrap-reverse {
     flex-wrap: wrap-reverse;
   }
 }
 @media (--xl) {
-  .xl\:rt-r-fw-nowrap {
+  .xl\:mui-r-fw-nowrap {
     flex-wrap: nowrap;
   }
-  .xl\:rt-r-fw-wrap {
+  .xl\:mui-r-fw-wrap {
     flex-wrap: wrap;
   }
-  .xl\:rt-r-fw-wrap-reverse {
+  .xl\:mui-r-fw-wrap-reverse {
     flex-wrap: wrap-reverse;
   }
 }

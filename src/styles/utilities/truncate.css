@@ -1,11 +1,11 @@
 /* 
-  Define a classe utilitária para truncamento de texto em linha única (rt-truncate). 
+  Define a classe utilitária para truncamento de texto em linha única (mui-truncate). 
   Aplica ocultaçāo do conteúdo excedente (overflow: hidden), impede a quebra automática 
   de linha (white-space: nowrap) e adiciona reticências ópticas no ponto de corte 
   (text-overflow: ellipsis) para preservar a integridade visual do layout.
 */
 
-.rt-truncate {
+.mui-truncate {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

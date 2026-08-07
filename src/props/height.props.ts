@@ -20,7 +20,7 @@ const heightPropDefs = {
    */
   height: {
     type: 'string',
-    className: 'rt-r-h',
+    className: 'mui-r-h',
     customProperties: ['--height'],
     responsive: true,
   },
@@ -37,7 +37,7 @@ const heightPropDefs = {
    */
   minHeight: {
     type: 'string',
-    className: 'rt-r-min-h',
+    className: 'mui-r-min-h',
     customProperties: ['--min-height'],
     responsive: true,
   },
@@ -54,7 +54,7 @@ const heightPropDefs = {
    */
   maxHeight: {
     type: 'string',
-    className: 'rt-r-max-h',
+    className: 'mui-r-max-h',
     customProperties: ['--max-height'],
     responsive: true,
   },

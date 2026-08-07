@@ -23,7 +23,7 @@ const gapPropDefs = {
    */
   gap: {
     type: 'enum | string',
-    className: 'rt-r-gap',
+    className: 'mui-r-gap',
     customProperties: ['--gap'],
     values: gapValues,
     responsive: true,
@@ -42,7 +42,7 @@ const gapPropDefs = {
    */
   gapX: {
     type: 'enum | string',
-    className: 'rt-r-cg',
+    className: 'mui-r-cg',
     customProperties: ['--column-gap'],
     values: gapValues,
     responsive: true,
@@ -61,7 +61,7 @@ const gapPropDefs = {
    */
   gapY: {
     type: 'enum | string',
-    className: 'rt-r-rg',
+    className: 'mui-r-rg',
     customProperties: ['--row-gap'],
     values: gapValues,
     responsive: true,

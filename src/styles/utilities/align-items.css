@@ -5,103 +5,103 @@
   agrupados em blocos @media por breakpoint para adequação responsiva do layout.
 */
 
-.rt-r-ai-start {
+.mui-r-ai-start {
   align-items: flex-start;
 }
-.rt-r-ai-center {
+.mui-r-ai-center {
   align-items: center;
 }
-.rt-r-ai-end {
+.mui-r-ai-end {
   align-items: flex-end;
 }
-.rt-r-ai-baseline {
+.mui-r-ai-baseline {
   align-items: baseline;
 }
-.rt-r-ai-stretch {
+.mui-r-ai-stretch {
   align-items: stretch;
 }
 @media (--xs) {
-  .xs\:rt-r-ai-start {
+  .xs\:mui-r-ai-start {
     align-items: flex-start;
   }
-  .xs\:rt-r-ai-center {
+  .xs\:mui-r-ai-center {
     align-items: center;
   }
-  .xs\:rt-r-ai-end {
+  .xs\:mui-r-ai-end {
     align-items: flex-end;
   }
-  .xs\:rt-r-ai-baseline {
+  .xs\:mui-r-ai-baseline {
     align-items: baseline;
   }
-  .xs\:rt-r-ai-stretch {
+  .xs\:mui-r-ai-stretch {
     align-items: stretch;
   }
 }
 @media (--sm) {
-  .sm\:rt-r-ai-start {
+  .sm\:mui-r-ai-start {
     align-items: flex-start;
   }
-  .sm\:rt-r-ai-center {
+  .sm\:mui-r-ai-center {
     align-items: center;
   }
-  .sm\:rt-r-ai-end {
+  .sm\:mui-r-ai-end {
     align-items: flex-end;
   }
-  .sm\:rt-r-ai-baseline {
+  .sm\:mui-r-ai-baseline {
     align-items: baseline;
   }
-  .sm\:rt-r-ai-stretch {
+  .sm\:mui-r-ai-stretch {
     align-items: stretch;
   }
 }
 @media (--md) {
-  .md\:rt-r-ai-start {
+  .md\:mui-r-ai-start {
     align-items: flex-start;
   }
-  .md\:rt-r-ai-center {
+  .md\:mui-r-ai-center {
     align-items: center;
   }
-  .md\:rt-r-ai-end {
+  .md\:mui-r-ai-end {
     align-items: flex-end;
   }
-  .md\:rt-r-ai-baseline {
+  .md\:mui-r-ai-baseline {
     align-items: baseline;
   }
-  .md\:rt-r-ai-stretch {
+  .md\:mui-r-ai-stretch {
     align-items: stretch;
   }
 }
 @media (--lg) {
-  .lg\:rt-r-ai-start {
+  .lg\:mui-r-ai-start {
     align-items: flex-start;
   }
-  .lg\:rt-r-ai-center {
+  .lg\:mui-r-ai-center {
     align-items: center;
   }
-  .lg\:rt-r-ai-end {
+  .lg\:mui-r-ai-end {
     align-items: flex-end;
   }
-  .lg\:rt-r-ai-baseline {
+  .lg\:mui-r-ai-baseline {
     align-items: baseline;
   }
-  .lg\:rt-r-ai-stretch {
+  .lg\:mui-r-ai-stretch {
     align-items: stretch;
   }
 }
 @media (--xl) {
-  .xl\:rt-r-ai-start {
+  .xl\:mui-r-ai-start {
     align-items: flex-start;
   }
-  .xl\:rt-r-ai-center {
+  .xl\:mui-r-ai-center {
     align-items: center;
   }
-  .xl\:rt-r-ai-end {
+  .xl\:mui-r-ai-end {
     align-items: flex-end;
   }
-  .xl\:rt-r-ai-baseline {
+  .xl\:mui-r-ai-baseline {
     align-items: baseline;
   }
-  .xl\:rt-r-ai-stretch {
+  .xl\:mui-r-ai-stretch {
     align-items: stretch;
   }
 }

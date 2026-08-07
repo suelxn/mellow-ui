@@ -5,103 +5,103 @@
   via blocos @media por breakpoint.
 */
 
-.rt-r-gaf-row {
+.mui-r-gaf-row {
   grid-auto-flow: row;
 }
-.rt-r-gaf-column {
+.mui-r-gaf-column {
   grid-auto-flow: column;
 }
-.rt-r-gaf-dense {
+.mui-r-gaf-dense {
   grid-auto-flow: dense;
 }
-.rt-r-gaf-row-dense {
+.mui-r-gaf-row-dense {
   grid-auto-flow: row dense;
 }
-.rt-r-gaf-column-dense {
+.mui-r-gaf-column-dense {
   grid-auto-flow: column dense;
 }
 @media (--xs) {
-  .xs\:rt-r-gaf-row {
+  .xs\:mui-r-gaf-row {
     grid-auto-flow: row;
   }
-  .xs\:rt-r-gaf-column {
+  .xs\:mui-r-gaf-column {
     grid-auto-flow: column;
   }
-  .xs\:rt-r-gaf-dense {
+  .xs\:mui-r-gaf-dense {
     grid-auto-flow: dense;
   }
-  .xs\:rt-r-gaf-row-dense {
+  .xs\:mui-r-gaf-row-dense {
     grid-auto-flow: row dense;
   }
-  .xs\:rt-r-gaf-column-dense {
+  .xs\:mui-r-gaf-column-dense {
     grid-auto-flow: column dense;
   }
 }
 @media (--sm) {
-  .sm\:rt-r-gaf-row {
+  .sm\:mui-r-gaf-row {
     grid-auto-flow: row;
   }
-  .sm\:rt-r-gaf-column {
+  .sm\:mui-r-gaf-column {
     grid-auto-flow: column;
   }
-  .sm\:rt-r-gaf-dense {
+  .sm\:mui-r-gaf-dense {
     grid-auto-flow: dense;
   }
-  .sm\:rt-r-gaf-row-dense {
+  .sm\:mui-r-gaf-row-dense {
     grid-auto-flow: row dense;
   }
-  .sm\:rt-r-gaf-column-dense {
+  .sm\:mui-r-gaf-column-dense {
     grid-auto-flow: column dense;
   }
 }
 @media (--md) {
-  .md\:rt-r-gaf-row {
+  .md\:mui-r-gaf-row {
     grid-auto-flow: row;
   }
-  .md\:rt-r-gaf-column {
+  .md\:mui-r-gaf-column {
     grid-auto-flow: column;
   }
-  .md\:rt-r-gaf-dense {
+  .md\:mui-r-gaf-dense {
     grid-auto-flow: dense;
   }
-  .md\:rt-r-gaf-row-dense {
+  .md\:mui-r-gaf-row-dense {
     grid-auto-flow: row dense;
   }
-  .md\:rt-r-gaf-column-dense {
+  .md\:mui-r-gaf-column-dense {
     grid-auto-flow: column dense;
   }
 }
 @media (--lg) {
-  .lg\:rt-r-gaf-row {
+  .lg\:mui-r-gaf-row {
     grid-auto-flow: row;
   }
-  .lg\:rt-r-gaf-column {
+  .lg\:mui-r-gaf-column {
     grid-auto-flow: column;
   }
-  .lg\:rt-r-gaf-dense {
+  .lg\:mui-r-gaf-dense {
     grid-auto-flow: dense;
   }
-  .lg\:rt-r-gaf-row-dense {
+  .lg\:mui-r-gaf-row-dense {
     grid-auto-flow: row dense;
   }
-  .lg\:rt-r-gaf-column-dense {
+  .lg\:mui-r-gaf-column-dense {
     grid-auto-flow: column dense;
   }
 }
 @media (--xl) {
-  .xl\:rt-r-gaf-row {
+  .xl\:mui-r-gaf-row {
     grid-auto-flow: row;
   }
-  .xl\:rt-r-gaf-column {
+  .xl\:mui-r-gaf-column {
     grid-auto-flow: column;
   }
-  .xl\:rt-r-gaf-dense {
+  .xl\:mui-r-gaf-dense {
     grid-auto-flow: dense;
   }
-  .xl\:rt-r-gaf-row-dense {
+  .xl\:mui-r-gaf-row-dense {
     grid-auto-flow: row dense;
   }
-  .xl\:rt-r-gaf-column-dense {
+  .xl\:mui-r-gaf-column-dense {
     grid-auto-flow: column dense;
   }
 }

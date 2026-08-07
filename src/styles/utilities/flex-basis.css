@@ -6,31 +6,31 @@
   responsiva por breakpoint.
 */
 
-.rt-r-fb {
+.mui-r-fb {
   flex-basis: var(--flex-basis);
 }
 @media (--xs) {
-  .xs\:rt-r-fb {
+  .xs\:mui-r-fb {
     flex-basis: var(--flex-basis-xs);
   }
 }
 @media (--sm) {
-  .sm\:rt-r-fb {
+  .sm\:mui-r-fb {
     flex-basis: var(--flex-basis-sm);
   }
 }
 @media (--md) {
-  .md\:rt-r-fb {
+  .md\:mui-r-fb {
     flex-basis: var(--flex-basis-md);
   }
 }
 @media (--lg) {
-  .lg\:rt-r-fb {
+  .lg\:mui-r-fb {
     flex-basis: var(--flex-basis-lg);
   }
 }
 @media (--xl) {
-  .xl\:rt-r-fb {
+  .xl\:mui-r-fb {
     flex-basis: var(--flex-basis-xl);
   }
 }

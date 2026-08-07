@@ -6,78 +6,78 @@
   com media queries (@media).
 */
 
-.rt-r-fs-0 {
+.mui-r-fs-0 {
   flex-shrink: 0;
 }
-.rt-r-fs-1 {
+.mui-r-fs-1 {
   flex-shrink: 1;
 }
 
-.rt-r-fs {
+.mui-r-fs {
   flex-shrink: var(--flex-shrink);
 }
 @media (--xs) {
-  .xs\:rt-r-fs {
+  .xs\:mui-r-fs {
     flex-shrink: var(--flex-shrink-xs);
   }
 }
 @media (--sm) {
-  .sm\:rt-r-fs {
+  .sm\:mui-r-fs {
     flex-shrink: var(--flex-shrink-sm);
   }
 }
 @media (--md) {
-  .md\:rt-r-fs {
+  .md\:mui-r-fs {
     flex-shrink: var(--flex-shrink-md);
   }
 }
 @media (--lg) {
-  .lg\:rt-r-fs {
+  .lg\:mui-r-fs {
     flex-shrink: var(--flex-shrink-lg);
   }
 }
 @media (--xl) {
-  .xl\:rt-r-fs {
+  .xl\:mui-r-fs {
     flex-shrink: var(--flex-shrink-xl);
   }
 }
 @media (--xs) {
-  .xs\:rt-r-fs-0 {
+  .xs\:mui-r-fs-0 {
     flex-shrink: 0;
   }
-  .xs\:rt-r-fs-1 {
+  .xs\:mui-r-fs-1 {
     flex-shrink: 1;
   }
 }
 @media (--sm) {
-  .sm\:rt-r-fs-0 {
+  .sm\:mui-r-fs-0 {
     flex-shrink: 0;
   }
-  .sm\:rt-r-fs-1 {
+  .sm\:mui-r-fs-1 {
     flex-shrink: 1;
   }
 }
 @media (--md) {
-  .md\:rt-r-fs-0 {
+  .md\:mui-r-fs-0 {
     flex-shrink: 0;
   }
-  .md\:rt-r-fs-1 {
+  .md\:mui-r-fs-1 {
     flex-shrink: 1;
   }
 }
 @media (--lg) {
-  .lg\:rt-r-fs-0 {
+  .lg\:mui-r-fs-0 {
     flex-shrink: 0;
   }
-  .lg\:rt-r-fs-1 {
+  .lg\:mui-r-fs-1 {
     flex-shrink: 1;
   }
 }
 @media (--xl) {
-  .xl\:rt-r-fs-0 {
+  .xl\:mui-r-fs-0 {
     flex-shrink: 0;
   }
-  .xl\:rt-r-fs-1 {
+  .xl\:mui-r-fs-1 {
     flex-shrink: 1;
   }
 }

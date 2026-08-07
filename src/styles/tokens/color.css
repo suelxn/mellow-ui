@@ -115,6 +115,14 @@
 /*                                     */
 /* * * * * * * * * * * * * * * * * * * */
 
+/*
+  As cores de destaque (accent) usam intencionalmente uma escala de 50 a 900 (sem os
+  extremos 0/950): nada na biblioteca consome um "branco/preto puro" tingido de accent.
+  Os extremos 0/950 existem só na família gray (neutral/slate, ver bloco "Gray color"
+  abaixo), porque shadow.css precisa de um tom que seja branco puro no light e preto
+  puro no dark (e vice-versa) para compor as sombras de forma theme-aware.
+*/
+
 :where(.mellow-ui) {
   /* padrão usado quando nenhum [data-accent-color] é definido */
   --accent-50: var(--pink-50);
@@ -286,6 +294,7 @@
 
 :where(.mellow-ui) {
   /* padrão usado quando nenhum [data-gray-color] é definido */
+  --gray-0: var(--neutral-0);
   --gray-50: var(--neutral-50);
   --gray-100: var(--neutral-100);
   --gray-200: var(--neutral-200);
@@ -296,6 +305,7 @@
   --gray-700: var(--neutral-700);
   --gray-800: var(--neutral-800);
   --gray-900: var(--neutral-900);
+  --gray-950: var(--neutral-950);
 
   --gray-contrast: var(--neutral-contrast);
   --gray-surface: var(--neutral-surface);
@@ -305,6 +315,7 @@
 
 .mellow-ui {
   &:where([data-gray-color='neutral']) {
+    --gray-0: var(--neutral-0);
     --gray-50: var(--neutral-50);
     --gray-100: var(--neutral-100);
     --gray-200: var(--neutral-200);
@@ -315,6 +326,7 @@
     --gray-700: var(--neutral-700);
     --gray-800: var(--neutral-800);
     --gray-900: var(--neutral-900);
+    --gray-950: var(--neutral-950);
 
     --gray-contrast: var(--neutral-contrast);
     --gray-surface: var(--neutral-surface);
@@ -323,6 +335,7 @@
   }
 
   &:where([data-gray-color='slate']) {
+    --gray-0: var(--slate-0);
     --gray-50: var(--slate-50);
     --gray-100: var(--slate-100);
     --gray-200: var(--slate-200);
@@ -333,6 +346,7 @@
     --gray-700: var(--slate-700);
     --gray-800: var(--slate-800);
     --gray-900: var(--slate-900);
+    --gray-950: var(--slate-950);
 
     --gray-contrast: var(--slate-contrast);
     --gray-surface: var(--slate-surface);
@@ -354,6 +368,7 @@
       [data-accent-color='green'],
       [data-accent-color='mint']
     ) {
+    --gray-0: var(--slate-0);
     --gray-50: var(--slate-50);
     --gray-100: var(--slate-100);
     --gray-200: var(--slate-200);
@@ -364,6 +379,7 @@
     --gray-700: var(--slate-700);
     --gray-800: var(--slate-800);
     --gray-900: var(--slate-900);
+    --gray-950: var(--slate-950);
 
     --gray-contrast: var(--slate-contrast);
     --gray-surface: var(--slate-surface);
@@ -377,6 +393,7 @@
       [data-accent-color='red'],
       [data-accent-color='yellow']
     ) {
+    --gray-0: var(--neutral-0);
     --gray-50: var(--neutral-50);
     --gray-100: var(--neutral-100);
     --gray-200: var(--neutral-200);
@@ -387,6 +404,7 @@
     --gray-700: var(--neutral-700);
     --gray-800: var(--neutral-800);
     --gray-900: var(--neutral-900);
+    --gray-950: var(--neutral-950);
 
     --gray-contrast: var(--neutral-contrast);
     --gray-surface: var(--neutral-surface);
