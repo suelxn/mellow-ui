@@ -1,3 +1,23 @@
 import { Meta } from '@storybook/addon-docs/blocks';
 
 <Meta title="Tipografia" />
+
+# Tipografia
+
+> **Página de exemplo.** Troque este conteúdo pelo texto real sobre a escala tipográfica quando chegar a hora — a ideia aqui é só mostrar a estrutura que essa página deve ter.
+
+## Tamanho de fonte
+
+Escala de `--font-size-xs` (12px) a `--font-size-9xl` (128px), sempre multiplicada por `--scaling` (a densidade configurada no `Theme`).
+
+## Peso de fonte
+
+A prop `weight` aceita: `thin` · `extralight` · `light` · `regular` · `medium` · `semibold` · `bold` · `extrabold` · `black`.
+
+## Altura de linha e espaçamento entre letras
+
+Cada tamanho de fonte tem uma altura de linha (`--line-height-*`) e um espaçamento entre letras (`--letter-spacing-*`) correspondentes, ajustados para leitura confortável em cada escala.
+
+## Família de fonte
+
+`Inter` como fonte padrão, com fallbacks nativos por sistema operacional (Segoe UI no Windows, system-ui/Open Sans no Linux, -apple-system no macOS) — relevante já que o Design System é desenvolvido e testado nos três.

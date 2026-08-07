@@ -1,3 +1,22 @@
 import { Meta } from '@storybook/addon-docs/blocks';
 
 <Meta title="Acessibilidade" />
+
+# Acessibilidade
+
+> **Página de exemplo.** Trocar este conteúdo pelo texto real sobre os princípios de acessibilidade quando chegar a hora. A ideia aqui é só mostrar a estrutura que essa página deve ter.
+
+## Como é verificado hoje
+
+Cada história no Storybook passa pelo `@storybook/addon-a11y`, que roda o [axe-core](https://github.com/dequelabs/axe-core) automaticamente e mostra as violações na aba **Accessibility** do painel de cada componente.
+
+## Princípios
+
+- **Foco visível**: todo elemento interativo precisa de um indicador de foco claro (ver `--focus-*` em `src/styles/tokens/color.css`, usado via `:focus-visible`).
+- **Contraste**: `--accent-contrast` e `--gray-contrast` existem justamente para garantir texto legível sobre os tons sólidos de cada cor.
+- **Estados desabilitados**: usam `--cursor-disabled` e devem continuar comunicando o estado visualmente (nunca só remover o elemento da tela).
+- **`asChild`**: ao usar `asChild`, a responsabilidade de manter a semântica HTML correta (ex.: um botão que vira link) passa a ser de quem consome o componente.
+
+## Próximos passos
+
+Conforme os componentes reais forem sendo construídos, documentar aqui: navegação por teclado esperada, uso de `aria-*` por componente, e como testar com leitor de tela.

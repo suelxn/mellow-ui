@@ -1,12 +1,9 @@
 'use client';
 
 /*
-  Componente raiz do Design System. Aplica a classe ".mellow-ui" e os atributos "data-*"
-  (radius, scaling, accent-color, gray-color, panel-background, has-background e is-root-theme)
-  dos quais os tokens em src/styles/tokens dependem para resolver suas CSS custom properties.
+  Componente raiz do Design System. Aplica a classe ".mellow-ui" e os atributos "data-*" (radius, scaling, accent-color, gray-color, panel-background, has-background e is-root-theme) dos quais os tokens em src/styles/tokens dependem para resolver suas CSS custom properties.
 
-  Suporta aninhamento: um "Theme" dentro de outro herda, via Context, os valores do "Theme" pai
-  e só sobrescreve o que for passado explicitamente por prop.
+  Suporta aninhamento: um "Theme" dentro de outro herda, via Context, os valores do "Theme" pai e só sobrescreve o que for passado explicitamente por prop.
 */
 
 import * as React from 'react';

@@ -1,3 +1,23 @@
 import { Meta } from '@storybook/addon-docs/blocks';
 
 <Meta title="Espaçamento" />
+
+# Espaçamento
+
+> **Página de exemplo.** Trocar este conteúdo pelo texto real sobre a escala de espaçamento quando chegar a hora. A ideia aqui é só mostrar a estrutura que essa página deve ter.
+
+## Escala
+
+De `--space-1` (4px) a `--space-9` (64px), sempre multiplicada por `--scaling`. Usada pelas props `p`/`px`/`py`/`pt`/`pr`/`pb`/`pl` (padding), `m`/`mx`/`my`/`mt`/`mr`/`mb`/`ml` (margin, aceita valores negativos) e `gap`/`gapX`/`gapY`.
+
+```tsx
+<div className="mui-r-p-4 mui-r-gap-2">...</div>
+```
+
+## Radius
+
+Controlado pela prop `radius` do `Theme` (`none` · `small` · `medium` · `large` · `full`), também escalado por `--scaling`.
+
+## Densidade (scaling)
+
+A prop `scaling` do `Theme` (`90%` a `110%`) ajusta a densidade de toda a interface de uma vez: espaçamento, tipografia e radius, sem precisar recalcular cada token manualmente.

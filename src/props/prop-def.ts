@@ -71,8 +71,8 @@ type RegularPropDef<T> =
   | (EnumPropDef<T> & NonStylingPropDef)
   | (EnumOrStringPropDef<T> & ArbitraryStylingPropDef)
   | (EnumOrStringPropDef<T> & NonStylingPropDef);
-type ResponsivePropDef<T = any> = RegularPropDef<T> & { responsive: true };
-type PropDef<T = any> = RegularPropDef<T> | ResponsivePropDef<T>;
+type ResponsivePropDef<T = unknown> = RegularPropDef<T> & { responsive: true };
+type PropDef<T = unknown> = RegularPropDef<T> | ResponsivePropDef<T>;
 
 // prettier-ignore
 type GetPropDefType<Def> =

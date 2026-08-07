@@ -1,7 +1,6 @@
 /*
   Define o objeto de especificação e tipagem para as props do componente raiz "Theme".
-  Reúne os tokens de tema (aparência, cor de destaque, cor neutra, fundo do painel, radius e scaling)
-  que precisam estar presentes no elemento raiz para que as CSS custom properties do Design System resolvam.
+  Reúne os tokens de tema (aparência, cor de destaque, cor neutra, fundo do painel, radius e scaling) que precisam estar presentes no elemento raiz para que as CSS custom properties do Design System resolvam.
 */
 
 import type { PropDef } from '../../props/prop-def';

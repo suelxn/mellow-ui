@@ -1,7 +1,7 @@
 /*
   Mescla as props que o componente resolve para o Slot (slotProps) com as props do elemento
   filho recebido via asChild (childProps). Regra: className concatena, style mescla (filho
-  vence em conflito) e handlers "on*" são compostos — os demais valores do filho sobrescrevem
+  vence em conflito) e handlers "on*" são compostos, os demais valores do filho sobrescrevem
   os do slot, já que o filho é quem melhor sabe do que precisa.
 */
 

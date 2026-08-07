@@ -11,10 +11,14 @@ mellow-ui/
 │
 ├── public/                      # Arquivos estáticos servidos pelo Next.js e pelo Storybook (staticDirs)
 │
-├── app/                         # Playground Next.js usado só para desenvolvimento local — NÃO faz parte do pacote publicado no npm
+├── app/                         # Playground Next.js usado só para desenvolvimento local - NÃO faz parte do pacote publicado no npm
 │   ├── globals.css              # Importa Tailwind (escopo exclusivo deste playground) + src/styles/index.css
 │   ├── layout.tsx               # Layout raiz do playground, já envolvido pelo <Theme>
 │   └── page.tsx                 # Página inicial (ainda o boilerplate do create-next-app)
+│
+├── dist/                        # Saída do build da lib ("npm run build:lib"): JS/d.ts compilados de src/ + CSS
+│                                 # copiado. É exatamente o que "files": ["dist"] publica no npm. Gerada, não
+│                                 # versionada (está no .gitignore), pode não existir localmente até você buildar.
 │
 ├── src/
 │   │
@@ -30,14 +34,16 @@ mellow-ui/
 │   │   │   ├── Theme.types.ts    # Tipos derivados de Theme.props.ts via GetPropDefTypes
 │   │   │   └── index.ts
 │   │   │
-│   │   └── Button/               # Scaffold criado, implementação ainda pendente (arquivos vazios)
+│   │   └── Button/               # Componente de EXEMPLO (não é o Button final do Design System - ver nota abaixo)
 │   │       ├── Button.tsx
+│   │       ├── Button.props.ts   # Objeto de especificação das props (PropDef): asChild, variant, size, color
 │   │       ├── Button.types.ts
+│   │       ├── Button.css
 │   │       ├── Button.stories.tsx
 │   │       ├── Button.test.tsx
 │   │       └── index.ts
 │   │
-│   ├── core/                    # Utilitários internos de composição — não fazem parte da API pública
+│   ├── core/                    # Utilitários internos de composição - não fazem parte da API pública
 │   │   ├── Slot.tsx              # Implementação própria do padrão "asChild" (equivalente ao Slot do Radix, sem depender dele)
 │   │   ├── composeRefs.ts
 │   │   ├── composeEventHandlers.ts
@@ -119,7 +125,8 @@ mellow-ui/
 | Pasta | Responsabilidade |
 |--------|------------------|
 | **app** | Playground Next.js usado só para desenvolvimento local. Não faz parte da biblioteca publicada no npm (o script `build:lib` nunca lê esta pasta). |
-| **components** | Contém todos os componentes do Design System, organizados individualmente em suas respectivas pastas. |
+| **dist** | Saída gerada por `npm run build:lib` — o que de fato é publicado no npm. Não é versionada (`.gitignore`) e pode não existir até você rodar o build; nunca edite nada aqui direto, edite em `src/`. |
+| **components** | Contém todos os componentes do Design System, organizados individualmente em suas respectivas pastas. Hoje só `Theme` é definitivo — `Button` é um componente de **exemplo** (props, CSS, stories e testes reais, mas só para validar a pipeline de build/lint/teste); será apagado e substituído quando a fase de construção dos componentes de verdade começar. |
 | **core** | Utilitários internos de composição (Slot/asChild, refs, event handlers, merge de props). Não são exportados publicamente — dão suporte à prop `asChild` dos componentes. |
 | **props** | Sistema compartilhado de definição de props ("prop-def"): cada arquivo descreve uma prop reutilizável (cor, espaçamento, layout, tipografia...) de forma tipada, com a classe CSS utilitária correspondente. É a base sobre a qual os componentes vão declarar suas próprias props. |
 | **icons** | Wrapper fino sobre `@phosphor-icons/react`, pensado para preservar tree-shaking (recebe o ícone já importado pelo consumidor, em vez de resolver por nome em string). |
@@ -143,7 +150,7 @@ mellow-ui/
 
 # Ainda não implementado
 
-As pastas abaixo **não existem no código hoje**. Ficam registradas aqui só como intenção futura — a lição deste documento é criá-las quando o primeiro caso de uso real aparecer, não antes disso, para não repetir uma árvore "prometida" e nunca construída:
+As pastas abaixo **não existem no código hoje**. Ficam registradas aqui só como intenção futura, a intenção deste documento é criá-las quando o primeiro caso de uso real aparecer, não antes disso, para não repetir uma árvore "prometida" e nunca construída:
 
 | Pasta futura | Quando criar |
 |--------|------------------|

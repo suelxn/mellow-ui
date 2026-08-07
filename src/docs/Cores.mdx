@@ -1,3 +1,27 @@
 import { Meta } from '@storybook/addon-docs/blocks';
 
 <Meta title="Cores" />
+
+# Cores
+
+> **Página de exemplo.** Trocar este conteúdo pelo texto real sobre o sistema de cores quando chegar a hora. A ideia aqui é só mostrar a estrutura que essa página deve ter. Boa oportunidade para, futuramente, renderizar as paletas de verdade lado a lado usando os blocos do Storybook (`ColorPalette`, `ColorItem`).
+
+## Cores de destaque (accent)
+
+Controladas pela prop `accentColor` do componente `Theme`:
+
+`blue` · `coral` · `green` · `mint` · `pink` · `red` · `sky` · `yellow`
+
+Cada uma expõe uma escala de `--accent-50` a `--accent-900`, além de `--accent-contrast`, `--accent-surface`, `--accent-indicator` e `--accent-track`.
+
+## Cores neutras (gray)
+
+Controladas pela prop `grayColor`:
+
+- `neutral` — cinza acromático.
+- `slate` — cinza com viés azulado.
+- `auto` — escolhe `neutral` ou `slate` automaticamente com base na temperatura do `accentColor` ativo.
+
+## Tema claro/escuro
+
+Definido pela prop `appearance` do `Theme` (`inherit` | `light` | `dark`). Todos os tokens de cor têm variante para os dois modos, incluindo suporte a telas de ampla gama de cores (Display P3) quando disponível.

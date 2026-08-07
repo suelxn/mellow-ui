@@ -1,3 +1,44 @@
 import { Meta } from '@storybook/addon-docs/blocks';
 
 <Meta title="Instalação" />
+
+# Instalação
+
+> **Página de exemplo.** Trocar este conteúdo pelo texto real de instalação quando chegar a hora. A ideia aqui é só mostrar a estrutura que essa página deve ter.
+
+## Pré-requisitos
+
+- **Node.js 20+**
+- **React 19** e **React DOM 19** já instalados no seu projeto
+
+## Instalando o pacote
+
+```bash
+npm install mellow-ui react react-dom
+```
+
+Se você usar o componente `Icon`, instale também o `@phosphor-icons/react` (peer dependency opcional):
+
+```bash
+npm install @phosphor-icons/react
+```
+
+## Importando o CSS
+
+```tsx
+import 'mellow-ui/styles/index.css';
+```
+
+## Envolvendo a aplicação com o `Theme`
+
+```tsx
+import { Theme } from 'mellow-ui';
+
+function App() {
+  return (
+    <Theme accentColor="pink" grayColor="auto" radius="medium">
+      {/* sua aplicação */}
+    </Theme>
+  );
+}
+```
