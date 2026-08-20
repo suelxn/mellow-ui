@@ -10,7 +10,7 @@
   --font-size-lg:  calc(18px * var(--scaling));
   --font-size-xl:  calc(20px * var(--scaling));
   --font-size-2xl: calc(24px * var(--scaling));
-  --font-size-3xl: calc(30px * var(--scaling));
+  --font-size-3xl: calc(32px * var(--scaling));
   --font-size-4xl: calc(36px * var(--scaling));
   --font-size-5xl: calc(48px * var(--scaling));
   --font-size-6xl: calc(60px * var(--scaling));
@@ -86,7 +86,7 @@
   --heading-line-height-md:  calc(22px * var(--scaling));
   --heading-line-height-lg:  calc(24px * var(--scaling));
   --heading-line-height-xl:  calc(26px * var(--scaling));
-  --heading-line-height-2xl: calc(30px * var(--scaling));
+  --heading-line-height-2xl: calc(32px * var(--scaling));
   --heading-line-height-3xl: calc(36px * var(--scaling));
   --heading-line-height-4xl: calc(40px * var(--scaling));
   --heading-line-height-5xl: calc(60px * var(--scaling));
