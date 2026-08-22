@@ -5,7 +5,8 @@
     "outDir": "dist",
     "declaration": true,
     "declarationMap": true,
-    "module": "esnext",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "skipLibCheck": true,
     "noEmit": false,
     "incremental": false
