@@ -8,8 +8,8 @@
 
 import * as React from 'react';
 
-import { themePropDefs } from './Theme.props';
-import type { ThemeOwnProps } from './Theme.types';
+import { themePropDefs } from './Theme.props.js';
+import type { ThemeOwnProps } from './Theme.types.js';
 
 type ThemeConfig = {
   accentColor: NonNullable<ThemeOwnProps['accentColor']>;

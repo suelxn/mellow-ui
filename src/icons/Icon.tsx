@@ -5,8 +5,8 @@
   padroniza propriedades de tamanho (via mapa ICON_SIZES ou valor numérico), peso e cor.
 */
 
-import type { IconProps } from './types';
-import { ICON_SIZES } from './types';
+import type { IconProps } from './types.js';
+import { ICON_SIZES } from './types.js';
 
 export function Icon({
   icon: IconComponent,

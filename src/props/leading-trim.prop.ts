@@ -4,7 +4,7 @@
   mapeando a prop à classe utilitária "mui-r-lt" com suporte a variações responsivas via PropDef.
 */
 
-import type { PropDef } from './prop-def';
+import type { PropDef } from './prop-def.js';
 
 const leadingTrimValues = ['normal', 'start', 'end', 'both'] as const;
 

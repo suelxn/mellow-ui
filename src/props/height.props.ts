@@ -4,7 +4,7 @@
   configurando o comportamento responsivo via PropDef e exportando o tipo agrupado HeightProps.
 */
 
-import type { PropDef, GetPropDefTypes } from './prop-def';
+import type { PropDef, GetPropDefTypes } from './prop-def.js';
 
 const heightPropDefs = {
   /**

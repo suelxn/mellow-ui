@@ -44,7 +44,7 @@
     "./styles/*": "./dist/styles/*"
   },
   "scripts": {
-    "build:lib": "rimraf dist && tsc --project tsconfig.json --outDir dist --declaration --module esnext --skipLibCheck && npm run copy:css",
+    "build:lib": "rimraf dist && tsc --project tsconfig.build.json && npm run copy:css",
     "copy:css": "copyfiles -u 1 \"src/styles/**/*\" \"src/components/**/*.css\" dist",
     "build": "npm run build:lib && npm run build-storybook",
     "prepublishOnly": "npm run build:lib",

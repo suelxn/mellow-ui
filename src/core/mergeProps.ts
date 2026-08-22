@@ -5,7 +5,7 @@
   os do slot, já que o filho é quem melhor sabe do que precisa.
 */
 
-import { composeEventHandlers } from './composeEventHandlers';
+import { composeEventHandlers } from './composeEventHandlers.js';
 
 type AnyProps = Record<string, unknown>;
 

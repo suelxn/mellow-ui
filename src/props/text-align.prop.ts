@@ -4,7 +4,7 @@
   para a classe utilitária "mui-r-ta" com suporte a ajustes responsivos via PropDef.
 */
 
-import type { PropDef } from './prop-def';
+import type { PropDef } from './prop-def.js';
 
 const textAlignValues = ['left', 'center', 'right'] as const;
 
