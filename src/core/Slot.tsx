@@ -23,9 +23,13 @@ type SlotProps = {
 } & Record<string, unknown>;
 
 function Slot({ children, ref, ...slotProps }: SlotProps) {
-  const child = React.Children.only(children);
-
-  if (!React.isValidElement<{ ref?: React.Ref<HTMLElement> }>(child)) {
+  // React.Children.only já valida "um único elemento React válido" e lança sua própria exceção
+  // (genérica, em inglês) para qualquer outro caso — capturamos e relançamos com uma mensagem
+  // específica da lib, mais clara sobre a causa (uso incorreto da prop "asChild").
+  let child: React.ReactElement<{ ref?: React.Ref<HTMLElement> }>;
+  try {
+    child = React.Children.only(children) as React.ReactElement<{ ref?: React.Ref<HTMLElement> }>;
+  } catch {
     throw new Error('[mellow-ui] "asChild" espera um elemento React único e válido como filho.');
   }
 
