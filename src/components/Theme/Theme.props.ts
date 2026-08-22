@@ -3,10 +3,10 @@
   Reúne os tokens de tema (aparência, cor de destaque, cor neutra, fundo do painel, radius e scaling) que precisam estar presentes no elemento raiz para que as CSS custom properties do Design System resolvam.
 */
 
-import type { PropDef } from '../../props/prop-def';
-import { accentColors, grayColors } from '../../props/color.prop';
-import { radii } from '../../props/radius.prop';
-import { scalings } from '../../props/scaling.prop';
+import type { PropDef } from '../../props/prop-def.js';
+import { accentColors, grayColors } from '../../props/color.prop.js';
+import { radii } from '../../props/radius.prop.js';
+import { scalings } from '../../props/scaling.prop.js';
 
 type ThemeRadius = (typeof radii)[number];
 

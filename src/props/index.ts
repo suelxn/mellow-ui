@@ -1,7 +1,7 @@
 // Prop definition
 export {
   breakpointsArray as breakpoints,
-} from './prop-def';
+} from './prop-def.js';
 export type {
   PropDef,
   GetPropDefTypes,
@@ -10,26 +10,26 @@ export type {
   Breakpoint,
   Responsive,
   Union,
-} from './prop-def';
+} from './prop-def.js';
 
- 
+
 // Individual props
-export * from './as-child.prop';
-export * from './color.prop';
-export * from './gap.props';
-export * from './height.props';
-export * from './high-contrast.prop';
-export * from './layout.props';
-export * from './leading-trim.prop';
-export * from './margin.props';
-export * from './padding.props';
-export * from './radius.prop';
-export * from './scaling.prop';
-export * from './text-align.prop';
-export * from './text-wrap.prop';
-export * from './truncate.prop';
-export * from './weight.prop';
-export * from './width.props';
+export * from './as-child.prop.js';
+export * from './color.prop.js';
+export * from './gap.props.js';
+export * from './height.props.js';
+export * from './high-contrast.prop.js';
+export * from './layout.props.js';
+export * from './leading-trim.prop.js';
+export * from './margin.props.js';
+export * from './padding.props.js';
+export * from './radius.prop.js';
+export * from './scaling.prop.js';
+export * from './text-align.prop.js';
+export * from './text-wrap.prop.js';
+export * from './truncate.prop.js';
+export * from './weight.prop.js';
+export * from './width.props.js';
 
 /*
 // Component props

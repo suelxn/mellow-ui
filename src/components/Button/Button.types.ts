@@ -1,7 +1,7 @@
 import type React from 'react';
 
-import type { GetPropDefTypes } from '../../props/prop-def';
-import type { buttonPropDefs } from './Button.props';
+import type { GetPropDefTypes } from '../../props/prop-def.js';
+import type { buttonPropDefs } from './Button.props.js';
 
 type ButtonOwnProps = GetPropDefTypes<typeof buttonPropDefs>;
 

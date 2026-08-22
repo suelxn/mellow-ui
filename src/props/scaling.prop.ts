@@ -4,7 +4,7 @@
   e exporta a definição tipada scalingPropDef via PropDef para ajuste de densidade visual do Design System.
 */
 
-import type { PropDef } from './prop-def';
+import type { PropDef } from './prop-def.js';
 
 const scalings = ['90%', '95%', '100%', '105%', '110%'] as const;
 

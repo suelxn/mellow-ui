@@ -1,3 +1,3 @@
 // src/components/index.ts
-export * from './Theme/index';
-export * from './Button/index';
+export * from './Theme/index.js';
+export * from './Button/index.js';

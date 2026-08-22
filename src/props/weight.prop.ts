@@ -4,7 +4,7 @@
   para a classe utilitária "mui-r-weight" com suporte a ajustes responsivos via PropDef.
 */
 
-import type { PropDef } from './prop-def';
+import type { PropDef } from './prop-def.js';
 
 const weights = ['thin', 'extralight', 'light', 'regular', 'medium', 'semibold', 'bold', 'extrabold', 'black'] as const;
 
