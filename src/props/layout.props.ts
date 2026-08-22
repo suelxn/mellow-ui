@@ -171,7 +171,7 @@ const layoutPropDefs = {
     responsive: true,
   },
   /**
-   * Define a propriedade CSS **overflow-x**. 
+   * Define a propriedade CSS **overflow-y**.
    * Suporta os valores CSS correspondentes e objetos responsivos.
    *
    * @example
