@@ -32,10 +32,16 @@ jobs:
         run: npm ci
 
       - name: Create Release PR or Publish to npm
-        uses: changesets/action@v1
+        # Pinado numa versão exata (não @v1/@v2 flutuante): @v1 estava resolvendo pra um commit
+        # antigo, com inputs em camelCase (publish, createGithubReleases) e detecção de tag via
+        # regex no texto "New tag:" do stdout do "changeset publish" - formato que @changesets/cli
+        # não imprime mais desde a UI baseada em Clack (spinners "Creating git tags..."). Resultado:
+        # o publish no npm funcionava, mas nenhuma tag/Release era criada no GitHub, silenciosamente.
+        # v2.1.1 usa inputs kebab-case (publish-script) e um mecanismo mais robusto (arquivo
+        # CHANGESETS_OUTPUT), compatível com a versão do @changesets/cli instalada aqui.
+        uses: changesets/action@v2.1.1
         with:
-          publish: npm run release
+          publish-script: npm run release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
