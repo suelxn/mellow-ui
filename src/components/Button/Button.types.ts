@@ -10,4 +10,7 @@ type ButtonProps = ButtonOwnProps &
     ref?: React.Ref<HTMLButtonElement>;
   };
 
-export type { ButtonOwnProps, ButtonProps };
+type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger';
+type ButtonSize = 'sm' | 'md' | 'lg';
+
+export type { ButtonOwnProps, ButtonProps, ButtonVariant, ButtonSize };

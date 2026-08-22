@@ -29,6 +29,8 @@ const preview: Preview = {
           "Fundamentos",
           "Tokens",
           "Componentes",
+          "*",
+          "Changelog",
         ],
       },
     },

@@ -1,5 +1,5 @@
 {
-  "name": "mellow-ui",
+  "name": "@softsues/mellow-ui",
   "version": "0.1.0",
   "private": false,
   "description": "Design System em React/TypeScript — componentes acessíveis, tokens de design e utilitários de layout, sem dependência do Radix UI, documentados via Storybook.",
@@ -48,12 +48,18 @@
     "copy:css": "copyfiles -u 1 \"src/styles/**/*\" \"src/components/**/*.css\" dist",
     "build": "npm run build:lib && npm run build-storybook",
     "prepublishOnly": "npm run build:lib",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "changeset publish",
     "dev": "next dev",
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1"
   },
   "peerDependencies": {
     "@phosphor-icons/react": "^2.1.10",
@@ -66,6 +72,7 @@
     }
   },
   "devDependencies": {
+    "@changesets/cli": "^3.0.1",
     "@chromatic-com/storybook": "^5.2.1",
     "@phosphor-icons/react": "^2.1.10",
     "@storybook/addon-a11y": "^10.5.4",
@@ -105,4 +112,3 @@
     "aria-query": "5.3.2"
   }
 }
-
