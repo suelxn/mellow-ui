@@ -14,7 +14,7 @@ const accentColors = ['blue', 'coral', 'green', 'mint', 'pink', 'red', 'sky', 'y
 // 'auto' resolve o cinza a partir do accentColor ativo (ver color.css); os demais valores são fixos.
 const grayColors = ['auto', 'neutral', 'slate'] as const;
 
-// Cor arbitrária por instância — cada componente escolhe livremente entre os 8 accent colors,
+// Cor arbitrária por instância: cada componente escolhe livremente entre os 8 accent colors,
 // sem relação com o accentColor ambiente definido pelo <Theme>. Usado por componentes de
 // preenchimento/contorno (ex.: Badge, Button, Avatar, Callout).
 const colorPropDef = {
@@ -35,7 +35,7 @@ const colorPropDef = {
 // O shape é idêntico ao de colorPropDef de propósito: no Radix Themes (referência de arquitetura
 // deste projeto), a diferença entre os dois vive em como cada componente consome o valor, não no
 // tipo do prop-def em si. Sem nenhum componente tipográfico implementado ainda, este prop-def não
-// tem consumidor — fica pronto para quando o primeiro for construído; não apagar por "código morto".
+// tem consumidor - fica pronto para quando o primeiro for construído; não apagar por "código morto".
 const accentColorPropDef = {
   color: {
     type: 'enum',

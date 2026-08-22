@@ -41,6 +41,7 @@ Este projeto é desenvolvido e mantido alternando entre três sistemas operacion
 
 - **Node.js 20+** (qualquer um dos três sistemas).
 - Git configurado para não reescrever line endings automaticamente além do que `.gitattributes` já define (evite `core.autocrlf=true` no Windows; o padrão `input` é suficiente já que `.gitattributes` cuida da normalização).
+- Browser do Playwright instalado (`npx playwright install chromium`) — necessário pra rodar `npm run test`, que executa em Chromium real, não num DOM simulado. Ver seção "Rodar os testes" abaixo.
 
 ## 🛠️ Como iniciar o projeto
 
@@ -67,6 +68,14 @@ npm run dev
 Abre em [http://localhost:3000](http://localhost:3000). Serve só para prototipar telas usando os componentes já publicados internamente, não é parte do pacote npm.
 
 ### Rodar os testes
+
+Os testes rodam em Chromium real via Playwright (ver `vitest.config.ts`), não num DOM simulado. Antes da primeira vez, baixe o browser (só precisa rodar uma vez por máquina):
+
+```bash
+npx playwright install chromium
+```
+
+Depois, rode a suíte:
 
 ```bash
 npm run test
