@@ -7,8 +7,10 @@
 import { clsx as classNames } from 'clsx';
 
 import { getResponsiveClassNames, getResponsiveStyles } from './get-responsive-styles.js';
+import { hasOwnProperty } from './has-own-property.js';
 import { isResponsiveObject } from './is-responsive-object.js';
 import { mergeStyles } from './merge-styles.js';
+import { breakpoints } from '../props/prop-def.js';
 
 import type * as React from 'react';
 import type { PropDef } from '../props/prop-def.js';
@@ -120,7 +122,23 @@ function extractProps<
       }
 
       if (propDef.type === 'boolean' && value) {
-        // TODO lidar com propriedades booleanas responsivas
+        if (isResponsiveObject(value)) {
+          const responsiveClassNames: string[] = [];
+
+          for (const bp in value) {
+            if (!hasOwnProperty(value, bp) || !breakpoints.has(bp)) {
+              continue;
+            }
+
+            if (value[bp]) {
+              responsiveClassNames.push(bp === 'initial' ? propDef.className : `${bp}:${propDef.className}`);
+            }
+          }
+
+          className = classNames(className, responsiveClassNames.join(' '));
+          continue;
+        }
+
         className = classNames(className, propDef.className);
         continue;
       }

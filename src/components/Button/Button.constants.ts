@@ -1,4 +1,4 @@
-import type { ButtonVariant, ButtonSize } from './Button.types';
+import type { ButtonVariant, ButtonSize } from './Button.types.js';
 
 export const DEFAULT_BUTTON_VARIANT: ButtonVariant = 'primary';
 export const DEFAULT_BUTTON_SIZE: ButtonSize = 'md';

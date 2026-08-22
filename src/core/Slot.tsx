@@ -14,8 +14,8 @@
 
 import * as React from 'react';
 
-import { composeRefs } from './composeRefs';
-import { mergeProps } from './mergeProps';
+import { composeRefs } from './composeRefs.js';
+import { mergeProps } from './mergeProps.js';
 
 type SlotProps = {
   children?: React.ReactNode;

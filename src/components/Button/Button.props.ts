@@ -7,9 +7,9 @@
   ser apagado e substituído pela implementação real do Button do Design System.
 */
 
-import type { PropDef } from '../../props/prop-def';
-import { asChildPropDef } from '../../props/as-child.prop';
-import { accentColors } from '../../props/color.prop';
+import type { PropDef } from '../../props/prop-def.js';
+import { asChildPropDef } from '../../props/as-child.prop.js';
+import { accentColors } from '../../props/color.prop.js';
 
 const buttonVariants = ['solid', 'soft', 'outline', 'ghost'] as const;
 const buttonSizes = ['1', '2', '3'] as const;

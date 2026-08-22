@@ -4,7 +4,7 @@
   de variantes visuais de alto contraste nos componentes, validada através do tipo PropDef.
 */
 
-import type { PropDef } from './prop-def';
+import type { PropDef } from './prop-def.js';
 
 const highContrastPropDef = {
   highContrast: {

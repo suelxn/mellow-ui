@@ -9,6 +9,14 @@ mellow-ui/
 │
 ├── .storybook/                  # Configuração do Storybook (addons, preview, ordenação de docs)
 │
+├── .changeset/                  # Configuração do Changesets (versionamento/changelog automatizado)
+│   ├── config.json
+│   └── README.md
+│
+├── .github/
+│   └── workflows/
+│       └── release.yml          # CI: abre PR de "Version Packages" e publica no npm ao mergear em main
+│
 ├── public/                      # Arquivos estáticos servidos pelo Next.js e pelo Storybook (staticDirs)
 │
 ├── app/                         # Playground Next.js usado só para desenvolvimento local - NÃO faz parte do pacote publicado no npm
@@ -22,7 +30,8 @@ mellow-ui/
 │
 ├── src/
 │   │
-│   ├── index.ts                 # Ponto de entrada público da biblioteca (export * from './components')
+│   ├── index.ts                 # Ponto de entrada público da biblioteca (reexporta components/ e icons/)
+│   ├── vite-env.d.ts             # Referência de tipos do Vite (habilita import de *.md?raw, usado em Changelog.mdx)
 │   │
 │   ├── components/              # Componentes do Design System
 │   │   ├── index.ts              # Barrel: reexporta cada componente publicado
@@ -106,11 +115,15 @@ mellow-ui/
 │       ├── cores.mdx
 │       ├── tipografia.mdx
 │       ├── espacamento.mdx
-│       └── acessibilidade.mdx
+│       ├── acessibilidade.mdx
+│       └── Changelog.mdx        # Renderiza o CHANGELOG.md da raiz via @storybook/addon-docs
 │
+├── CHANGELOG.md                 # Gerado automaticamente pelo Changesets a cada release
 ├── LICENSE
 ├── package.json
 ├── tsconfig.json
+├── tsconfig.build.json          # tsconfig dedicado ao "build:lib" (rootDir/include restritos a src/,
+│                                 # moduleResolution "nodenext"), desacoplado do tsconfig do Next.js
 ├── eslint.config.mjs
 ├── next.config.ts
 ├── postcss.config.mjs
@@ -129,10 +142,12 @@ mellow-ui/
 | **components** | Contém todos os componentes do Design System, organizados individualmente em suas respectivas pastas. Hoje só `Theme` é definitivo — `Button` é um componente de **exemplo** (props, CSS, stories e testes reais, mas só para validar a pipeline de build/lint/teste); será apagado e substituído quando a fase de construção dos componentes de verdade começar. |
 | **core** | Utilitários internos de composição (Slot/asChild, refs, event handlers, merge de props). Não são exportados publicamente — dão suporte à prop `asChild` dos componentes. |
 | **props** | Sistema compartilhado de definição de props ("prop-def"): cada arquivo descreve uma prop reutilizável (cor, espaçamento, layout, tipografia...) de forma tipada, com a classe CSS utilitária correspondente. É a base sobre a qual os componentes vão declarar suas próprias props. |
-| **icons** | Wrapper fino sobre `@phosphor-icons/react`, pensado para preservar tree-shaking (recebe o ícone já importado pelo consumidor, em vez de resolver por nome em string). |
-| **styles** | Design Tokens (`tokens/`) e classes utilitárias (`utilities/`) publicados junto com a biblioteca. É o que o consumidor final importa via CSS (`mellow-ui/styles/...`). |
-| **docs** | Páginas de documentação em MDX exibidas no Storybook (fundamentos, tokens, guias de uso). |
+| **icons** | Wrapper fino sobre `@phosphor-icons/react`, pensado para preservar tree-shaking (recebe o ícone já importado pelo consumidor, em vez de resolver por nome em string). Reexportado publicamente por `src/index.ts` e pelo subpath `@softsues/mellow-ui/icons` no `exports` do `package.json`. |
+| **styles** | Design Tokens (`tokens/`) e classes utilitárias (`utilities/`) publicados junto com a biblioteca. É o que o consumidor final importa via CSS (`@softsues/mellow-ui/styles/...`). |
+| **docs** | Páginas de documentação em MDX exibidas no Storybook (fundamentos, tokens, guias de uso, changelog). |
 | **.storybook** | Configuração do Storybook: addons, preview, decorators e ordenação das páginas de documentação. |
+| **.changeset** | Configuração do Changesets — versionamento e changelog automatizados via `npm run changeset`. |
+| **.github/workflows** | CI de release: ao mergear em `main`, abre PR de "Version Packages" e, ao mergear esse PR, publica no npm e cria a tag/Release no GitHub. |
 | **public** | Arquivos estáticos servidos pelo Next.js (`app/`) e pelo Storybook (`staticDirs`). |
 
 ---

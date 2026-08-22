@@ -1,2 +1,2 @@
-export { Theme } from './Theme';
-export type { ThemeProps } from './Theme';
+export { Theme } from './Theme.js';
+export type { ThemeProps } from './Theme.js';

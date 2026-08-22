@@ -10,9 +10,9 @@
 
 import * as React from 'react';
 
-import { Slot } from '../../core';
-import { buttonPropDefs } from './Button.props';
-import type { ButtonProps } from './Button.types';
+import { Slot } from '../../core/index.js';
+import { buttonPropDefs } from './Button.props.js';
+import type { ButtonProps } from './Button.types.js';
 
 function Button({
   asChild,

@@ -4,7 +4,7 @@
   para a classe utilitária "mui-r-tw" com suporte a variações responsivas via PropDef.
 */
 
-import type { PropDef } from './prop-def';
+import type { PropDef } from './prop-def.js';
 
 const textWrapValues = ['wrap', 'nowrap', 'pretty', 'balance'] as const;
 

@@ -1,5 +1,5 @@
-import { cn } from './Button.utils';
-import type { ButtonSize, ButtonVariant } from './Button.types';
+import { cn } from './Button.utils.js';
+import type { ButtonSize, ButtonVariant } from './Button.types.js';
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary: 'bg-blue-600 text-white hover:bg-blue-700 focus-visible:ring-blue-600',
