@@ -1,7 +1,7 @@
 /*
   Converte um valor de prop (fixo ou responsivo por breakpoint) em classes CSS e CSS custom
-  properties equivalentes. É a base usada por `extractProps` e `getMarginStyles` para qualquer
-  prop que aceite valores por breakpoint.
+  properties equivalentes. É a base usada por `extractProps` para qualquer prop que aceite
+  valores por breakpoint.
 */
 
 import { breakpoints } from '../props/prop-def.js';
