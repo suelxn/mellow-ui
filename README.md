@@ -107,10 +107,10 @@ Ver [ESTRUTURA.md](./ESTRUTURA.md) para a árvore completa e a responsabilidade 
 
 ## 📦 Consumindo a biblioteca
 
-Depois de publicado no npm, um projeto consumidor instala:
+Publicado no npm como [`@softsues/mellow-ui`](https://www.npmjs.com/package/@softsues/mellow-ui). Um projeto consumidor instala:
 
 ```bash
-npm install mellow-ui react react-dom
+npm install @softsues/mellow-ui react react-dom
 ```
 
 E, só se for usar o componente `Icon`, também o `@phosphor-icons/react` (peer dependency opcional):
@@ -122,8 +122,8 @@ npm install @phosphor-icons/react
 Depois, importa os componentes e o CSS:
 
 ```tsx
-import { Theme } from 'mellow-ui';
-import 'mellow-ui/styles/index.css';
+import { Theme } from '@softsues/mellow-ui';
+import '@softsues/mellow-ui/styles/index.css';
 
 function App() {
   return (
