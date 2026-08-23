@@ -77,6 +77,13 @@ function extractProps<
       }
 
       if (isResponsiveObject(value)) {
+        // Clona o objeto responsivo antes de preencher defaults nele: "extractedProps" é um
+        // spread raso de "props" (linha 45), então "value" ainda é a MESMA referência do objeto
+        // passado pelo consumidor. Sem essa cópia, as escritas abaixo mutariam esse objeto
+        // original — ex.: quebra com TypeError se o consumidor reutilizar uma config
+        // Object.freeze()ada entre instâncias (o projeto é 100% ESM, portanto sempre modo estrito).
+        value = { ...value };
+
         // Aplicar os valores padrão da propriedade ao ponto de interrupção `initial`
         if (propDef.default !== undefined && value.initial === undefined) {
           // eslint-disable-next-line @typescript-eslint/no-explicit-any -- isResponsiveObject tipa o objeto como Record<Breakpoint, string>, mas propDef.default pode ser boolean (BooleanPropDef) além de string
