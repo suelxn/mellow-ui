@@ -1,7 +1,11 @@
 import type { Preview } from "@storybook/nextjs-vite";
 
 import { Theme } from "../src/components";
-import "../app/globals.css";
+// Importa só o CSS publicado da própria lib (tokens + utilities), sem passar por
+// app/globals.css: aquele arquivo carrega o Tailwind inteiro (Preflight incluso), que é só
+// pro playground Next.js e nunca deve vazar pros componentes do Design System (ver README).
+// O Storybook precisa refletir exatamente o que um consumidor sem Tailwind instalado vê.
+import "../src/styles/index.css";
 
 const preview: Preview = {
   decorators: [
