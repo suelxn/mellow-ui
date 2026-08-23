@@ -1,46 +1,42 @@
 # Mellow UI
 
-Design System em React + TypeScript: componentes de interface, tokens de design (cor, tipografia, espaçamento, radius, sombra) e utilitários de layout, documentados e testados via Storybook e publicados como biblioteca no npm.
+Design System em React + TypeScript: componentes de interface construídos com Tailwind CSS puro, documentados e testados via Storybook e publicados como biblioteca no npm.
 
-A arquitetura toma como referência conceitos consolidados no ecossistema React (padrão `asChild`/Slot, sistema de definição de props responsivas, tokens semânticos por CSS custom properties), mas é uma implementação própria: não depende de outras bibliotecas de componentes. Toda classe utilitária gerada usa o prefixo próprio `mui-` (Mellow UI).
+A arquitetura toma como referência conceitos consolidados no ecossistema React (padrão `asChild`/Slot), mas é uma implementação própria: não depende de outras bibliotecas de componentes. A paleta de cor de marca, a escala de sombra e a fonte padrão são fixadas em `@theme` (Tailwind v4, ver `src/styles/index.css`); todo o resto de layout e tipografia usa a escala nativa do Tailwind direto nos componentes. O pacote publicado sai com o CSS já compilado (`npm run build:css`), quem consome a lib não precisa ter Tailwind instalado.
 
 ## Referências de design
 
-A arquitetura, os padrões de componentização e as decisões de design deste Design System tomam como referência bibliotecas e design systems consolidados do ecossistema: **Radix UI**, **shadcn/ui**, **Wix Style React** (WIX) e **Grafana UI** (Grafana Labs). Não depende de nenhuma delas em runtime - é uma implementação própria, sem reuso direto de código.
+A arquitetura, os padrões de componentização e as decisões de design deste Design System tomam como referência bibliotecas e design systems consolidados do ecossistema: **Radix UI**, **shadcn/ui**, **Wix Style React** (WIX) e **Grafana UI** (Grafana Labs). Não depende de nenhuma delas em runtime. É uma implementação própria, sem reuso direto de código.
 
 ## Status atual
 
 Projeto em fase inicial. Já implementados:
 
-- Sistema de tokens completo (cor - 8 accents + 2 grays com light/dark e Display P3 -, tipografia, espaçamento, radius, sombra, cursor).
-- Sistema compartilhado de definição de props (`src/props`), responsivo por breakpoint — cobrindo praticamente todo layout (margin, padding, width/height, position, overflow, gap e as props de nível item do Flexbox/Grid); as props de nível container (display, flex-direction, grid-template-*, etc.) ficam reservadas para quando os componentes `Flex`/`Grid` forem construídos (ver comentário em `src/props/layout.props.ts`).
-- Motor de runtime (`src/helpers`) que resolve os prop-defs em `className`/`style` de verdade — `extractProps` é a função central, com suporte a valores fixos, responsivos por breakpoint e arbitrários (fora da escala).
+- Paleta de cor de marca (8 accents + 2 grays), escala de sombra e fonte padrão fixadas em `@theme` (`src/styles/index.css`), com dark mode via classe `.dark`. Todo o resto de layout/tipografia usa a escala nativa do Tailwind.
 - Utilitários internos de composição (`src/core`): `Slot`/`asChild`, merge de props, composição de refs e de event handlers.
-- Cobertura de testes unitários para `src/core` e `src/helpers` (Vitest + Testing Library, rodando em Chromium real via Playwright).
-- Componente `Theme` (raiz da árvore, controla aparência, cor de destaque, cor neutra, radius e scaling via Context + atributos `data-*`).
-- Wrapper de ícones (`src/icons/Icon`) sobre `@phosphor-icons/react`, pensado para tree-shaking — exportado publicamente na raiz da lib e via subpath `@softsues/mellow-ui/icons`.
-- `Button` de **exemplo** (`src/components/Button`) - props, CSS, stories e testes reais, mas só para validar a pipeline de build/lint/teste (ver `npm run test`). Será apagado e substituído quando a fase de construção dos componentes de verdade começar.
-- Páginas de documentação em MDX (`src/docs`) com conteúdo de exemplo, prontas para virar o conteúdo real.
+- Cobertura de testes unitários para `src/core` (Vitest + Testing Library, rodando em Chromium real via Playwright).
+- Componente `Theme` (raiz da árvore, só controla dark mode via a prop `appearance`).
+- Wrapper de ícones (`src/icons/Icon`) sobre `@phosphor-icons/react`, pensado para tree-shaking, exportado publicamente na raiz da lib e via subpath `@softsues/mellow-ui/icons`.
+- `Button` (`src/components/Button`) - primeiro componente real do Design System, com variantes, tamanhos, as 11 cores de marca e estado `loading` (spinner + desabilitado automático).
 - Versionamento e changelog automatizados via Changesets, com publicação no npm e criação de tag/Release no GitHub disparadas por CI (`.github/workflows/release.yml`) ao mergear em `main`.
 
-Ainda não implementados: os componentes de UI de verdade do Design System (só existe o `Button` de exemplo acima). Veja [ESTRUTURA.md](./ESTRUTURA.md) para o detalhamento completo de pastas e o que falta.
+Ainda não implementados: os demais componentes de UI do Design System (só existe o `Button` acima). Veja [ESTRUTURA.md](./ESTRUTURA.md) para o detalhamento completo de pastas e o que falta.
 
 ## 🚀 Tecnologias utilizadas
 
 * **React 19** + **TypeScript**: biblioteca de componentes (`react`/`react-dom` são `peerDependencies`, não vêm embutidos no pacote).
 * **Storybook 10** (com Vite): desenvolvimento isolado, documentação viva e testes de acessibilidade (`addon-a11y`).
 * **Vitest** + **Playwright**: testes de componente rodando em navegador real (Chromium), via `@storybook/addon-vitest`.
-* **PostCSS** + `postcss-custom-media`: processamento dos tokens e utilitários CSS publicados com a biblioteca.
+* **Tailwind CSS v4**: base de estilização dos componentes (classNames diretos) e da paleta/tema (`@theme`, `src/styles/index.css`). `npm run build:css` (via `@tailwindcss/cli`) compila o CSS publicado em `dist/styles` - quem consome a lib não precisa ter Tailwind instalado.
 * **@phosphor-icons/react**: biblioteca de ícones consumida pelo wrapper `Icon` (`peerDependency` **opcional**: só quem for usar o `Icon` precisa instalá-la).
 * **Next.js**: usado só como playground local de desenvolvimento (pasta `app/`); **não faz parte do pacote publicado**.
-* **Tailwind CSS**: usado só dentro do playground Next.js (`app/globals.css`), nunca nos componentes do Design System.
 
 ## 💻 Ambiente de desenvolvimento multiplataforma
 
 Este projeto é desenvolvido e mantido alternando entre três sistemas operacionais: **Windows 11**, **Linux Mint Cinnamon** e **macOS**, com o objetivo de construir uma biblioteca com suporte real aos três, não só testada informalmente em um deles. Isso influencia algumas decisões do repositório:
 
 - `.gitattributes` normaliza todos os arquivos de texto para `LF` (`text=auto eol=lf`), evitando divergências de line ending entre Windows e Unix.
-- Nomes de arquivo evitam acentuação (ex.: `src/docs/introducao.mdx`, não `Introdução.mdx`, macOS e Linux normalizam Unicode de forma diferente (NFD vs. NFC), o que pode fazer o Git enxergar o mesmo arquivo como alterado só por trocar de máquina.
+- Nomes de arquivo evitam acentuação (ex.: `src/docs/introducao.mdx`, não `Introdução.mdx`), macOS e Linux normalizam Unicode de forma diferente (NFD vs. NFC), o que pode fazer o Git enxergar o mesmo arquivo como alterado só por trocar de máquina.
 - `package.json` define `"engines": { "node": ">=20" }` para manter a mesma versão mínima do Node nas três máquinas.
 - Dependências nativas específicas de plataforma (como `sharp`, usada só pela otimização de imagem do Next.js no playground) ficam em `devDependencies`, nunca em `dependencies`, não fazem parte do pacote publicado e não devem ser forçadas em quem instalar o Design System.
 
@@ -103,7 +99,8 @@ Use `npx vitest` (sem `run`) para rodar em modo *watch* durante o desenvolviment
 | `npm run build-storybook` | Gera a versão estática do Storybook (`storybook-static/`), para deploy/homologação. |
 | `npm run dev` | Inicia o playground Next.js em modo desenvolvimento. |
 | `npm run start` | Sobe o playground Next.js já compilado. |
-| `npm run build:lib` | Limpa `dist/`, compila `src/` (TypeScript + declarações de tipo) e copia o CSS de `src/styles` e `src/components/**/*.css` para `dist/`. É o que roda antes de publicar no npm (`prepublishOnly`). |
+| `npm run build:lib` | Limpa `dist/`, compila `src/` (TypeScript + declarações de tipo) e roda `build:css` (Tailwind CLI compila `src/styles/index.css` num `dist/styles/index.css` já com as classes usadas pelos componentes). É o que roda antes de publicar no npm (`prepublishOnly`). |
+| `npm run build:css` | Compila `src/styles/index.css` com o Tailwind CLI, gerando `dist/styles/index.css` minificado e pronto pra ser importado sem precisar de Tailwind instalado. |
 | `npm run build` | Roda `build:lib` e depois `build-storybook`. |
 | `npm run lint` | Roda o ESLint no projeto. |
 | `npm run test` | Roda a suite de testes uma vez (`vitest run`) e sai. |
@@ -137,7 +134,7 @@ import '@softsues/mellow-ui/styles/index.css';
 
 function App() {
   return (
-    <Theme accentColor="pink" grayColor="auto" radius="medium">
+    <Theme appearance="inherit">
       {/* ... */}
     </Theme>
   );

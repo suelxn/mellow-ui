@@ -12,9 +12,10 @@ Cada história no Storybook passa pelo `@storybook/addon-a11y`, que roda o [axe-
 
 ## Princípios
 
-- **Foco visível**: todo elemento interativo precisa de um indicador de foco claro (ver `--focus-*` em `src/styles/tokens/color.css`, usado via `:focus-visible`).
-- **Contraste**: `--accent-contrast` e `--gray-contrast` existem justamente para garantir texto legível sobre os tons sólidos de cada cor.
-- **Estados desabilitados**: usam `--cursor-disabled` e devem continuar comunicando o estado visualmente (nunca só remover o elemento da tela).
+- **Foco visível**: todo elemento interativo precisa de um indicador de foco claro (classes `focus-visible:*` do Tailwind, ver `Button.tsx`).
+- **Contraste**: a cor de texto usada sobre cada tom sólido é escolhida por família em `colorClasses` (`Button.tsx`), calibrada a partir da paleta de marca em `src/styles/index.css`.
+- **Estados desabilitados**: usam `disabled:opacity-50 disabled:pointer-events-none` e devem continuar comunicando o estado visualmente (nunca só remover o elemento da tela).
+- **Estado de carregamento**: a prop `loading` do `Button` marca `aria-busy="true"` além de desabilitar o elemento, pra leitores de tela saberem que a ação está em andamento (não só que o botão está inativo).
 - **`asChild`**: ao usar `asChild`, a responsabilidade de manter a semântica HTML correta (ex.: um botão que vira link) passa a ser de quem consome o componente.
 
 ## Próximos passos

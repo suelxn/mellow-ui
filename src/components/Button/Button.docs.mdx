@@ -5,10 +5,76 @@ import * as ButtonStories from './Button.stories';
 
 # Button
 
-O componente `Button` é utilizado para disparar ações ou eventos do usuário.
+O componente `Button` é utilizado para disparar ações ou eventos do usuário. Suporta 5 variantes, 5 tamanhos e as 11 cores de marca do Design System, além de poder virar qualquer elemento via `asChild`.
+
+```tsx
+import { Button } from '@softsues/mellow-ui';
+
+<Button variant="solid" color="blue" size="md">
+  Confirmar
+</Button>
+```
 
 <Primary />
 
 ## Propriedades
 
 <Controls />
+
+## Variantes
+
+`solid`, `outline`, `ghost` e `text` usam a cor definida pela prop `color`. `danger` ignora `color` de propósito (um botão destrutivo é sempre vermelho).
+
+```tsx
+<Button variant="solid">Solid</Button>
+<Button variant="outline">Outline</Button>
+<Button variant="danger">Danger</Button>
+<Button variant="ghost">Ghost</Button>
+<Button variant="text">Text</Button>
+```
+
+## Cores
+
+<Canvas of={ButtonStories.Colors} />
+
+## Tamanhos
+
+<Canvas of={ButtonStories.Sizes} />
+
+## Com ícone
+
+`IconLeft` e `IconRight` recebem um componente de ícone do `@phosphor-icons/react` (o mesmo padrão usado pelo wrapper `Icon` da lib, o Button importa só o tipo, nunca a biblioteca inteira).
+
+```tsx
+import { PaperPlaneTilt } from '@phosphor-icons/react';
+
+<Button IconLeft={PaperPlaneTilt}>Enviar</Button>
+```
+
+<Canvas of={ButtonStories.WithIcon} />
+
+## Como um elemento diferente (`asChild`)
+
+Funde as props do `Button` (classes, estilos, handlers) no elemento filho em vez de renderizar um `<button>` próprio, útil quando o botão precisa ser, por exemplo, um link. Exige exatamente um elemento React como filho.
+
+```tsx
+<Button asChild>
+  <a href="/pagina">Ir para a página</a>
+</Button>
+```
+
+<Canvas of={ButtonStories.AsChild} />
+
+## Desabilitado
+
+<Canvas of={ButtonStories.Disabled} />
+
+## Carregando (`loading`)
+
+Enquanto `loading` for `true`, o `Button` mostra um spinner no lugar do `IconLeft` e fica desabilitado automaticamente (`disabled` + `aria-busy`), não precisa passar `disabled` junto.
+
+```tsx
+<Button loading>Enviando</Button>
+```
+
+<Canvas of={ButtonStories.Loading} />
