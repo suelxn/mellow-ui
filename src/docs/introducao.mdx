@@ -6,9 +6,9 @@ import { Meta } from '@storybook/addon-docs/blocks';
 
 > **Página de exemplo.** Troque este conteúdo pelo texto real da introdução quando chegar a hora. A ideia aqui é só mostrar a estrutura (título, seções, blocos de texto) que essa página deve ter.
 
-Design System em React + TypeScript: componentes de interface, tokens de design (cor, tipografia, espaçamento, radius, sombra) e utilitários de layout, documentados e testados via Storybook.
+Design System em React + TypeScript: componentes de interface construídos com Tailwind CSS puro, documentados e testados via Storybook.
 
-A arquitetura toma como referência conceitos consolidados no ecossistema React (padrão `asChild`/Slot, sistema de definição de props responsivas, tokens semânticos por CSS custom properties), mas é uma implementação própria — não depende de outras bibliotecas de componentes.
+A arquitetura toma como referência conceitos consolidados no ecossistema React (padrão `asChild`/Slot), mas é uma implementação própria — não depende de outras bibliotecas de componentes. A paleta de cor de marca, a escala de sombra e a fonte padrão ficam fixadas em `@theme` (Tailwind); todo o resto de layout e tipografia usa a escala nativa do Tailwind direto nos componentes.
 
 ## Nesta documentação
 

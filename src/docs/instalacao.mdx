@@ -31,12 +31,14 @@ import '@softsues/mellow-ui/styles/index.css';
 
 ## Envolvendo a aplicação com o `Theme`
 
+`Theme` só controla dark mode (`appearance`); a paleta de cor é fixa, definida em `src/styles/index.css`.
+
 ```tsx
 import { Theme } from '@softsues/mellow-ui';
 
 function App() {
   return (
-    <Theme accentColor="pink" grayColor="auto" radius="medium">
+    <Theme appearance="inherit">
       {/* sua aplicação */}
     </Theme>
   );

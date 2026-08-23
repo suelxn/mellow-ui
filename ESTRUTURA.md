@@ -20,13 +20,14 @@ mellow-ui/
 ├── public/                      # Arquivos estáticos servidos pelo Next.js e pelo Storybook (staticDirs)
 │
 ├── app/                         # Playground Next.js usado só para desenvolvimento local - NÃO faz parte do pacote publicado no npm
-│   ├── globals.css              # Importa Tailwind (escopo exclusivo deste playground) + src/styles/index.css
+│   ├── globals.css              # Importa src/styles/index.css (Tailwind + tema da lib) - único entry point de CSS do playground
 │   ├── layout.tsx               # Layout raiz do playground, já envolvido pelo <Theme>
 │   └── page.tsx                 # Página inicial (ainda o boilerplate do create-next-app)
 │
 ├── dist/                        # Saída do build da lib ("npm run build:lib"): JS/d.ts compilados de src/ + CSS
-│                                 # copiado. É exatamente o que "files": ["dist"] publica no npm. Gerada, não
-│                                 # versionada (está no .gitignore), pode não existir localmente até você buildar.
+│                                 # já processado pelo Tailwind CLI ("build:css"). É exatamente o que
+│                                 # "files": ["dist"] publica no npm. Gerada, não versionada (está no
+│                                 # .gitignore), pode não existir localmente até você buildar.
 │
 ├── src/
 │   │
@@ -35,21 +36,16 @@ mellow-ui/
 │   │
 │   ├── components/              # Componentes do Design System
 │   │   ├── index.ts              # Barrel: reexporta cada componente publicado
-│   │   ├── index.css             # Agrega o CSS de cada componente, conforme forem sendo construídos
 │   │   │
-│   │   ├── Theme/                # Componente raiz: Context de tema + atributos data-* no DOM
-│   │   │   ├── Theme.tsx
-│   │   │   ├── Theme.props.ts    # Objeto de especificação das props (PropDef) e seus defaults
-│   │   │   ├── Theme.types.ts    # Tipos derivados de Theme.props.ts via GetPropDefTypes
+│   │   ├── Theme/                # Componente raiz: só controla dark mode
+│   │   │   ├── Theme.tsx         # Prop única (appearance: 'inherit' | 'light' | 'dark'), aplica classe "dark"/"light"
 │   │   │   └── index.ts
 │   │   │
-│   │   └── Button/               # Componente de EXEMPLO (não é o Button final do Design System - ver nota abaixo)
-│   │       ├── Button.tsx
-│   │       ├── Button.props.ts   # Objeto de especificação das props (PropDef): asChild, variant, size, color
-│   │       ├── Button.types.ts
-│   │       ├── Button.css
+│   │   └── Button/               # Primeiro componente real do Design System
+│   │       ├── Button.tsx        # Componente + variantes + tamanhos + cores + tipos + spinner de loading, tudo num arquivo só
 │   │       ├── Button.stories.tsx
 │   │       ├── Button.test.tsx
+│   │       ├── Button.docs.mdx
 │   │       └── index.ts
 │   │
 │   ├── core/                    # Utilitários internos de composição - não fazem parte da API pública
@@ -63,83 +59,25 @@ mellow-ui/
 │   │   ├── mergeProps.test.ts
 │   │   └── index.ts
 │   │
-│   ├── props/                   # Sistema compartilhado de definição de props ("prop-def"), usado por todos os componentes
-│   │   ├── prop-def.ts           # Tipos base: PropDef, Responsive<T>, breakpoints, GetPropDefTypes
-│   │   ├── as-child.prop.ts
-│   │   ├── color.prop.ts
-│   │   ├── gap.props.ts
-│   │   ├── height.props.ts
-│   │   ├── high-contrast.prop.ts
-│   │   ├── layout.props.ts       # Agrega padding/width/height + position, overflow, flex e grid (nível item)
-│   │   ├── leading-trim.prop.ts
-│   │   ├── margin.props.ts
-│   │   ├── padding.props.ts
-│   │   ├── radius.prop.ts
-│   │   ├── scaling.prop.ts
-│   │   ├── text-align.prop.ts
-│   │   ├── text-wrap.prop.ts
-│   │   ├── truncate.prop.ts
-│   │   ├── weight.prop.ts
-│   │   ├── width.props.ts
-│   │   └── index.ts
-│   │
-│   ├── helpers/                 # Motor de runtime que consome os prop-defs de src/props/ - resolve props em
-│   │   │                        # className/style de verdade. Não faz parte da API pública.
-│   │   ├── extract-props.ts      # Função central: cruza props recebidas com prop-defs, aplica defaults,
-│   │   │                        # gera className/style responsivos
-│   │   ├── extract-props.test.ts
-│   │   ├── extract-margin-props.ts
-│   │   ├── get-responsive-styles.ts  # Converte um valor (fixo ou responsivo) em classes + custom properties
-│   │   ├── get-responsive-styles.test.ts
-│   │   ├── is-responsive-object.ts   # Type guard: distingue valor fixo de objeto responsivo por breakpoint
-│   │   ├── is-responsive-object.test.ts
-│   │   ├── merge-styles.ts
-│   │   ├── component-props.ts
-│   │   ├── get-matching-gray-color.ts
-│   │   ├── get-subtree.ts
-│   │   ├── has-own-property.ts
-│   │   ├── inert.ts
-│   │   ├── input-attributes.ts
-│   │   ├── map-prop-values.ts
-│   │   ├── require-react-element.ts
-│   │   └── index.ts
-│   │
 │   ├── icons/                   # Wrapper de ícones sobre @phosphor-icons/react
 │   │   ├── Icon.tsx              # Recebe o componente do ícone via prop `icon` (tree-shakable: não importa a lib inteira)
 │   │   ├── types.ts
 │   │   └── index.ts
 │   │
-│   ├── styles/                  # Design Tokens + utilitários CSS publicados junto com a biblioteca
-│   │   ├── index.css             # Entry point: breakpoints + tokens + CSS dos componentes + utilities
-│   │   ├── breakpoints.css       # @custom-media dos breakpoints responsivos (xs, sm, md, lg, xl)
-│   │   │
-│   │   ├── tokens/
-│   │   │   ├── index.css
-│   │   │   ├── base.css          # Agrega color, cursor, layout, radius, shadow, typography
-│   │   │   ├── color.css         # Mapeamento semântico (--accent-*, --gray-*, --color-*) sobre as paletas primitivas
-│   │   │   ├── colors/           # Paletas primitivas
-│   │   │   │   ├── index.css
-│   │   │   │   ├── absolute.css      # --white, --black, --transparent
-│   │   │   │   ├── blue.css, coral.css, green.css, mint.css, pink.css, red.css, sky.css, yellow.css  # 8 accent colors
-│   │   │   │   └── neutral.css, slate.css                                                            # 2 famílias de gray
-│   │   │   ├── cursor.css
-│   │   │   ├── layout.css        # --scaling + --space-*
-│   │   │   ├── radius.css
-│   │   │   ├── scaling.css
-│   │   │   ├── shadow.css
-│   │   │   ├── space.css
-│   │   │   └── typography.css
-│   │   │
-│   │   └── utilities/            # Classes utilitárias responsivas (prefixo "mui-"): gap, margin, padding, flex, grid, position etc.
-│   │       └── index.css
+│   ├── styles/
+│   │   └── index.css             # Único arquivo de estilo da lib: @import "tailwindcss" + @theme (paleta de
+│   │                             # cor de marca, escala de sombra, fonte padrão) + overrides de dark mode
+│   │                             # (.dark) + @font-face de fallback. Todo o resto (espaçamento, radius,
+│   │                             # tamanho de fonte, cursor) usa a escala nativa do Tailwind direto nos
+│   │                             # componentes, sem token próprio.
 │   │
 │   └── docs/                    # Páginas de documentação em MDX, descobertas automaticamente pelo Storybook
 │       │                        # (glob "../src/**/*.mdx" definido em .storybook/main.ts)
 │       ├── introducao.mdx
 │       ├── instalacao.mdx
-│       ├── Cores.mdx
-│       ├── Tipografia.mdx
-│       ├── espacamento.mdx
+│       ├── Cores.mdx            # "Em breve" - conteúdo real ainda por escrever
+│       ├── Tipografia.mdx       # "Em breve" - conteúdo real ainda por escrever
+│       ├── espacamento.mdx      # "Em breve" - conteúdo real ainda por escrever
 │       ├── Acessibilidade.mdx
 │       └── Changelog.mdx        # Renderiza o CHANGELOG.md da raiz via @storybook/addon-docs
 │
@@ -164,12 +102,10 @@ mellow-ui/
 |--------|------------------|
 | **app** | Playground Next.js usado só para desenvolvimento local. Não faz parte da biblioteca publicada no npm (o script `build:lib` nunca lê esta pasta). |
 | **dist** | Saída gerada por `npm run build:lib` — o que de fato é publicado no npm. Não é versionada (`.gitignore`) e pode não existir até você rodar o build; nunca edite nada aqui direto, edite em `src/`. |
-| **components** | Contém todos os componentes do Design System, organizados individualmente em suas respectivas pastas. Hoje só `Theme` é definitivo — `Button` é um componente de **exemplo** (props, CSS, stories e testes reais, mas só para validar a pipeline de build/lint/teste); será apagado e substituído quando a fase de construção dos componentes de verdade começar. |
+| **components** | Contém todos os componentes do Design System, organizados individualmente em suas respectivas pastas, em Tailwind puro (classNames diretos no componente). `Theme` é só um wrapper de dark mode. `Button` é o primeiro componente real (variantes, tamanhos, 11 cores de marca, estado `loading`), consolidado num único `Button.tsx` — inclusive o spinner de loading, que era um arquivo `Button.icons.tsx` separado antes de ser incorporado. |
 | **core** | Utilitários internos de composição (Slot/asChild, refs, event handlers, merge de props). Não são exportados publicamente — dão suporte à prop `asChild` dos componentes. Cobertos por testes unitários próprios (`*.test.ts(x)`, ao lado de cada arquivo). |
-| **props** | Sistema compartilhado de definição de props ("prop-def"): cada arquivo descreve uma prop reutilizável (cor, espaçamento, layout, tipografia...) de forma tipada, com a classe CSS utilitária correspondente. É a base sobre a qual os componentes vão declarar suas próprias props — só dados/tipos, sem lógica de runtime (ver `helpers`). |
-| **helpers** | Motor de runtime que consome os prop-defs de `props/` e resolve as props recebidas por um componente em `className`/`style` de verdade (`extractProps` é a função central). Não é exportado publicamente. Cobertos por testes unitários próprios. |
 | **icons** | Wrapper fino sobre `@phosphor-icons/react`, pensado para preservar tree-shaking (recebe o ícone já importado pelo consumidor, em vez de resolver por nome em string). Reexportado publicamente por `src/index.ts` e pelo subpath `@softsues/mellow-ui/icons` no `exports` do `package.json`. |
-| **styles** | Design Tokens (`tokens/`) e classes utilitárias (`utilities/`) publicados junto com a biblioteca. É o que o consumidor final importa via CSS (`@softsues/mellow-ui/styles/...`). |
+| **styles** | Um único `index.css`: importa o Tailwind e define, em `@theme`, a paleta de cor de marca, a escala de sombra e a fonte padrão — os únicos valores fixados como token próprio. É o que o consumidor final importa via CSS (`@softsues/mellow-ui/styles/index.css`), já compilado pelo `npm run build:css` (Tailwind CLI); não exige Tailwind instalado em quem consome. |
 | **docs** | Páginas de documentação em MDX exibidas no Storybook (fundamentos, tokens, guias de uso, changelog). |
 | **.storybook** | Configuração do Storybook: addons, preview, decorators e ordenação das páginas de documentação. |
 | **.changeset** | Configuração do Changesets — versionamento e changelog automatizados via `npm run changeset`. |
@@ -181,9 +117,9 @@ mellow-ui/
 # Princípios da arquitetura
 
 - Cada pasta possui uma única responsabilidade.
-- Os componentes não possuem dependência direta de cores ou valores fixos; toda estilização deve utilizar os Design Tokens em `src/styles/tokens`.
-- O tema (claro/escuro, cor de destaque, cor neutra, radius, scaling) é resolvido em runtime pelo componente `Theme` via Context + atributos `data-*` no DOM, que os tokens em `src/styles/tokens` leem para calcular suas CSS custom properties — não existem arquivos de tema separados por variante (`light.css`/`dark.css`); a variação de tema inteira vive nos seletores `:is(.dark, .dark-theme)` dentro dos próprios arquivos de token.
-- As classes utilitárias geradas a partir de `src/props` usam o prefixo `mui-` (identidade própria do Mellow UI)
+- Os componentes usam classNames do Tailwind diretamente — sem sistema próprio de props/tokens/utilities. As únicas exceções fixadas como token (`@theme` em `src/styles/index.css`) são cor de marca, sombra e fonte padrão, porque não têm equivalente nativo satisfatório no Tailwind; todo o resto (espaçamento, radius, tamanho de fonte, cursor) usa a escala nativa do Tailwind.
+- O dark mode é resolvido pelo componente `Theme`, que só aplica a classe `.dark`/`.light` no DOM — as cores trocam sozinhas porque `--color-*` é reatribuída dentro de `.dark` em `src/styles/index.css`, sem precisar de prefixo `dark:` nos componentes.
+- Tailwind é ferramenta só de build para a lib: `npm run build:css` compila as classes usadas pelos componentes num CSS final em `dist/styles`. Quem consome a biblioteca não precisa ter Tailwind instalado — só importa o CSS já pronto.
 - Os componentes são documentados individualmente através do Storybook.
 - A estrutura foi projetada para facilitar a publicação futura do Design System como uma biblioteca reutilizável (`package.json` já expõe `.`, `./components/*` e `./styles/*`).
 
@@ -197,5 +133,5 @@ As pastas abaixo **não existem no código hoje**. Ficam registradas aqui só co
 |--------|------------------|
 | **hooks/** | No dia em que um hook React precisar ser compartilhado por mais de um componente (ex.: `useControllableState`). |
 | **providers/** | Se surgir um Context além do `Theme` que precise ser compartilhado (ex.: Toast, Modal). |
-| **utils/** | No dia em que uma função utilitária (não ligada a props/estilo) precisar ser compartilhada entre componentes. |
-| **types/** | Se surgirem tipos verdadeiramente globais que não pertençam a `props/` nem a um componente específico. |
+| **utils/** | No dia em que uma função utilitária (não ligada a estilo) precisar ser compartilhada entre componentes — ex.: se `accentColors`/`colorClasses` de `Button.tsx` precisarem ser reaproveitados por um segundo componente. |
+| **types/** | Se surgirem tipos verdadeiramente globais que não pertençam a um componente específico. |
