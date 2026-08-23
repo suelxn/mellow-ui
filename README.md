@@ -6,7 +6,7 @@ A arquitetura toma como referência conceitos consolidados no ecossistema React 
 
 ## Referências de design
 
-A arquitetura, os padrões de componentização e as decisões de design deste Design System tomam como referência bibliotecas e design systems consolidados do ecossistema: **Radix UI**, **shadcn/ui**, **Wix Style React** (WIX) e **Grafana UI** (Grafana Labs). Não depende de nenhuma delas em runtime — é uma implementação própria, sem reuso direto de código.
+A arquitetura, os padrões de componentização e as decisões de design deste Design System tomam como referência bibliotecas e design systems consolidados do ecossistema: **Radix UI**, **shadcn/ui**, **Wix Style React** (WIX) e **Grafana UI** (Grafana Labs). Não depende de nenhuma delas em runtime - é uma implementação própria, sem reuso direto de código.
 
 ## Status atual
 
