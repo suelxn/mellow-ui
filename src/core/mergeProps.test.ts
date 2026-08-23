@@ -57,4 +57,29 @@ describe('mergeProps', () => {
 
     expect(result.onLine).toBe('child-value');
   });
+
+  // Regressão do achado "mergeProps pode perder o handler do slot se o filho definir a prop
+  // explicitamente como undefined": { onClick: undefined } no filho (comum em spreads
+  // condicionais, ex. `{ onClick: condicao ? handler : undefined }`) não deve apagar o handler
+  // do slot — deve ser tratado como "sem opinião do filho", caindo de volta pro slot.
+  test('[regressão] handler undefined explícito no filho não apaga o handler do slot', () => {
+    const slotOnClick = vi.fn();
+
+    const result = mergeProps({ onClick: slotOnClick }, { onClick: undefined });
+    (result.onClick as (event: unknown) => void)({ defaultPrevented: false });
+
+    expect(slotOnClick).toHaveBeenCalledOnce();
+  });
+
+  test('[regressão] prop comum undefined explícita no filho não apaga o valor do slot', () => {
+    const result = mergeProps({ 'data-variant': 'solid' }, { 'data-variant': undefined });
+
+    expect(result['data-variant']).toBe('solid');
+  });
+
+  test('[regressão] handler undefined nos dois lados resulta em undefined (nada a chamar)', () => {
+    const result = mergeProps({ onClick: undefined }, { onClick: undefined });
+
+    expect(result.onClick).toBeUndefined();
+  });
 });
