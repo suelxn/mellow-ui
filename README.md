@@ -4,17 +4,24 @@ Design System em React + TypeScript: componentes de interface, tokens de design 
 
 A arquitetura toma como referência conceitos consolidados no ecossistema React (padrão `asChild`/Slot, sistema de definição de props responsivas, tokens semânticos por CSS custom properties), mas é uma implementação própria: não depende de outras bibliotecas de componentes. Toda classe utilitária gerada usa o prefixo próprio `mui-` (Mellow UI).
 
+## Referências de design
+
+A arquitetura, os padrões de componentização e as decisões de design deste Design System tomam como referência bibliotecas e design systems consolidados do ecossistema: **Radix UI**, **shadcn/ui**, **Wix Style React** (WIX) e **Grafana UI** (Grafana Labs). Não depende de nenhuma delas em runtime — é uma implementação própria, sem reuso direto de código.
+
 ## Status atual
 
 Projeto em fase inicial. Já implementados:
 
 - Sistema de tokens completo (cor - 8 accents + 2 grays com light/dark e Display P3 -, tipografia, espaçamento, radius, sombra, cursor).
-- Sistema compartilhado de definição de props (`src/props`), responsivo por breakpoint.
+- Sistema compartilhado de definição de props (`src/props`), responsivo por breakpoint — cobrindo praticamente todo layout (margin, padding, width/height, position, overflow, gap e as props de nível item do Flexbox/Grid); as props de nível container (display, flex-direction, grid-template-*, etc.) ficam reservadas para quando os componentes `Flex`/`Grid` forem construídos (ver comentário em `src/props/layout.props.ts`).
+- Motor de runtime (`src/helpers`) que resolve os prop-defs em `className`/`style` de verdade — `extractProps` é a função central, com suporte a valores fixos, responsivos por breakpoint e arbitrários (fora da escala).
 - Utilitários internos de composição (`src/core`): `Slot`/`asChild`, merge de props, composição de refs e de event handlers.
+- Cobertura de testes unitários para `src/core` e `src/helpers` (Vitest + Testing Library, rodando em Chromium real via Playwright).
 - Componente `Theme` (raiz da árvore, controla aparência, cor de destaque, cor neutra, radius e scaling via Context + atributos `data-*`).
-- Wrapper de ícones (`src/icons/Icon`) sobre `@phosphor-icons/react`, pensado para tree-shaking.
+- Wrapper de ícones (`src/icons/Icon`) sobre `@phosphor-icons/react`, pensado para tree-shaking — exportado publicamente na raiz da lib e via subpath `@softsues/mellow-ui/icons`.
 - `Button` de **exemplo** (`src/components/Button`) - props, CSS, stories e testes reais, mas só para validar a pipeline de build/lint/teste (ver `npm run test`). Será apagado e substituído quando a fase de construção dos componentes de verdade começar.
 - Páginas de documentação em MDX (`src/docs`) com conteúdo de exemplo, prontas para virar o conteúdo real.
+- Versionamento e changelog automatizados via Changesets, com publicação no npm e criação de tag/Release no GitHub disparadas por CI (`.github/workflows/release.yml`) ao mergear em `main`.
 
 Ainda não implementados: os componentes de UI de verdade do Design System (só existe o `Button` de exemplo acima). Veja [ESTRUTURA.md](./ESTRUTURA.md) para o detalhamento completo de pastas e o que falta.
 
@@ -100,6 +107,9 @@ Use `npx vitest` (sem `run`) para rodar em modo *watch* durante o desenvolviment
 | `npm run build` | Roda `build:lib` e depois `build-storybook`. |
 | `npm run lint` | Roda o ESLint no projeto. |
 | `npm run test` | Roda a suite de testes uma vez (`vitest run`) e sai. |
+| `npm run changeset` | Abre o prompt interativo do Changesets pra descrever uma mudança (tipo de bump + descrição), gerando um arquivo em `.changeset/`. Roda antes de abrir a PR de uma mudança que deva virar release. |
+| `npm run version` | Consome os changesets pendentes, faz bump da versão no `package.json` e atualiza o `CHANGELOG.md`. Rodado automaticamente pelo CI — não precisa rodar manualmente. |
+| `npm run release` | Publica o pacote no npm. Rodado automaticamente pelo CI ao mergear o PR "Version Packages" em `main` — não precisa rodar manualmente. |
 
 ## 📂 Estrutura de pastas
 

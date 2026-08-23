@@ -29,7 +29,7 @@ const gapPropDefs = {
     responsive: true,
   },
   /**
-   * Define a propriedade CSS **row-gap**. 
+   * Define a propriedade CSS **column-gap**.
    * Oferece suporte a valores de escala de espaçamento, strings CSS e objetos responsivos.
    *
    * @example
@@ -38,7 +38,7 @@ const gapPropDefs = {
    * gapX={{ sm: '2', lg: '3em' }}
    *
    * @link
-   * https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap
+   * https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap
    */
   gapX: {
     type: 'enum | string',
@@ -48,7 +48,7 @@ const gapPropDefs = {
     responsive: true,
   },
   /**
-   * Define a propriedade CSS **column-gap**. 
+   * Define a propriedade CSS **row-gap**.
    * Oferece suporte a valores de escala de espaçamento, strings CSS e objetos responsivos.
    *
    * @example
@@ -57,7 +57,7 @@ const gapPropDefs = {
    * gapY={{ sm: '2', lg: '3em' }}
    *
    * @link
-   * https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap
+   * https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap
    */
   gapY: {
     type: 'enum | string',

@@ -1,8 +1,20 @@
-/* 
-  Agrupa e define as especificações de props para o controle de layout abrangente do Design System (layoutPropDefs). 
-  Combina as definições de padding, width e height com propriedades de posicionamento, coordenadas de borda (inset, top, right, bottom, left), 
-  comportamento de overflow, configurações de Flexbox/Grid e alinhamentos de item (alignSelf, justifySelf), 
+/*
+  Agrupa e define as especificações de props para o controle de layout abrangente do Design System (layoutPropDefs).
+  Combina as definições de padding, width e height com propriedades de posicionamento, coordenadas de borda (inset, top, right, bottom, left),
+  comportamento de overflow, configurações de Flexbox/Grid e alinhamentos de item (alignSelf, justifySelf),
   mapeando-as para classes utilitárias, variáveis CSS e exportando a tipagem composta LayoutProps.
+
+  Propositalmente só cobre propriedades de Flexbox/Grid de nível ITEM (flexBasis, flexShrink,
+  flexGrow, gridArea, gridColumn/Row(Start/End), alignSelf, justifySelf) — as que um filho de um
+  container flex/grid declara sobre si mesmo, e que fazem sentido em layoutPropDefs por serem
+  espalhadas em qualquer componente. As propriedades de nível CONTAINER (display, flexDirection,
+  flexWrap, alignItems, alignContent, justifyContent, justifyItems, gridAutoFlow,
+  gridTemplateColumns/Rows/Areas) não têm prop-def ainda — os utilitários CSS correspondentes já
+  existem em src/styles/utilities/ (publicados, prontos), mas só fazem sentido como props de um
+  componente `Flex`/`Grid` de verdade, ainda não construído. Não são código órfão: ficam
+  reservados pra quando esses componentes existirem. O mesmo vale, por outros motivos, para
+  resize.css (Textarea), table-layout.css (Table) e vertical-align.css — utilitários publicados
+  sem prop-def porque os componentes que vão consumi-los ainda não foram construídos.
 */
 
 import { paddingPropDefs } from './padding.props.js';
@@ -171,7 +183,7 @@ const layoutPropDefs = {
     responsive: true,
   },
   /**
-   * Define a propriedade CSS **overflow-x**. 
+   * Define a propriedade CSS **overflow-y**.
    * Suporta os valores CSS correspondentes e objetos responsivos.
    *
    * @example
