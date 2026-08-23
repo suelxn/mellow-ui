@@ -1,4 +1,10 @@
 # @softsues/mellow-ui
+
+## 0.2.0
+
+### Minor Changes
+
+- 3ccf45a: Refatorei a biblioteca inteira para migrar para Tailwind CSS Puro.
 # mellow-ui
 
 ## 0.1.1

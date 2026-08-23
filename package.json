@@ -1,6 +1,6 @@
 {
   "name": "@softsues/mellow-ui",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "private": false,
   "description": "Design System em React/TypeScript — componentes acessíveis construídos com Tailwind CSS, sem dependência do Radix UI, documentados via Storybook.",
   "license": "MIT",
