@@ -37,7 +37,9 @@
   ],
   "exclude": [
     "node_modules",
+    "**/*.stories.ts",
     "**/*.stories.tsx",
+    "**/*.test.ts",
     "**/*.test.tsx",
     "dist"
   ]
