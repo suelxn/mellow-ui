@@ -78,8 +78,9 @@ function extractProps<
 
       if (isResponsiveObject(value)) {
         // Aplicar os valores padrão da propriedade ao ponto de interrupção `initial`
-        if (propDef.type !== 'boolean' && propDef.default !== undefined && value.initial === undefined) {
-          value.initial = propDef.default;
+        if (propDef.default !== undefined && value.initial === undefined) {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any -- isResponsiveObject tipa o objeto como Record<Breakpoint, string>, mas propDef.default pode ser boolean (BooleanPropDef) além de string
+          (value as Record<string, any>).initial = propDef.default;
         }
 
         // Aplica o valor padrão ao ponto de interrupção `initial` quando ele não for um valor de enumeração válido.
