@@ -112,10 +112,10 @@ mellow-ui/
 │       │                        # (glob "../src/**/*.mdx" definido em .storybook/main.ts)
 │       ├── introducao.mdx
 │       ├── instalacao.mdx
-│       ├── cores.mdx
-│       ├── tipografia.mdx
+│       ├── Cores.mdx
+│       ├── Tipografia.mdx
 │       ├── espacamento.mdx
-│       ├── acessibilidade.mdx
+│       ├── Acessibilidade.mdx
 │       └── Changelog.mdx        # Renderiza o CHANGELOG.md da raiz via @storybook/addon-docs
 │
 ├── CHANGELOG.md                 # Gerado automaticamente pelo Changesets a cada release
