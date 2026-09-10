@@ -9,12 +9,30 @@ import "../src/styles/index.css";
 
 const preview: Preview = {
   decorators: [
-    (Story) => (
-      <Theme>
+    (Story, context) => (
+      <Theme appearance={context.globals.theme}>
         <Story />
       </Theme>
     ),
   ],
+
+  globalTypes: {
+    theme: {
+      description: "Tema global (light/dark) do Design System",
+      toolbar: {
+        icon: "circlehollow",
+        items: [
+          { value: "light", icon: "sun", title: "Light" },
+          { value: "dark", icon: "moon", title: "Dark" },
+        ],
+        dynamicTitle: true,
+      },
+    },
+  },
+
+  initialGlobals: {
+    theme: "light",
+  },
 
   parameters: {
     layout: "centered",
